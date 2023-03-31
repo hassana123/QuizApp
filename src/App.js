@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+import Loading from "./components/loading";
+const Home = React.lazy(() => import("./routes/home"));
+const Game = React.lazy(() => import("./routes/game"));
+const LeaderBoard = React.lazy(() => import("./routes/leaderBoard"));
+//const Topic = React.lazy(() => import("./routes/home"));
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/game"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Game />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/leaderBoard"
+          element={
+            <Suspense fallback={<Loading />}>
+              <LeaderBoard />
+            </Suspense>
+          }
+        />
+      </Routes>
     </div>
   );
 }
