@@ -21,7 +21,7 @@
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .share {
-  margin-bottom: 20px;
+  margin-bottom:5px;
 }
 .share small {
   display: block;
@@ -47,7 +47,7 @@
   text-transform: capitalize;
 }
 .stats-cont h1 {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .stats-cont h1 span {
   color: #f1ca61;
