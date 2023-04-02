@@ -91,22 +91,23 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
 
               <FacebookShareButton
                 url={shareUrl}
-                quote=""
-                hashtag="#RAMADANQUIZ"
+                quote={`Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃`}
+                hashtag={`#RAMADANQUIZ`}
               >
                 <FacebookIcon size={35} round={true} />
               </FacebookShareButton>
               <WhatsappShareButton
                 url={shareUrl}
-                quote=""
-                hashtag="#RAMADANQUIZ"
+                quote={`Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃`}
+                hashtag={`#RAMADANQUIZ`}
               >
                 <WhatsappIcon size={35} round={true} />
               </WhatsappShareButton>
               <TwitterShareButton
                 url={shareUrl}
-                quote=""
-                hashtag="#RAMADANQUIZ"
+                quote={`Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃`}
+                hashtag={`#RAMADANQUIZ`}
+                ss
               >
                 <TwitterIcon size={35} round={true} />
               </TwitterShareButton>
@@ -129,7 +130,7 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
                 getImage();
               }}
             >
-              Take a screenshot for the socials
+              📷 Take a screenshot for the socials 📸
             </button>
           </div>
         </>

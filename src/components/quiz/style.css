@@ -80,6 +80,7 @@
 .answer-sect {
   position: relative;
   margin-top: 100px;
+  margin-bottom: 20px;
 }
 .options-cont {
   display: grid;

@@ -181,9 +181,9 @@ const Index = () => {
         { opt: "Friday Night", isCorrect: false },
         { opt: "Night of Arafah", isCorrect: false },
         { opt: "Night of Eid", isCorrect: false },
-        { opt: "Laylatul Kadr", isCorrect: false },
+        { opt: "Laylatul Kadr", isCorrect: true},
       ],
-    },
+    }, 
     {
       question: "Who was seen in the fourth heaven on the night if Miraj?",
       answerOpt: [
