@@ -2,6 +2,7 @@ import React from "react";
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Loading from "./components/loading";
+import Nav from "./components/nav";
 const Home = React.lazy(() => import("./routes/home"));
 const Game = React.lazy(() => import("./routes/game"));
 const LeaderBoard = React.lazy(() => import("./routes/leaderBoard"));
@@ -9,6 +10,7 @@ const LeaderBoard = React.lazy(() => import("./routes/leaderBoard"));
 function App() {
   return (
     <div className="app">
+      <Nav />
       <Routes>
         <Route
           path="/"

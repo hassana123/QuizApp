@@ -1,6 +1,7 @@
 .home-page {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
+  max-height: fit-content;
   background: #233c67;
   text-align: center;
   padding: 5px;
@@ -13,13 +14,13 @@
 .home-container {
   width: 95%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .home-container img {
   display: block;
   width: 50%;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .home-container h3 {
   color: #f1ca61;
@@ -37,7 +38,7 @@
   width: 80%;
   margin: auto;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
@@ -45,8 +46,8 @@
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   margin-bottom: 20px;
   color: #ffffef;
-  border-radius: 20px;
-  padding: 15px 0;
+  border-radius: 15px;
+  padding: 10px 0;
   transition: all 1s ease-in-out;
 }
 
@@ -61,7 +62,7 @@
   background: linear-gradient(to top right, #0d97fc, red);
 }
 .home-container button:hover {
-  font-size: 2rem;
-  padding: 30px;
+  font-size: 1.7rem;
+  padding: 15px;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

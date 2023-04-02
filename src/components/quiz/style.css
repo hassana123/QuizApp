@@ -13,7 +13,7 @@
 .q-sect {
   background-color: #ffffef;
   color: #002136;
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 5px;
   border-radius: 10px;
 }
@@ -22,6 +22,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 25px;
   margin-top: 20px;
+}
+.sect-1 .score {
+  margin: 6px 0;
+}
+.sect-1 .score h2 {
+  color: #002136;
+  font-size: 1.7rem;
+  width: 15%;
+  background: #ffffef;
+  margin: auto;
+  border: 2px solid #002136;
 }
 .grid .time {
   height: 70px;
@@ -64,7 +75,7 @@
   margin-bottom: 50px;
 }
 .answer-sect {
-  margin-top: 70px;
+  margin-top: 80px;
 }
 .options-cont {
   display: grid;
@@ -81,7 +92,7 @@
   background-color: #ffffef;
 }
 .options:hover {
-  padding: 20px 0;
+  padding: 17px 0;
 }
 .correct {
   border: 2px solid #00ff00 !important;

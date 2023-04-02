@@ -1,4 +1,7 @@
 .complete-quiz {
+  height: 100vh;
+  max-height: fit-content;
+  background: #f1ca61;
 }
 .stats-cont {
   background: #002136;
@@ -9,24 +12,32 @@
   text-transform: capitalize;
 }
 .stats-cont h1 {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .stats-cont h3 {
   margin: 30px 0;
 }
+.stats-cont h3 span {
+  color: #f1ca61;
+  font-size: 1.5rem;
+}
 .stats-cont p {
   margin: 20px 0;
+}
+.stats-cont p span {
+  background: #f1ca61;
+  color: #002136;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 
 .form {
   color: #002136;
-  background-color: #ffffef;
   padding: 0.2px;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
 }
 .form p {
-  margin: 50px 0;
+  margin: 60px 0;
   font-size: 1.2rem;
 }
 .form input {

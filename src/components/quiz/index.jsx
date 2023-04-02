@@ -68,12 +68,12 @@ const Index = (props) => {
           value={`${(currentQ / props.questions.length) * 100}`}
           max={props.questions.length * 15}
         ></progress> */}
-        <div className="btn">
+        <div className="score">
           {/* <button>Quit</button> */}
           {/* <button disabled={!clicked} onClick={handleNext}>
             Next
           </button> */}
-          {score}
+          <h2>{score}</h2>
         </div>
       </div>
       <div className="answer-sect">

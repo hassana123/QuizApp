@@ -1,14 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import "./style.css";
+import { useScreenshot } from "use-react-screenshot";
 const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
   const [name, setName] = useState("");
   const [saved, setSaved] = useState(false);
+  const ref = createRef(null);
+  const [image, takeScreenshot] = useScreenshot();
+
   const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
   useEffect(() => {
     localStorage.setItem("name", JSON.stringify(name));
     localStorage.setItem("score", JSON.stringify(score));
   }, [name, score]);
+  const getImage = () => {
+    takeScreenshot(ref.current);
+  };
   function validate() {
     if (name && name !== " ") {
       setSaved(true);
@@ -29,44 +36,63 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
 
   return (
     <section className="complete-quiz">
-      <div className="stats-cont">
-        <p onClick={() => navigate("/")}>back</p>
-        <h1>Masha Allah</h1>
-        <h3>
-          POINTS <br />
-          <br /> {score}
-        </h3>
-        <p>
-          correct answers {correctAnswer} out of {question}
-        </p>
-        <p>
-          wrong answers {wrongAnswer} out of {question}
-        </p>
-      </div>
-      <div>
-        {saved ? (
-          <div>saved</div>
-        ) : (
-          <form
-            className="form"
-            onSubmit={(e) => {
-              e.preventDefault();
-              validate();
-            }}
-          >
-            <p>Enter your name to save your score in leaderBoard</p>
-            <input
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              placeholder="Name?"
-            />
-
-            <button onClick={(e) => e.preventDefault} type="submit">
-              save
+      {saved ? (
+        <>
+          <div ref={ref} className="stats-cont">
+            <p onClick={() => navigate("/")}>back</p>
+            <h1>Masha Allah {name}</h1>
+            <p>you did Amazing !</p>
+            <h3>
+              POINTS <br />
+              <br /> <span>{score}</span>
+            </h3>
+            <p>
+              Total correct answers:
+              <span>
+                {correctAnswer} out of {question}
+              </span>
+            </p>
+            <p>
+              Total wrong answers:
+              <span>
+                {wrongAnswer} out of {question}
+              </span>
+            </p>
+            <button onClick={getImage}>
+              Take a screenshot for the socials
             </button>
-          </form>
-        )}
-      </div>
+            <img src={image} alt="screenshot" />
+          </div>
+          <div className="socials">
+            <a
+              href="whatsapp://send?text='+encodeURIComponent(image)"
+              data-action="share/whatsapp/share"
+              target="_blank"
+            >
+              whatsApp
+            </a>
+          </div>
+        </>
+      ) : (
+        <form
+          className="form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            validate();
+          }}
+        >
+          <p>Enter your name to save your POINT!</p>
+          <input
+            onChange={(e) => setName(e.target.value)}
+            type="text"
+            placeholder="Name?"
+          />
+
+          <button onClick={(e) => e.preventDefault} type="submit">
+            save
+          </button>
+        </form>
+      )}
     </section>
   );
 };
