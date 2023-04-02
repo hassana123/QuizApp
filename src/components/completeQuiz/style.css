@@ -3,6 +3,14 @@
   max-height: fit-content;
   background: #f1ca61;
 }
+.img-cont {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.img-social {
+  width: 100%;
+}
 .stats-cont {
   background: #002136;
   color: #ffffef;

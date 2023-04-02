@@ -6,9 +6,8 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
   const [saved, setSaved] = useState(false);
   const ref = createRef(null);
   const [image, takeScreenshot] = useScreenshot();
-
+  //let imgUrl = document.getElementById("img").src;
   const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
   useEffect(() => {
     localStorage.setItem("name", JSON.stringify(name));
     localStorage.setItem("score", JSON.stringify(score));
@@ -61,15 +60,21 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
             <button onClick={getImage}>
               Take a screenshot for the socials
             </button>
-            <img src={image} alt="screenshot" />
+            <div className="img-cont">
+              <img
+                id="img"
+                className="img-social"
+                src={image}
+                alt="screenshot"
+              />
+            </div>
           </div>
           <div className="socials">
             <a
-              href="whatsapp://send?text='+encodeURIComponent(image)"
-              data-action="share/whatsapp/share"
-              target="_blank"
+              href={`whatsapp://send?text=${encodeURIComponent(image)}`}
+              id="btn"
             >
-              whatsApp
+              share
             </a>
           </div>
         </>
