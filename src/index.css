@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200&family=Poppins:ital,wght@0,100;1,100&family=Rajdhani:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,11 @@
 .app {
   padding: 0;
   margin: 0;
+  font-size: medium;
+  font-family: "Rajdhani", sans-serif;
+}
+button {
+  font-family: "Rajdhani", sans-serif;
 }
 html body {
   padding: 0;

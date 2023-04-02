@@ -1,0 +1,7 @@
+.leaderboard-cont {
+  background: linear-gradient(to top right, hsl(205, 98%, 52%), red);
+  padding: 0.2px;
+}
+.leaderboard-cont h2 {
+  margin-top: 40px;
+}

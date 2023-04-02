@@ -1,19 +1,47 @@
+import * as htmlToImage from "html-to-image";
 import React, { createRef, useEffect, useState } from "react";
 import "./style.css";
-import { useScreenshot } from "use-react-screenshot";
+import {
+  FacebookShareButton,
+  WhatsappShareButton,
+  WhatsappIcon,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from "react-share";
+
 const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
   const [name, setName] = useState("");
   const [saved, setSaved] = useState(false);
   const ref = createRef(null);
-  const [image, takeScreenshot] = useScreenshot();
-  //let imgUrl = document.getElementById("img").src;
+  const shareUrl = "quiz-egsju80e3-hassana123.vercel.app";
+  // const [image] = useScreenshot({
+  //   type: "image/jpeg",
+  //   quality: 1.0,
+  // });
+  const createFileName = (extension = "", ...names) => {
+    if (!extension) {
+      return "";
+    }
+    return `${names.join("")}.${extension}`;
+  };
+  const takeScreenShot = async (node) => {
+    const imgURI = await htmlToImage.toJpeg(node);
+    return imgURI;
+  };
+  const download = (image, { name = "result", extension = "jpg" } = {}) => {
+    const a = document.createElement("a");
+    a.href = image;
+    a.download = createFileName(extension, name);
+    a.click();
+  };
   const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
   useEffect(() => {
     localStorage.setItem("name", JSON.stringify(name));
     localStorage.setItem("score", JSON.stringify(score));
   }, [name, score]);
   const getImage = () => {
-    takeScreenshot(ref.current);
+    takeScreenShot(ref.current).then(download);
   };
   function validate() {
     if (name && name !== " ") {
@@ -38,12 +66,13 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
       {saved ? (
         <>
           <div ref={ref} className="stats-cont">
-            <p onClick={() => navigate("/")}>back</p>
-            <h1>Masha Allah {name}</h1>
-            <p>you did Amazing !</p>
+            <h1>
+              Masha Allah <span>{name} !!!</span>
+            </h1>
+            <p>Quiz completed ✅ successfully.👏</p>
             <h3>
-              POINTS <br />
-              <br /> <span>{score}</span>
+              POINTS 👇🏾 <br />
+              <br /> <span>✨ {score} 🙌</span>
             </h3>
             <p>
               Total correct answers:
@@ -57,25 +86,51 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
                 {wrongAnswer} out of {question}
               </span>
             </p>
-            <button onClick={getImage}>
-              Take a screenshot for the socials
-            </button>
-            <div className="img-cont">
+            <div className="share">
+              <small>share with friends:🤗</small>
+
+              <FacebookShareButton
+                url={shareUrl}
+                quote=""
+                hashtag="#RAMADANQUIZ"
+              >
+                <FacebookIcon size={35} round={true} />
+              </FacebookShareButton>
+              <WhatsappShareButton
+                url={shareUrl}
+                quote=""
+                hashtag="#RAMADANQUIZ"
+              >
+                <WhatsappIcon size={35} round={true} />
+              </WhatsappShareButton>
+              <TwitterShareButton
+                url={shareUrl}
+                quote=""
+                hashtag="#RAMADANQUIZ"
+              >
+                <TwitterIcon size={35} round={true} />
+              </TwitterShareButton>
+            </div>
+
+            {/* <div className="img-cont">
               <img
                 id="img"
                 className="img-social"
                 src={image}
                 alt="screenshot"
               />
-            </div>
+            </div> */}
           </div>
           <div className="socials">
-            <a
-              href={`whatsapp://send?text=${encodeURIComponent(image)}`}
-              id="btn"
+            <button
+              className="btn-shot"
+              onClick={(e) => {
+                e.preventDefault();
+                getImage();
+              }}
             >
-              share
-            </a>
+              Take a screenshot for the socials
+            </button>
           </div>
         </>
       ) : (

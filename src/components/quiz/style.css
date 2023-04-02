@@ -1,11 +1,12 @@
 .quiz {
   background: transparent;
   color: #002136;
+  padding: 0.1px;
 }
 .sect-1 {
-  background: #004244;
+  background: hsl(182, 100%, 13%);
   color: #ffffef;
-  height: 35vh;
+  height: 40vh;
   padding: 5px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
@@ -13,23 +14,24 @@
 .q-sect {
   background-color: #ffffef;
   color: #002136;
-  margin-top: 60px;
   padding: 5px;
+  top: 32%;
+  position: relative;
   border-radius: 10px;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 20px;
 }
-.sect-1 .score {
+.sect-1 .q-count {
   margin: 6px 0;
 }
-.sect-1 .score h2 {
+.sect-1 .q-count h2 {
   color: #002136;
-  font-size: 1.7rem;
-  width: 15%;
+  font-size: 1.5rem;
+  width: 20%;
   background: #ffffef;
   margin: auto;
   border: 2px solid #002136;
@@ -69,26 +71,28 @@
   border-radius: 10px;
   height: 2vh;
 }
+.q-count span {
+  font-size: 1.2rem;
+}
 .q-cont {
-  margin-top: 20px;
-
-  margin-bottom: 50px;
+  margin: 20px 0;
 }
 .answer-sect {
-  margin-top: 80px;
+  position: relative;
+  margin-top: 100px;
 }
 .options-cont {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 .options {
-  width: 90%;
+  width: 95%;
   margin: auto;
   padding: 15px 0;
   color: #002136;
+  font-size: 1.2rem;
   border: 2px solid #004244;
-  border-radius: 10px;
-  font-size: 1.1rem;
+  border-radius: 7px;
   background-color: #ffffef;
 }
 .options:hover {

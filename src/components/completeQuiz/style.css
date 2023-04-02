@@ -2,28 +2,47 @@
   height: 100vh;
   max-height: fit-content;
   background: #f1ca61;
+  padding: 0.22px;
 }
-.img-cont {
-  width: 80%;
-  margin: auto;
-  margin-top: 30px;
+.btn-shot {
+  background: #002136;
+  color: #ffffef;
+  border: none;
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
 }
-.img-social {
-  width: 100%;
+.share {
+  margin: 10px 0;
+}
+.share small {
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 5px;
+}
+.btn-shot:hover {
+  background: #ffffef;
+  color: #002136;
+  border: 2px solid #002136;
 }
 .stats-cont {
   background: #002136;
   color: #ffffef;
   padding: 0.2px;
+  margin-top: 45px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   text-transform: capitalize;
 }
 .stats-cont h1 {
-  margin-top: 50px;
+  margin-top: 40px;
+}
+.stats-cont h1 span {
+  color: #f1ca61;
 }
 .stats-cont h3 {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .stats-cont h3 span {
   color: #f1ca61;
@@ -41,6 +60,11 @@
 }
 
 .form {
+  background-color: #ffffef;
+  width: 90%;
+  margin: auto;
+  margin-top: 46px;
+  border-radius: 15px;
   color: #002136;
   padding: 0.2px;
 }
@@ -52,9 +76,10 @@
   display: block;
   width: 80%;
   border: 2px solid #002136;
-  padding: 25px 5px;
+  padding: 15px 5px;
   margin: auto;
   border-radius: 20px;
+  background: #ffffef;
 }
 .form button {
   background: #002136;
