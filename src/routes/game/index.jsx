@@ -181,9 +181,9 @@ const Index = () => {
         { opt: "Friday Night", isCorrect: false },
         { opt: "Night of Arafah", isCorrect: false },
         { opt: "Night of Eid", isCorrect: false },
-        { opt: "Laylatul Kadr", isCorrect: true},
+        { opt: "Laylatul Kadr", isCorrect: true },
       ],
-    }, 
+    },
     {
       question: "Who was seen in the fourth heaven on the night if Miraj?",
       answerOpt: [
@@ -237,6 +237,8 @@ const Index = () => {
   const [tWrongans, setTwrongans] = useState(0);
   const [tCorrectAns, setTcorrectAns] = useState(0);
   const [time, setTime] = useState();
+  const [timeOff, setTimeOff] = useState(false);
+  const [attemptedq, setAttemptedq] = useState(0);
 
   let counter;
   // useEffect(() => {
@@ -252,6 +254,7 @@ const Index = () => {
         if (time < 1) {
           clearInterval(counter);
           setTime("time off");
+          setTimeOff(true);
           setShowComplete(true);
         }
         return time - 1;
@@ -259,10 +262,11 @@ const Index = () => {
     }, 1000);
   }
 
-  const getData = (tScore, tCorrectans, tWrongans) => {
+  const getData = (tScore, tCorrectans, tWrongans, attempts) => {
     setTscore(tScore);
     setTcorrectAns(tCorrectans);
     setTwrongans(tWrongans);
+    setAttemptedq(attempts);
   };
 
   return (
@@ -276,6 +280,8 @@ const Index = () => {
               question={questions.length}
               correctAnswer={tCorrectAns}
               score={tscore}
+              attemptedq={attemptedq}
+              timeOff={timeOff}
             />
           ) : (
             <Quiz

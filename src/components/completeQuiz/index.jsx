@@ -10,7 +10,14 @@ import {
   TwitterIcon,
 } from "react-share";
 
-const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
+const Index = ({
+  correctAnswer,
+  score,
+  question,
+  wrongAnswer,
+  attemptedq,
+  timeOff,
+}) => {
   const [name, setName] = useState("");
   const [saved, setSaved] = useState(false);
   const ref = createRef(null);
@@ -69,11 +76,20 @@ const Index = ({ correctAnswer, score, question, wrongAnswer, navigate }) => {
             <h1>
               Masha Allah <span>{name} !!!</span>
             </h1>
-            <p>Quiz completed ✅ successfully.👏</p>
+            {timeOff ? (
+              <p>Opps! ⏱ Time OFF 📴 </p>
+            ) : (
+              <p>Quiz completed ✅ successfully.👏</p>
+            )}
+
             <h3>
               POINTS 👇🏾 <br />
               <br /> <span>✨ {score} 🙌</span>
             </h3>
+            <p>
+              You Attempted {attemptedq} out of {question}
+            </p>
+            <p>Total unAttempted Questionis {question - attemptedq}</p>
             <p>
               Total correct answers:
               <span>

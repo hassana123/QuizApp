@@ -8,6 +8,7 @@ const Index = (props) => {
   const [wrongA, setWrongA] = useState(0);
   const [currentQ, setCurrentQ] = useState(0);
   const [clicked, setClicked] = useState(false);
+  const [attempt, setAttempt] = useState(0);
 
   const handleNext = () => {
     setClicked(false);
@@ -25,17 +26,19 @@ const Index = (props) => {
     if (isCorrect) {
       setScore(score + 50);
       setCorrectA(correctA + 1);
+      setAttempt(attempt + 1);
       setTimeout(() => {
         handleNext();
       }, 1000);
     } else {
       setWrongA(wrongA + 1);
+      setAttempt(attempt + 1);
       setTimeout(() => {
         handleNext();
       }, 1000);
     }
   };
-  props.getData(score, correctA, wrongA);
+  props.getData(score, correctA, wrongA, attempt);
   return (
     <div className="quiz">
       <div className="sect-1">
