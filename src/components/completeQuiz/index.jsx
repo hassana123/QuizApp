@@ -108,10 +108,7 @@ const Index = ({
               <FacebookShareButton
                 url={shareUrl}
                 title={
-                  "Are you a quiz lover, if yes then this is for you, with new questions everyday, this app is sure to test your knowledge"
-                }
-                quote={
-                  "Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃"
+                  "Hey👋🏾 Ramadan Mubarak🤗, Are you curious about islam, want to learn more about islam and it's teachings, if yes then this Quizz app is perfect for you, with new questions everyday through out the month of Ramadan, this app is sure to test your knowledge. Let's learn about islam in a fun way ☺😎😃"
                 }
                 hashtag="#RAMADANQUIZ"
               >
@@ -120,11 +117,9 @@ const Index = ({
               <WhatsappShareButton
                 url={shareUrl}
                 title={
-                  "Are you a quiz lover, if yes then this is for you, with new questions everyday, this app is sure to test your knowledge"
+                  "Hey👋🏾 Ramadan Mubarak🤗, Are you curious about islam, want to learn more about islam and it's teachings, if yes then this Quizz app is perfect for you, with new questions everyday through out the month of Ramadan, this app is sure to test your knowledge. Let's learn about islam in a fun way ☺😎😃"
                 }
-                quote={
-                  "Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃"
-                }
+                separator=":: "
                 hashtag="#RAMADANQUIZ"
               >
                 <WhatsappIcon size={35} round={true} />
@@ -132,10 +127,7 @@ const Index = ({
               <TwitterShareButton
                 url={shareUrl}
                 title={
-                  "Are you a quiz lover, if yes then this is for you, with new questions everyday, this app is sure to test your knowledge"
-                }
-                quote={
-                  "Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃"
+                  "Hey👋🏾 Ramadan Mubarak🤗, Are you curious about islam, want to learn more about islam and it's teachings, if yes then this Quizz app is perfect for you, with new questions everyday through out the month of Ramadan, this app is sure to test your knowledge. Let's learn about islam in a fun way ☺😎😃"
                 }
                 hashtag="#RAMADANQUIZ"
               >
