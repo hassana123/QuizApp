@@ -301,13 +301,13 @@ const Index = () => {
                 setTime(e.target.value);
                 start();
               }}
-              value="120"
+              value="300"
               className="easy"
             >
               easy <br />
             </button>
             <small>
-              2:00<sub>min</sub>
+              5:00<sub>min</sub>
             </small>
           </div>
           <div className="btn-container">
@@ -316,13 +316,13 @@ const Index = () => {
                 setTime(e.target.value);
                 start();
               }}
-              value="60"
+              value="180"
               className="medium"
             >
               medium <br />
             </button>
             <small>
-              1:00 <sub>min</sub>
+              3:00 <sub>min</sub>
             </small>
           </div>{" "}
           <div className="btn-container">
@@ -331,13 +331,13 @@ const Index = () => {
                 setTime(e.target.value);
                 start();
               }}
-              value="35"
+              value="95"
               className="hard"
             >
               hard <br />
             </button>
             <small>
-              35:00 <sub>sec</sub>
+              1:35 <sub>sec</sub>
             </small>
           </div>
         </div>
