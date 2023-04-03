@@ -90,7 +90,7 @@ const Index = (props) => {
                 }}
                 className={`options ${
                   clicked && ans.isCorrect ? "correct" : "options"
-                }`}
+                } ${clicked && !ans.isCorrect ? "wrong" : "options" }`}
                 key={i}
               >
                 {ans.opt}
