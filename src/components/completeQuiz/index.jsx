@@ -107,23 +107,37 @@ const Index = ({
 
               <FacebookShareButton
                 url={shareUrl}
-                quote={`Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃`}
-                hashtag={`#RAMADANQUIZ`}
+                title={
+                  "Are you a quiz lover, if yes then this is for you, with new questions everyday, this app is sure to test your knowledge"
+                }
+                quote={
+                  "Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃"
+                }
+                hashtag="#RAMADANQUIZ"
               >
                 <FacebookIcon size={35} round={true} />
               </FacebookShareButton>
               <WhatsappShareButton
                 url={shareUrl}
-                quote={`Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃`}
-                hashtag={`#RAMADANQUIZ`}
+                title={
+                  "Are you a quiz lover, if yes then this is for you, with new questions everyday, this app is sure to test your knowledge"
+                }
+                quote={
+                  "Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃"
+                }
+                hashtag="#RAMADANQUIZ"
               >
                 <WhatsappIcon size={35} round={true} />
               </WhatsappShareButton>
               <TwitterShareButton
                 url={shareUrl}
-                quote={`Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃`}
-                hashtag={`#RAMADANQUIZ`}
-                ss
+                title={
+                  "Are you a quiz lover, if yes then this is for you, with new questions everyday, this app is sure to test your knowledge"
+                }
+                quote={
+                  "Hey👋🏾 Ramadan Mubarak🤗, let's learn about islam in a fun way ☺😎😃"
+                }
+                hashtag="#RAMADANQUIZ"
               >
                 <TwitterIcon size={35} round={true} />
               </TwitterShareButton>
