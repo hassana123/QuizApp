@@ -89,7 +89,8 @@ const Index = (props) => {
                   handleCorrectAnswer(ans.isCorrect);
                 }}
                 className={`options ${
-                  clicked && ans.isCorrect ? "correct" : "wrong"
+                  clicked && ans.isCorrect ? "correct" : "options"
+                  clicked && !ans.isCorrect ? "wrong" : "options"
                 }`}
                 key={i}
               >
