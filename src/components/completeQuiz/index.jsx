@@ -21,7 +21,7 @@ const Index = ({
   const [name, setName] = useState("");
   const [saved, setSaved] = useState(false);
   const ref = createRef(null);
-  const shareUrl = "quiz-egsju80e3-hassana123.vercel.app";
+  const shareUrl = "https://quiz-app-gamma-self.vercel.app/";
   // const [image] = useScreenshot({
   //   type: "image/jpeg",
   //   quality: 1.0,
