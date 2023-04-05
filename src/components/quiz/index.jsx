@@ -30,7 +30,7 @@ const Index = (props) => {
       props.setShowComplete(true);
     }
   };
-  let gameTime;
+
   useEffect(() => {
     setTime(props.time);
   }, [props.time]);
