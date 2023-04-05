@@ -14,547 +14,450 @@ const Index = () => {
 
   const questions = [
     {
-      question: "When was the prophet muhammad (SAW) born?",
+      question: "Where was prophet Musa AS born?",
       answerOpt: [
-        { opt: "Monday, 9th Rabi Al awwal, 571 AC", isCorrect: true },
-        { opt: "thursday, 13th Rabi Al awwal, 571 AC", isCorrect: false },
-        { opt: "friday 14th Rabi Al awwal, 571 AC", isCorrect: false },
-        { opt: "Monday, 9th Muhram, 571 AC", isCorrect: false },
+        { opt: "Hadramout", isCorrect: false },
+        { opt: "Yemen", isCorrect: false },
+        { opt: "Egypt", isCorrect: true },
+        { opt: "Palestine", isCorrect: false },
       ],
     },
     {
-      question: "Where Was the prophet born",
+      question: "Who was Haroon AS to Musa AS? ",
       answerOpt: [
-        { opt: "Medina", isCorrect: false },
-        { opt: "Yathrib", isCorrect: false },
-        { opt: "Mekkah", isCorrect: true },
-        { opt: "Saudi", isCorrect: false },
+        { opt: "Musa's Father", isCorrect: false },
+        { opt: "musa's Brother", isCorrect: true },
+        { opt: "musa's helper", isCorrect: false },
+        { opt: "musa's father-in-law", isCorrect: false },
       ],
     },
     {
-      question: "Prophet Muhammad s.a.w was from ?",
+      question: "What was the name of Pharaoh’s minister?",
       answerOpt: [
-        { opt: "Banu Sa'ad", isCorrect: false },
-        { opt: "banu khuzair", isCorrect: false },
-        { opt: "Banu Hashim", isCorrect: true },
-        { opt: "Banu Israel.", isCorrect: false },
+        { opt: "Samiri", isCorrect: false },
+        { opt: "Haroon", isCorrect: false },
+        { opt: "Malik", isCorrect: false },
+        { opt: "Hamaan", isCorrect: true },
       ],
     },
     {
-      question: "What is the name of prophet muhammad's Father?",
+      question: "What were the people of Musa (AS) called?",
       answerOpt: [
-        { opt: "Ibrahim", isCorrect: false },
-        { opt: "Abdul-mutalib", isCorrect: false },
-        { opt: "Abu-talib", isCorrect: false },
-        { opt: "Abdullah", isCorrect: true },
+        { opt: "The children of taym", isCorrect: false },
+        { opt: "The children of Adi.", isCorrect: false },
+        { opt: "The children of Israel.", isCorrect: true },
+        { opt: "The children of egypt.", isCorrect: false },
       ],
     },
     {
-      question: "when and when did the prophet's Muhammad(SAW) father die?",
+      question:
+        "The Prophet Musa (pbuh) was put into the river by his mother inside which object",
       answerOpt: [
-        { opt: "he died in mekkah when he was a year old", isCorrect: false },
-        { opt: "he died in mekkah before he was born", isCorrect: true },
-        {
-          opt: "he on a journey back to medina when he was six",
-          isCorrect: false,
-        },
-        { opt: "he died in medina when he was an aldult", isCorrect: false },
+        { opt: "A wooden basket", isCorrect: true },
+        { opt: "A metal cage", isCorrect: false },
+        { opt: "an old Caneo", isCorrect: false },
+        { opt: "a wooden box", isCorrect: false },
       ],
     },
     {
-      question: "where did the prophet muhammad (SAW) mother die?",
-      answerOpt: [
-        { opt: "in Yathrib", isCorrect: false },
-        { opt: "in mekkah", isCorrect: false },
-        { opt: "in bani hashim", isCorrect: false },
-        { opt: "Abwa", isCorrect: true },
-      ],
-    },
-    {
-      question: "what was the prophets(SAW) age when his mother died?",
-      answerOpt: [
-        { opt: "2", isCorrect: false },
-        { opt: "8", isCorrect: false },
-        { opt: "6", isCorrect: true },
-        { opt: "12", isCorrect: false },
-      ],
-    },
-    {
-      question: "what is the name of the prophets grandfather?",
-      answerOpt: [
-        { opt: "Abdullah", isCorrect: false },
-        { opt: "Abu-talib", isCorrect: false },
-        { opt: "hamza", isCorrect: false },
-        { opt: "abdull muttalib", isCorrect: true },
-      ],
-    },
-    {
-      question: "what is the prophet's lineage up too his fifth ancesstor?",
+      question:
+        "What punishment did Pharaoh use to give the children and women of Israel?",
       answerOpt: [
         {
-          opt: "Muhammad ibn Abdullah ibn Abdul muttallib ibn kilab ibn manaf ibn hashim ibn abd manaf",
+          opt: "he would Banish the children and keep the women",
           isCorrect: false,
         },
         {
-          opt: "Muhammad ibn Abdullah ibn Abdul muttallib  ibn manaf ibn kilab ibn hashim ibn Qusai",
+          opt: "He would slaughter the daugthers, and keep the sons alive.",
           isCorrect: false,
         },
         {
-          opt: "Muhammad ibn Abdullah ibn Abdul muttallib ibn hashim ibn Abd manaf ibn Qusai ibn kilab",
+          opt: "He would slaughter the children, and keep the women alive.",
           isCorrect: true,
         },
         {
-          opt: "Muhammad ibn Abdullah ibn Abdul muttallib ibn hashim ibn kilab ibn manaf",
+          opt: "He would slaughter the women, and keep the men alive.",
           isCorrect: false,
         },
       ],
     },
     {
-      question: "Who named the Prophet (SAW)",
+      question:
+        "It was the wife of Pharaoh who discovered Musa (pbuh) in the river. What was her name?",
       answerOpt: [
-        { opt: "Abu-talib", isCorrect: false },
-        { opt: "Abdull mutallib", isCorrect: true },
-        { opt: "Abdullah", isCorrect: false },
-        { opt: "Amina", isCorrect: false },
+        { opt: "Hafsa", isCorrect: false },
+        { opt: "Maryam", isCorrect: false },
+        { opt: "Asiya", isCorrect: true },
+        { opt: "Hajar", isCorrect: false },
       ],
     },
     {
-      question: "Who took charge of his care After his mother died?",
+      question:
+        "Who cleverly told the household of Pharaoh that there was a suitable wet nurse nearby for baby Musa (pbuh) after he refused the others, and thus reunited him with his mother?",
       answerOpt: [
-        { opt: "his uncle (abu talib)", isCorrect: false },
-        { opt: "his Grandfather (abdull mutalib)", isCorrect: true },
-        { opt: "his father (abdulah)", isCorrect: false },
-        { opt: "none of the above", isCorrect: false },
+        { opt: "his mother's servant", isCorrect: false },
+        { opt: "His brother", isCorrect: false },
+        { opt: "His uncle", isCorrect: false },
+        { opt: "His Sister", isCorrect: true },
       ],
     },
     {
-      question: "how long did the prophets's grandfather take care of him?",
+      question:
+        " Pharaoh's wife took up the responsibility of bringing up Musa (AS) ?",
       answerOpt: [
-        { opt: "4 years", isCorrect: false },
-        { opt: "3 years", isCorrect: false },
+        { opt: "True", isCorrect: true },
+        { opt: "False", isCorrect: false },
+      ],
+    },
+    {
+      question: "Which incident caused Musa (pbuh) to flee from Egypt?",
+      answerOpt: [
+        { opt: "He accidentally killed an egyptian man", isCorrect: true },
+        { opt: "He was accused of theft", isCorrect: false },
+        { opt: "there was a plague", isCorrect: false },
+        { opt: "There was a plague", isCorrect: false },
+      ],
+    },
+    {
+      question: "What was the penalty For Killing an egyptian at the time",
+      answerOpt: [
+        { opt: "Banishment", isCorrect: false },
+        { opt: "Prison", isCorrect: false },
+        { opt: "Death", isCorrect: true },
+        { opt: "No penalty", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "Why did prophet Musa leave Egypt after the incident in his youth?",
+      answerOpt: [
+        {
+          opt: "Because he was scred of the soldiers of pharoah",
+          isCorrect: true,
+        },
+        { opt: "Because he wanted to marry", isCorrect: false },
+        { opt: "Because he wanted to see his mother", isCorrect: false },
+        { opt: "Because he wanted to migrate", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "After fleeing Egypt, Musa (pbuh) eventually arrived at a new location. What was it called?",
+      answerOpt: [
+        { opt: "Jerusalem", isCorrect: false },
+        { opt: "Constantinople", isCorrect: false },
+        { opt: "Madyan", isCorrect: true },
+        { opt: "Sinai", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "Upon arriving at this location, Musa (pbuh) saw two women struggling nearby a well. What were they struggling with?",
+      answerOpt: [
+        { opt: "Their purchased goods", isCorrect: false },
+        { opt: "Their horses", isCorrect: false },
+        { opt: "Their flock of sheep", isCorrect: true },
+        { opt: "Their elderly father", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "Musa (pbuh) eventually married one of these two women. What was her name?",
+      answerOpt: [
+        { opt: "Sumayyah", isCorrect: false },
+        { opt: "Safurah", isCorrect: true },
+        { opt: "Safiyyah", isCorrect: false },
+        { opt: "Sameerah", isCorrect: false },
+      ],
+    },
+    {
+      question: "How many years did Musa stayed away from his home?",
+      answerOpt: [
+        { opt: "10 Years", isCorrect: true },
         { opt: "7 years", isCorrect: false },
-        { opt: "2 years", isCorrect: true },
+        { opt: "12 years", isCorrect: false },
+        { opt: "5 years", isCorrect: false },
       ],
     },
     {
-      question: "at what age did the prophet travel to syria with his uncle?",
+      question:
+        "Why did musa AS suddenly decides to return to egypt after 10 years ",
       answerOpt: [
-        { opt: "8 years", isCorrect: false },
-        { opt: "12 years", isCorrect: true },
-        { opt: "9 years", isCorrect: false },
-        { opt: "11 years", isCorrect: false },
+        { opt: "He had a dream ", isCorrect: false },
+        { opt: "he felt Homesick", isCorrect: true },
+        { opt: "He wanted to see his brother", isCorrect: false },
+        { opt: "He wanted to see his sister", isCorrect: false },
       ],
     },
     {
-      question: "Who was khadija (RA)",
+      question:
+        "While travelling with his family, Musa (pbuh) saw something in the direction of Mount Tur which led him to go and investigate. This is where he ultimately spoke to Allah (swt) and received Prophethood. What was it that he saw?",
+      answerOpt: [
+        { opt: "A bright light", isCorrect: false },
+        { opt: "A huge cave", isCorrect: false },
+        { opt: "A burning fire", isCorrect: true },
+        { opt: "A dark cloud", isCorrect: false },
+      ],
+    },
+    {
+      question: "As musa AS neared the fire Whose voice he hear  calling him",
+      answerOpt: [
+        { opt: "Haroon", isCorrect: false },
+        { opt: "Allah SWT", isCorrect: false },
+        { opt: "pharaoh", isCorrect: false },
+        { opt: "angel jibreel", isCorrect: false },
+      ],
+    },
+    {
+      question: "where did Musa AS receive the first revelation?",
+      answerOpt: [
+        { opt: "in Madyn", isCorrect: false },
+        { opt: "in towa valley", isCorrect: true },
+        { opt: "in cave hira", isCorrect: false },
+        { opt: "in the enterance of egypt", isCorrect: false },
+      ],
+    },
+    {
+      question: "What miracles did Allah showed him when he got the mission?",
+      answerOpt: [
+        { opt: "The sea", isCorrect: false },
+        { opt: "The moutain", isCorrect: false },
+        { opt: "The snake and the hand", isCorrect: true },
+        { opt: "the bird", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "Which of Musa’s (pbuh) possessions did Allah (swt) order him to throw on to the ground, which then turned into a snake?",
+      answerOpt: [
+        { opt: "His cloak", isCorrect: false },
+        { opt: "His turban", isCorrect: false },
+        { opt: "His shoe", isCorrect: false },
+        { opt: "His staff", isCorrect: true },
+      ],
+    },
+    {
+      question:
+        "What happened when Allah (swt) ordered Musa (pbuh) to put his hand into his garment?",
+      answerOpt: [
+        { opt: "It turned white", isCorrect: true },
+        { opt: "It grew twice as big", isCorrect: false },
+        { opt: "It turned into gold", isCorrect: false },
+        { opt: "It vanished for a moment", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "What request did Musa (pbuh) make to Allah (swt) when he was commanded to go and confront Pharaoh?",
+      answerOpt: [
+        { opt: "That it should be during the night", isCorrect: false },
+        { opt: "That his brother Harun should go with him", isCorrect: true },
+        { opt: "that he send an army with him", isCorrect: false },
+        { opt: "That he should not fight him", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "How did Pharaoh’s magicians react after they witnessed the miracles that Musa (pbuh) performed in front of them and were defeated?",
+      answerOpt: [
+        { opt: "They laughed at him", isCorrect: false },
+        { opt: "They called him a trickstar", isCorrect: false },
+        { opt: "they challenged him to a rematch", isCorrect: false },
+        { opt: "They fell down in prostration to Allah", isCorrect: true },
+      ],
+    },
+    {
+      question:
+        "What did Pharaoh do to the magicians after they accepted Islam?",
       answerOpt: [
         {
-          opt: " she was A family friend of the prophet (SAW)?",
-          isCorrect: false,
-        },
-        { opt: "she was A wealthy merchant", isCorrect: true },
-        { opt: "she Was An idol worshipper", isCorrect: false },
-        { opt: "she was An outcast", isCorrect: false },
-      ],
-    },
-    {
-      question: "why did she (khadijah) want to marry muhammad (SAW)?",
-      answerOpt: [
-        { opt: "Because of his good looks", isCorrect: false },
-        {
-          opt: "because of his truthfulness and good conduct",
+          opt: "He cut off their hands and feet on opposite sides and crucified them",
           isCorrect: true,
         },
-        { opt: "beacuse of his status", isCorrect: false },
-        { opt: "because of his wealth", isCorrect: false },
-      ],
-    },
-    {
-      question: "How old was the prophet and khadija when they got married? ",
-      answerOpt: [
-        { opt: "he was 40 she was 25", isCorrect: false },
-        { opt: "he was 20 she was 40", isCorrect: false },
-        { opt: "he was 25 she was 40", isCorrect: true },
-        { opt: "he was 30 she was 40", isCorrect: false },
-      ],
-    },
-    {
-      question: "What did the prophet give her (khadija) as dowry? ",
-      answerOpt: [
-        { opt: "20 camels", isCorrect: true },
-        { opt: "50 camels", isCorrect: false },
-        { opt: "10 camels", isCorrect: false },
-        { opt: "25 camels", isCorrect: false },
+        { opt: "He locked them up", isCorrect: false },
+        { opt: "he banished them ", isCorrect: false },
+        { opt: " He let them go", isCorrect: false },
       ],
     },
     {
       question:
-        "How many times is the name muhammad mentioned in the holy quran?",
-      answerOpt: [
-        { opt: "3 times", isCorrect: false },
-        { opt: "6 times", isCorrect: false },
-        { opt: "10 times", isCorrect: false },
-        { opt: "4 times", isCorrect: true },
-      ],
-    },
-    {
-      question: "where did the prophet go into seclussion?",
-      answerOpt: [
-        { opt: "cave hira", isCorrect: true },
-        { opt: "mount arafah", isCorrect: false },
-        { opt: "Kabaah", isCorrect: false },
-        { opt: "cave sinai", isCorrect: false },
-      ],
-    },
-    {
-      question: "Where did the first revelation come down to him?",
-      answerOpt: [
-        { opt: "in cave sinai", isCorrect: false },
-        { opt: "in Cave hira", isCorrect: true },
-        { opt: "in cave utta", isCorrect: false },
-        { opt: "in cave tur", isCorrect: false },
-      ],
-    },
-    {
-      question: "Who were the first to embrace islam(in order)",
+        "Which of the follwing is not a correct order of the plagues of egypt ",
       answerOpt: [
         {
-          opt: "khadija(wife), zaid ibn harith(freed slave), ali ibn talib(cousin) and abubakar(friend)",
+          opt: "The flood, the locusts, the drought , lice, frogs and blood.",
           isCorrect: true,
         },
         {
-          opt: "zaid ibn harith(freed slave), ali ibn talib(cousin), khadija(wife)  and abubakar(friend)",
+          opt: "The flood, the locusts, chickenpox and blood.",
           isCorrect: false,
         },
         {
-          opt: "khadija(wife), zaid ibn harith(freed slave) and ali ibn talib(cousin) ",
+          opt: "The flood, the locusts, eathquake ,lice,  frogs and  drought.",
           isCorrect: false,
         },
         {
-          opt: "abubakar(friend), zaid ibn harith(freed slave), ali ibn talib(cousin) and khadija(wife) ",
+          opt: "The Drought, chickenpox, lice and frogs and blood.",
           isCorrect: false,
         },
       ],
     },
     {
-      question: "how was the dawah(worship) done in the begining",
+      question: "How many tribes was the people of Musa AS divided into?",
       answerOpt: [
-        { opt: "openly", isCorrect: false },
-        { opt: "secretly", isCorrect: true },
-        { opt: "secretly and openly", isCorrect: false },
-        { opt: "none of the above", isCorrect: false },
-      ],
-    },
-    {
-      question: "did the prophet's uncle abu talib accept islam",
-      answerOpt: [
-        { opt: "yes he did", isCorrect: false },
-        { opt: "yes but didnt not practice", isCorrect: false },
-        { opt: "no he died a polythiest", isCorrect: true },
-        { opt: "none of the above", isCorrect: false },
-      ],
-    },
-    {
-      question: "The Year of Mourning was the year Khadija and _________died",
-      answerOpt: [
-        { opt: "Abu Bakr", isCorrect: false },
-        { opt: "Abu jahl", isCorrect: false },
-        { opt: "Abu lahab", isCorrect: false },
-        { opt: "Abu talib", isCorrect: true },
-      ],
-    },
-    {
-      question: "Who accompanied the Prophet on his migration to Madinah?",
-      answerOpt: [
-        { opt: "Abu Bakr", isCorrect: true },
-        { opt: "Umar ibn al-Kattab", isCorrect: false },
-        { opt: "Uthman ibn Affan", isCorrect: false },
-        { opt: "Ali ibn Talib", isCorrect: false },
-      ],
-    },
-    {
-      question: "Which wife of the prophet was the daughter of Abu Bakr?",
-      answerOpt: [
-        { opt: "Asma", isCorrect: false },
-        { opt: "Aisha", isCorrect: true },
-        { opt: "Hafsah", isCorrect: false },
-        { opt: "Saudahh", isCorrect: false },
-      ],
-    },
-    {
-      question: "At what age did the prophet die",
-      answerOpt: [
-        { opt: "64", isCorrect: false },
-        { opt: "65", isCorrect: false },
-        { opt: "67", isCorrect: false },
-        { opt: "63", isCorrect: true },
+        { opt: "six tribes", isCorrect: false },
+        { opt: "Eleven tribes", isCorrect: false },
+        { opt: "Twelve tribes.", isCorrect: true },
+        { opt: "3 tribes", isCorrect: false },
       ],
     },
     {
       question:
-        "Which was his only living child present when the Prophet died?",
+        "Which miracle did Allah (swt) cause to happen for Musa (pbuh) when he put his staff into the Red Sea?",
       answerOpt: [
-        { opt: "fatima", isCorrect: true },
-        { opt: "Zainab", isCorrect: false },
-        { opt: "umme kulsoom", isCorrect: false },
-        { opt: "Ruqayya", isCorrect: false },
+        { opt: "he sea turned red", isCorrect: false },
+        { opt: "The sea parted", isCorrect: true },
+        { opt: "He was able to walk on it", isCorrect: false },
+        { opt: "An ark appeared", isCorrect: false },
       ],
     },
     {
       question:
-        "Which of the following was one of the prophet's occupations before he became a prophet?",
+        "There was a rebellious man among the people of Musa (pbuh) who tried to lead the people astray, i.e. away from monotheism and worshiping one God. What was his name?",
       answerOpt: [
-        { opt: "Tailor", isCorrect: false },
-        { opt: "Farmer", isCorrect: false },
-        { opt: "Merchent", isCorrect: true },
-        { opt: "Carpenter", isCorrect: false },
+        { opt: "Melik", isCorrect: false },
+        { opt: "Khidr", isCorrect: false },
+        { opt: "Dhul Qarnayn", isCorrect: false },
+        { opt: "Samiri", isCorrect: true },
       ],
     },
     {
       question:
-        "In which month did the attack during 'Aam al-Fil (Year of the Elephant) take place?",
+        "What did this rebellious man do in order to encourage the followers of Musa (pbuh) to fall into idolatry?",
       answerOpt: [
-        { opt: "Ramadan", isCorrect: false },
-        { opt: "Muharam", isCorrect: true },
-        { opt: "dhul hijjah", isCorrect: false },
-        { opt: "sha'ban", isCorrect: false },
+        { opt: "He claimed to be a prophet", isCorrect: false },
+        { opt: "He built a golden calf", isCorrect: true },
+        { opt: "He built a statue", isCorrect: false },
+        { opt: "He built a wall", isCorrect: false },
       ],
     },
     {
       question:
-        "What was the name of the maid who helped to look after the Prophet Muhammad ﷺ as a child?",
+        "When did the rebellious man take the opportunity to encourage the followers of Musa (pbuh) to fall into idolatry?",
       answerOpt: [
-        { opt: "Maimoonah bint Harith", isCorrect: false },
-        { opt: "Zaynab", isCorrect: false },
-        { opt: "Ruqayyah", isCorrect: false },
-        { opt: "Barakah bint Tha'alaba (Umm Ayman)", isCorrect: true },
+        { opt: "On the Day of Ashura", isCorrect: false },
+        { opt: "While Musa (pbuh) was sleeping", isCorrect: false },
+        { opt: "Openly in front of Musa (pbuh)", isCorrect: false },
+        { opt: "While Musa (pbuh) was at Mount Sinai", isCorrect: true },
       ],
     },
     {
       question:
-        "Aam al-Fil (the Year of the Elephant) was named after an attack launched by which of the following",
+        " Whom did Musa (AS) appoint as incharge when he left his people?",
       answerOpt: [
-        { opt: "The crusaders", isCorrect: false },
-        { opt: "The roman empires", isCorrect: false },
-        { opt: "An Abyssinian ruler of yemen", isCorrect: true },
-        { opt: "The byzantine empire", isCorrect: false },
+        { opt: "Samiriy", isCorrect: false },
+        { opt: "Qaron", isCorrect: false },
+        { opt: "Haroon", isCorrect: true },
+        { opt: "Dhul Qarnayn ", isCorrect: false },
+      ],
+    },
+    {
+      question: "For how many nights did Musa (a) leave his people? ",
+      answerOpt: [
+        { opt: "30 nights", isCorrect: false },
+        { opt: " 90 nights", isCorrect: false },
+        { opt: " 50 nights ", isCorrect: false },
+        { opt: " 40 night", isCorrect: true },
       ],
     },
     {
       question:
-        "What was the name of the wet nurse that looked after the Prophet Muhammad during his childhood?",
+        "Allah (swt) continued to forgive and favour Banu Israeel and sent them provisions over the years, including water, shade, and two types of food. What were these foods called?",
       answerOpt: [
-        { opt: "Halima al-sadiyah", isCorrect: true },
-        { opt: "Umm Sulaim", isCorrect: false },
-        { opt: "Amina bint Wahb", isCorrect: false },
-        { opt: "Juwayriyah bint Harith", isCorrect: false },
+        { opt: "Tin and Zaytun", isCorrect: false },
+        { opt: "Ruman and thamar", isCorrect: false },
+        { opt: "Manna and salwa", isCorrect: true },
+        { opt: "Naan and halwa", isCorrect: false },
       ],
     },
     {
       question:
-        "What was the name of the servant that Khadijah RA sent with the Prophet for business trade prior to their marriage?",
+        "What was the name of the wise man with the special knowledge musan As was informed of?",
       answerOpt: [
-        { opt: "Rabi'ah", isCorrect: false },
-        { opt: "maysarah", isCorrect: true },
-        { opt: "sumayyah", isCorrect: false },
-        { opt: "Nafisah", isCorrect: false },
+        { opt: "Al khidr", isCorrect: true },
+        { opt: "Al khali", isCorrect: false },
+        { opt: "Al kahaf", isCorrect: false },
+        { opt: "Al kabeer", isCorrect: false },
+      ],
+    },
+    {
+      question: "What is the main lesson the wise man taught Musa AS?",
+      answerOpt: [
+        { opt: "Punctuality", isCorrect: false },
+        { opt: "Smartness", isCorrect: false },
+        { opt: "Patience", isCorrect: true },
+        { opt: "Courage", isCorrect: false },
       ],
     },
     {
       question:
-        "How many years did the Qur'an take to be revealed to the prophet Muhammad?",
+        "Musa AS wanted to meet Al-khidr so Allah instructed to journey with a live fish in a water filled vessel and when the fish ___ he would find the location of Al-khidr?",
       answerOpt: [
-        { opt: "33", isCorrect: false },
-        { opt: "43", isCorrect: false },
-        { opt: "3", isCorrect: false },
-        { opt: "23", isCorrect: true },
+        { opt: "disappeares", isCorrect: true },
+        { opt: "Glows", isCorrect: false },
+        { opt: "Turns into a shark", isCorrect: false },
+        { opt: "Dies", isCorrect: false },
       ],
     },
+
     {
-      question: "How many male children did the prophet Muhammad (Pbuh) have?",
+      question:
+        "who said the words `did i not tell you that you can have no patiience with me` To musa AS ",
       answerOpt: [
-        { opt: "1", isCorrect: false },
-        { opt: "2", isCorrect: true },
-        { opt: "5", isCorrect: false },
-        { opt: "none", isCorrect: false },
-      ],
-    },
-    {
-      question: "What was the core of his predication?",
-      answerOpt: [
-        { opt: "To be proud of being Arab", isCorrect: false },
-        { opt: "To fight against the non belivers", isCorrect: false },
-        { opt: "To be a nice person", isCorrect: false },
-        { opt: "To worship Allah the only Good", isCorrect: true },
-      ],
-    },
-    {
-      question: "What battle did the prophet first win?",
-      answerOpt: [
-        { opt: "Badr", isCorrect: true },
-        { opt: "Uhud", isCorrect: false },
-        { opt: "Yarmuk", isCorrect: false },
-        { opt: "none of the above", isCorrect: false },
-      ],
-    },
-    {
-      question: "What was the second Surah revealed to Prophet Muhammad?",
-      answerOpt: [
-        { opt: "Ya-seen", isCorrect: false },
-        { opt: "Al fatiha", isCorrect: false },
-        { opt: "al mulk", isCorrect: false },
-        { opt: "al muddathir", isCorrect: true },
-      ],
-    },
-    {
-      question: "the year the prophet was born is called?",
-      answerOpt: [
-        { opt: "Aamul huzn", isCorrect: false },
-        { opt: "Aaamul shajar", isCorrect: false },
-        { opt: "Aamul feel", isCorrect: true },
-        { opt: "Aamul jamal", isCorrect: false },
+        { opt: "ALLAH SWT", isCorrect: false },
+        { opt: "Al-khidr", isCorrect: true },
+        { opt: "Haroon AS", isCorrect: false },
+        { opt: "Samiri", isCorrect: false },
       ],
     },
     {
       question:
-        "Who was prominent protestants from among makkans against Muslims?",
+        "Through which method was Prophet Musa (pbuh) given the commandments by Allah (swt)?",
       answerOpt: [
-        { opt: "Abu Lahab", isCorrect: true },
-        { opt: "Abu bakr", isCorrect: false },
-        { opt: "omar RA", isCorrect: false },
-        { opt: "uthman bin khattab", isCorrect: false },
+        { opt: "Verbal communication only", isCorrect: false },
+        { opt: "On leaves", isCorrect: false },
+        { opt: "on golden paper", isCorrect: false },
+        { opt: "On tablets", isCorrect: true },
       ],
     },
     {
-      question:
-        "The first masjid of islam , masjide Quba was made in how many days?",
+      question: "What did Allah write for Musa (a) on the tablets? ",
       answerOpt: [
-        { opt: "10 days", isCorrect: false },
-        { opt: "12 days", isCorrect: false },
-        { opt: "5 days", isCorrect: false },
-        { opt: "8 days", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        "Who was the first sahabi to do hijrat to madinah and preach islam?",
-      answerOpt: [
-        { opt: "Mussab bin omer", isCorrect: true },
-        { opt: "Hz talha", isCorrect: false },
-        { opt: "Abdulrahman bin auf", isCorrect: false },
-        { opt: "saad bi abi waqqas", isCorrect: false },
-      ],
-    },
-    {
-      question: "What is the distance between Quba and Madinah?",
-      answerOpt: [
-        { opt: "3 miles", isCorrect: true },
-        { opt: "10 miles", isCorrect: false },
-        { opt: "5 miles", isCorrect: false },
-        { opt: "4 miles", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "For how many months Baithul Muqaddas was qibla in Madinah for Muslims and then changed to kaaba?",
-      answerOpt: [
-        { opt: "17 months", isCorrect: true },
-        { opt: "10 months", isCorrect: false },
-        { opt: "6 months", isCorrect: false },
-        { opt: "15 months", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Who was wife of Rasoolallah s.a.w at time of his hijrat to Madinah?",
-      answerOpt: [
-        { opt: "khadija", isCorrect: false },
-        { opt: "zainab", isCorrect: false },
-        { opt: "hafsa", isCorrect: false },
-        { opt: "sawda", isCorrect: true },
-      ],
-    },
-    {
-      question: "Who were Ashabe Suhfa?",
-      answerOpt: [
-        { opt: "The first people to embrace islam", isCorrect: false },
+        { opt: "Names of all the other prophets ", isCorrect: false },
+        { opt: "Prayers and worship chants", isCorrect: false },
         {
-          opt: "the muhajirins from mecca and other places that came to practice islam",
+          opt: "Instructions and explanation for all thing",
           isCorrect: true,
         },
-        { opt: "the learners from medinnah", isCorrect: false },
-        { opt: "none of the above", isCorrect: false },
+        { opt: "list of all the idolators", isCorrect: false },
       ],
     },
     {
-      question:
-        "What is the equivelent of praying salah in masjide Nabuwwi in Madina?",
+      question: "Mount Sinai is also called Jabal-ut-Toor",
       answerOpt: [
-        { opt: "better than 1000 salah", isCorrect: true },
-        { opt: "10,000 salah", isCorrect: false },
-        { opt: "50,000 salah", isCorrect: false },
-        { opt: "better than a million salah", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "the Special place in masjid Nabuwwi which is a piece of jannah is called riyazul jannah",
-      answerOpt: [
-        { opt: "true", isCorrect: true },
         { opt: "false", isCorrect: false },
+        { opt: "true", isCorrect: true },
       ],
     },
-    {
-      question: "How many people embraced Islam in the early stage? ",
-      answerOpt: [
-        { opt: "60", isCorrect: false },
-        { opt: "40", isCorrect: true },
-        { opt: "10", isCorrect: false },
-        { opt: "30", isCorrect: false },
-      ],
-    },
-    {
-      question: "What date did the Prophet migrate to Madinah?",
-      answerOpt: [
-        { opt: "12th Rabi ul Awwal", isCorrect: true },
-        { opt: "9th Rabi ul awwal", isCorrect: false },
-        { opt: "15th rabi ul awwal", isCorrect: false },
-        { opt: "19th rabi ul awwal", isCorrect: false },
-      ],
-    },
-    {
-      question: "Did prophet muhammed (SAW) get injured in any battle?",
-      answerOpt: [
-        { opt: "Yes", isCorrect: true },
-        { opt: "No", isCorrect: false },
-      ],
-    },
-    {
-      question: "in what battle did the prophet get injured?",
-      answerOpt: [
-        { opt: "Badr", isCorrect: false },
-        { opt: "ditch", isCorrect: false },
-        { opt: "uhud", isCorrect: true },
-        { opt: "ushayra", isCorrect: false },
-      ],
-    },
+
     {
       question:
-        "how many expenditions did the prophet(SAW) attend personally in his life time?",
+        "What did musa AS do to the Angel of Death when he came totake his life",
       answerOpt: [
-        { opt: "12", isCorrect: false },
-        { opt: "17", isCorrect: false },
-        { opt: "20", isCorrect: false },
-        { opt: "27", isCorrect: true },
-      ],
-    },
-    {
-      question: "What was the greatest miracle of the Prophet muhammad SAW",
-      answerOpt: [
-        { opt: "the splitting of the moon", isCorrect: false },
-        { opt: "water gushing from his noble fingers", isCorrect: false },
-        { opt: ")stones and trees making salaam to him", isCorrect: false },
-        { opt: "The Quran", isCorrect: true },
+        { opt: "shaked his hands", isCorrect: false },
+        { opt: "Slapped him", isCorrect: true },
+        { opt: "smiled at him", isCorrect: false },
+        { opt: "hit him with his staff ", isCorrect: false },
       ],
     },
   ];
@@ -567,14 +470,14 @@ const Index = () => {
   const [timeOff, setTimeOff] = useState(false);
   const [attemptedq, setAttemptedq] = useState(0);
   const [totalq, setTotalQ] = useState();
-  //console.log(questions.length);
+  console.log(questions.length);
   let counter;
 
   function start() {
     setPlay(true);
     startTimer();
   }
-  console.log(time);
+  //console.log(time);
   function startTimer() {
     setTimeOff(false);
     counter = setInterval(() => {
@@ -630,8 +533,9 @@ const Index = () => {
         <section>
           <div className="quiz-info">
             <p>
-              Todays Quiz is going to be focused on the life of prophet
-              muhammed(SAW)
+              Todays Quiz is going to be focused on the life of prophet Musa
+              (AS)
+              <small>Enjoy🤗</small>
             </p>
           </div>
           <div className="mode">
