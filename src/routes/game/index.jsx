@@ -284,22 +284,48 @@ const Index = () => {
       question:
         "Which of the follwing is not a correct order of the plagues of egypt ",
       answerOpt: [
-        {
-          opt: "The flood, the locusts, the drought , lice, frogs and blood.",
-          isCorrect: true,
-        },
-        {
-          opt: "The flood, the locusts, chickenpox and blood.",
-          isCorrect: false,
-        },
-        {
-          opt: "The flood, the locusts, eathquake ,lice,  frogs and  drought.",
-          isCorrect: false,
-        },
-        {
-          opt: "The Drought, chickenpox, lice and frogs and blood.",
-          isCorrect: false,
-        },
+        { opt: "Halima al-sadiyah", isCorrect: true },
+        { opt: "Umm Sulaim", isCorrect: false },
+        { opt: "Amina bint Wahb", isCorrect: false },
+        { opt: "Juwayriyah bint Harith", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What was the name of the servant that Khadijah RA sent with the Prophet for business trade prior to their marriage?",
+      answerOpt: [
+        { opt: "Rabi'ah", isCorrect: false },
+        { opt: "maysarah", isCorrect: true },
+        { opt: "sumayyah", isCorrect: false },
+        { opt: "Nafisah", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "How many years did the Qur'an take to be revealed to the prophet Muhammad?",
+      answerOpt: [
+        { opt: "33", isCorrect: false },
+        { opt: "43", isCorrect: false },
+        { opt: "3", isCorrect: false },
+        { opt: "23", isCorrect: true },
+      ],
+    },
+    {
+      question: "How many male children did the prophet Muhammad (Pbuh) have?",
+      answerOpt: [
+        { opt: "1", isCorrect: false },
+        { opt: "2", isCorrect: true },
+        { opt: "5", isCorrect: false },
+        { opt: "none", isCorrect: false },
+      ],
+    },
+    {
+      question: "What was the core of his predication?",
+      answerOpt: [
+        { opt: "To be proud of being Arab", isCorrect: false },
+        { opt: "To fight against the non belivers", isCorrect: false },
+        { opt: "To be a nice person", isCorrect: false },
+        { opt: "To worship Allah the only Good", isCorrect: true },
       ],
     },
     {
@@ -466,7 +492,7 @@ const Index = () => {
   const [tscore, setTscore] = useState(0);
   const [tWrongans, setTwrongans] = useState(0);
   const [tCorrectAns, setTcorrectAns] = useState(0);
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(" ");
   const [timeOff, setTimeOff] = useState(false);
   const [attemptedq, setAttemptedq] = useState(0);
   const [totalq, setTotalQ] = useState();
@@ -484,7 +510,7 @@ const Index = () => {
       setTime((time) => {
         if (time < 1) {
           clearInterval(counter);
-          setTime("time off");
+          setTime(0);
           setTimeOff(true);
           setShowComplete(true);
         } else {
@@ -533,18 +559,17 @@ const Index = () => {
         <section>
           <div className="quiz-info">
             <p>
-              Todays Quiz is going to be focused on the life of prophet Musa
-              (AS)
-              <small>Enjoy🤗</small>
+              Todays Quiz is going to be focused on the life of prophet
+              muhammed(SAW)
             </p>
           </div>
           <div className="mode">
             <h1>select mode</h1>
             <div className="btn-container">
               <button
-                value={100}
+                value="100"
                 onClick={(e) => {
-                  setTime(e.target.value);
+                  setTime("100");
                   setEasyQ(true);
                   start();
                 }}
@@ -558,9 +583,9 @@ const Index = () => {
             </div>
             <div className="btn-container">
               <button
-                value={120}
-                onClick={(e) => {
-                  setTime(e.target.value);
+                value="120"
+                onClick={() => {
+                  setTime("120");
                   setMediumQ(true);
                   start();
                 }}
@@ -574,9 +599,9 @@ const Index = () => {
             </div>
             <div className="btn-container">
               <button
-                value={240}
+                value="240"
                 onClick={(e) => {
-                  setTime(e.target.value);
+                  setTime("240");
                   setHardQ(true);
                   start();
                 }}
