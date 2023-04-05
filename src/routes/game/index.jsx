@@ -581,7 +581,7 @@ const Index = () => {
       setTime((time) => {
         if (time < 1) {
           clearInterval(counter);
-          setTime("time off");
+          setTime(0);
           setTimeOff(true);
           setShowComplete(true);
         } else {
