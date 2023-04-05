@@ -631,7 +631,9 @@ const Index = () => {
           <div className="quiz-info">
             <p>
               Todays Quiz is going to be focused on the life of prophet
-              muhammed(SAW)
+              muhammed(SAW)<br/> <b>Don't mind the time glitch"
+</b>
+
             </p>
           </div>
           <div className="mode">
