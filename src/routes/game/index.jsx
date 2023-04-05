@@ -563,7 +563,7 @@ const Index = () => {
   const [tscore, setTscore] = useState(0);
   const [tWrongans, setTwrongans] = useState(0);
   const [tCorrectAns, setTcorrectAns] = useState(0);
-  const [time, setTime] = useState("");
+  const [time, setTime] = useState(0);
   const [timeOff, setTimeOff] = useState(false);
   const [attemptedq, setAttemptedq] = useState(0);
   const [totalq, setTotalQ] = useState();
@@ -574,6 +574,7 @@ const Index = () => {
     setPlay(true);
     startTimer();
   }
+  console.log(time);
   function startTimer() {
     setTimeOff(false);
     counter = setInterval(() => {
@@ -669,7 +670,7 @@ const Index = () => {
             </div>
             <div className="btn-container">
               <button
-                value="240"
+                value={240}
                 onClick={(e) => {
                   setTime(e.target.value);
                   setHardQ(true);

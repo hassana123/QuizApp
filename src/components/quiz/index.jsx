@@ -10,6 +10,7 @@ const Index = (props) => {
   const [currentQ, setCurrentQ] = useState(0);
   const [clicked, setClicked] = useState(false);
   const [attempt, setAttempt] = useState(0);
+  const [time, setTime] = useState(0);
   let qs;
   if (props.easyQ) {
     qs = props.questions.slice(0, 15);
@@ -29,6 +30,10 @@ const Index = (props) => {
       props.setShowComplete(true);
     }
   };
+  let gameTime;
+  useEffect(() => {
+    setTime(props.time);
+  }, [props.time]);
 
   const handleCorrectAnswer = (isCorrect) => {
     setClicked(true);
@@ -62,7 +67,7 @@ const Index = (props) => {
                 <div></div>
               </small>
               <div className="time">
-                <h4>{props.time}</h4>
+                <h4>{time}</h4>
               </div>
 
               <small className="w-count">
