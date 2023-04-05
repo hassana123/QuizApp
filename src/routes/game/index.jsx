@@ -374,9 +374,9 @@ const Index = () => {
       question: "How many male children did the prophet Muhammad (Pbuh) have?",
       answerOpt: [
         { opt: "1", isCorrect: false },
-        { opt: "2", isCorrect: true },
+        { opt: "2", isCorrect: false },
         { opt: "5", isCorrect: false },
-        { opt: "none", isCorrect: false },
+        { opt: "3", isCorrect: true },
       ],
     },
     {
