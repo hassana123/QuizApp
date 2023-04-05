@@ -563,7 +563,7 @@ const Index = () => {
   const [tscore, setTscore] = useState(0);
   const [tWrongans, setTwrongans] = useState(0);
   const [tCorrectAns, setTcorrectAns] = useState(0);
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(time);
   const [timeOff, setTimeOff] = useState(false);
   const [attemptedq, setAttemptedq] = useState(0);
   const [totalq, setTotalQ] = useState();
@@ -579,7 +579,7 @@ const Index = () => {
     setTimeOff(false);
     counter = setInterval(() => {
       setTime((time) => {
-        if (time < 1) {
+        if (time && time < 1) {
           clearInterval(counter);
           setTime(0);
           setTimeOff(true);
