@@ -11,18 +11,23 @@
   width: 100%;
   margin: auto;
   padding-right: 7px;
-  margin-top: 90px;
+  margin-top: 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   max-width: 500px;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 .mode .btn-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
   padding: 0 10px;
+}
+.quiz-info {
+  margin-top: 55px;
+  font-size: 1.3rem;
+  color: #223b65;
 }
 .btn-container small {
   color: #223b65;
@@ -31,11 +36,11 @@
 }
 .mode button {
   border: none;
-  width: 70%;
-  font-size: 1rem;
+  width: 80%;
+  font-size: 1.2rem;
   padding: 25px;
   color: aliceblue;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
@@ -56,7 +61,7 @@
   width: 60%;
   margin: auto;
   text-transform: capitalize;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   background-color: #f1ca61;
   padding: 20px 0;
   border-bottom-left-radius: 30px;

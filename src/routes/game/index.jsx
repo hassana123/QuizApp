@@ -3,231 +3,558 @@ import Quiz from "../../components/quiz";
 import CompleteQuiz from "../../components/completeQuiz";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
+//import { useEffect } from "react";
 
 const Index = () => {
   const navigate = useNavigate();
   const [showComplete, setShowComplete] = useState(false);
+  const [easyQ, setEasyQ] = useState(false);
+  const [mediumQ, setMediumQ] = useState(false);
+  const [hardQ, setHardQ] = useState(false);
 
   const questions = [
     {
-      question: "Who locked away Yajuj and Majuj",
+      question: "When was the prophet muhammad (SAW) born?",
       answerOpt: [
-        { opt: "Dhul Qarnayn", isCorrect: true },
-        { opt: "Isa AS", isCorrect: false },
-        { opt: "Imam Mahdi", isCorrect: false },
-        { opt: "Muhammad SAW", isCorrect: false },
+        { opt: "Monday, 9th Rabi Al awwal, 571 AC", isCorrect: true },
+        { opt: "thursday, 13th Rabi Al awwal, 571 AC", isCorrect: false },
+        { opt: "friday 14th Rabi Al awwal, 571 AC", isCorrect: false },
+        { opt: "Monday, 9th Muhram, 571 AC", isCorrect: false },
       ],
     },
     {
-      question: "Which Angels were sent to Babylon?",
+      question: "Where Was the prophet born",
       answerOpt: [
-        { opt: "Israfil and Jibreel ", isCorrect: false },
-        { opt: "Malik and Harut", isCorrect: false },
-        { opt: "Marut and Jibreel", isCorrect: false },
-        { opt: "Harut and Marut", isCorrect: true },
+        { opt: "Medina", isCorrect: false },
+        { opt: "Yathrib", isCorrect: false },
+        { opt: "Mekkah", isCorrect: true },
+        { opt: "Saudi", isCorrect: false },
       ],
     },
     {
-      question:
-        "When was it revealed to Prophet Muhammad SAW for Muslims to pray 5 fard prayers ",
+      question: "Prophet Muhammad s.a.w was from ?",
       answerOpt: [
-        { opt: "Laylatul Qadr", isCorrect: false },
-        { opt: "The night of Isra' and Miraaj'", isCorrect: true },
-        { opt: "During Hajj", isCorrect: false },
-        { opt: "Battle of badr", isCorrect: false },
+        { opt: "Banu Sa'ad", isCorrect: false },
+        { opt: "banu khuzair", isCorrect: false },
+        { opt: "Banu Hashim", isCorrect: true },
+        { opt: "Banu Israel.", isCorrect: false },
       ],
     },
     {
-      question:
-        "Which surah (chapter) is considered as one third (1/3) of the Quran?",
+      question: "What is the name of prophet muhammad's Father?",
       answerOpt: [
-        { opt: "Surah Ar-Rahman, chapter 55", isCorrect: false },
-        { opt: "Surah Muhammad, chapter 47", isCorrect: false },
-        { opt: "Surah Ya Seen, chapter 36", isCorrect: false },
-        { opt: "Surah Ikhlas, chapter 112", isCorrect: true },
+        { opt: "Ibrahim", isCorrect: false },
+        { opt: "Abdul-mutalib", isCorrect: false },
+        { opt: "Abu-talib", isCorrect: false },
+        { opt: "Abdullah", isCorrect: true },
       ],
     },
     {
-      question: "Which Prophets did Allah SWT order to build the Ka'abah",
+      question: "when and when did the prophet's Muhammad(SAW) father die?",
       answerOpt: [
-        { opt: "Nuh AS and Lut AS", isCorrect: false },
-        { opt: "Yusuf AS and Yunus AS", isCorrect: false },
-        { opt: "Ibrahim AS and Ismail AS", isCorrect: true },
-        { opt: "Musa AS and Adam AS", isCorrect: false },
+        { opt: "he died in mekkah when he was a year old", isCorrect: false },
+        { opt: "he died in mekkah before he was born", isCorrect: true },
+        {
+          opt: "he on a journey back to medina when he was six",
+          isCorrect: false,
+        },
+        { opt: "he died in medina when he was an aldult", isCorrect: false },
       ],
     },
     {
-      question: "What is the first compulsory act on man?",
+      question: "where did the prophet muhammad (SAW) mother die?",
       answerOpt: [
-        { opt: "As Salat", isCorrect: true },
-        { opt: "Az Zakat", isCorrect: false },
-        { opt: "Hajj", isCorrect: false },
-        { opt: "At Taharah", isCorrect: false },
+        { opt: "in Yathrib", isCorrect: false },
+        { opt: "in mekkah", isCorrect: false },
+        { opt: "in bani hashim", isCorrect: false },
+        { opt: "Abwa", isCorrect: true },
       ],
     },
     {
-      question: "How many Fard Rakaats are there in a day?",
+      question: "what was the prophets(SAW) age when his mother died?",
       answerOpt: [
-        { opt: "10", isCorrect: false },
-        { opt: "15", isCorrect: false },
-        { opt: "17", isCorrect: true },
+        { opt: "2", isCorrect: false },
         { opt: "8", isCorrect: false },
+        { opt: "6", isCorrect: true },
+        { opt: "12", isCorrect: false },
       ],
     },
     {
-      question: "Which surah is the first Surah of the Quran?",
+      question: "what is the name of the prophets grandfather?",
       answerOpt: [
-        { opt: "Surah Ikhlas", isCorrect: false },
-        { opt: "Surah Baqara", isCorrect: false },
-        { opt: "Surah Fatiha", isCorrect: true },
-        { opt: "Surah Yaseen", isCorrect: false },
+        { opt: "Abdullah", isCorrect: false },
+        { opt: "Abu-talib", isCorrect: false },
+        { opt: "hamza", isCorrect: false },
+        { opt: "abdull muttalib", isCorrect: true },
       ],
     },
     {
-      question: "Who was the Prophet's S.A.w mother",
+      question: "what is the prophet's lineage up too his fifth ancesstor?",
       answerOpt: [
-        { opt: "Khadija RA", isCorrect: false },
-        { opt: "Amina RA", isCorrect: true },
-        { opt: "Halima RA", isCorrect: false },
-        { opt: "Fatima RA", isCorrect: false },
+        {
+          opt: "Muhammad ibn Abdullah ibn Abdul muttallib ibn kilab ibn manaf ibn hashim ibn abd manaf",
+          isCorrect: false,
+        },
+        {
+          opt: "Muhammad ibn Abdullah ibn Abdul muttallib  ibn manaf ibn kilab ibn hashim ibn Qusai",
+          isCorrect: false,
+        },
+        {
+          opt: "Muhammad ibn Abdullah ibn Abdul muttallib ibn hashim ibn Abd manaf ibn Qusai ibn kilab",
+          isCorrect: true,
+        },
+        {
+          opt: "Muhammad ibn Abdullah ibn Abdul muttallib ibn hashim ibn kilab ibn manaf",
+          isCorrect: false,
+        },
       ],
     },
     {
-      question: "Which is the longest surah (chapter) of the Quran?",
+      question: "Who named the Prophet (SAW)",
       answerOpt: [
-        { opt: "Al-Baqara", isCorrect: true },
-        { opt: "Ya Seen", isCorrect: false },
-        { opt: "Ar-Rahman", isCorrect: false },
-        { opt: "Al-Hajj", isCorrect: false },
+        { opt: "Abu-talib", isCorrect: false },
+        { opt: "Abdull mutallib", isCorrect: true },
+        { opt: "Abdullah", isCorrect: false },
+        { opt: "Amina", isCorrect: false },
       ],
     },
     {
-      question: "How many chapters does the quran have?",
+      question: "Who took charge of his care After his mother died?",
       answerOpt: [
-        { opt: "115", isCorrect: false },
-        { opt: "108", isCorrect: false },
-        { opt: "144", isCorrect: false },
-        { opt: "114", isCorrect: true },
+        { opt: "his uncle (abu talib)", isCorrect: false },
+        { opt: "his Grandfather (abdull mutalib)", isCorrect: true },
+        { opt: "his father (abdulah)", isCorrect: false },
+        { opt: "none of the above", isCorrect: false },
       ],
     },
     {
-      question: "How many wings does Angel Jibreel (AS) have?",
+      question: "how long did the prophets's grandfather take care of him?",
+      answerOpt: [
+        { opt: "4 years", isCorrect: false },
+        { opt: "3 years", isCorrect: false },
+        { opt: "7 years", isCorrect: false },
+        { opt: "2 years", isCorrect: true },
+      ],
+    },
+    {
+      question: "at what age did the prophet travel to syria with his uncle?",
+      answerOpt: [
+        { opt: "8 years", isCorrect: false },
+        { opt: "12 years", isCorrect: true },
+        { opt: "9 years", isCorrect: false },
+        { opt: "11 years", isCorrect: false },
+      ],
+    },
+    {
+      question: "Who was khadija (RA)",
+      answerOpt: [
+        {
+          opt: " she was A family friend of the prophet (SAW)?",
+          isCorrect: false,
+        },
+        { opt: "she was A wealthy merchant", isCorrect: true },
+        { opt: "she Was An idol worshipper", isCorrect: false },
+        { opt: "she was An outcast", isCorrect: false },
+      ],
+    },
+    {
+      question: "why did she (khadijah) want to marry muhammad (SAW)?",
+      answerOpt: [
+        { opt: "Because of his good looks", isCorrect: false },
+        {
+          opt: "because of his truthfulness and good conduct",
+          isCorrect: true,
+        },
+        { opt: "beacuse of his status", isCorrect: false },
+        { opt: "because of his wealth", isCorrect: false },
+      ],
+    },
+    {
+      question: "How old was the prophet and khadija when they got married? ",
+      answerOpt: [
+        { opt: "he was 40 she was 25", isCorrect: false },
+        { opt: "he was 20 she was 40", isCorrect: false },
+        { opt: "he was 25 she was 40", isCorrect: true },
+        { opt: "he was 30 she was 40", isCorrect: false },
+      ],
+    },
+    {
+      question: "What did the prophet give her (khadija) as dowry? ",
+      answerOpt: [
+        { opt: "20 camels", isCorrect: true },
+        { opt: "50 camels", isCorrect: false },
+        { opt: "10 camels", isCorrect: false },
+        { opt: "25 camels", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "How many times is the name muhammad mentioned in the holy quran?",
+      answerOpt: [
+        { opt: "3 times", isCorrect: false },
+        { opt: "6 times", isCorrect: false },
+        { opt: "10 times", isCorrect: false },
+        { opt: "4 times", isCorrect: true },
+      ],
+    },
+    {
+      question: "where did the prophet go into seclussion?",
+      answerOpt: [
+        { opt: "cave hira", isCorrect: true },
+        { opt: "mount arafah", isCorrect: false },
+        { opt: "Kabaah", isCorrect: false },
+        { opt: "cave sinai", isCorrect: false },
+      ],
+    },
+    {
+      question: "Where did the first revelation come down to him?",
+      answerOpt: [
+        { opt: "in cave sinai", isCorrect: false },
+        { opt: "in Cave hira", isCorrect: true },
+        { opt: "in cave utta", isCorrect: false },
+        { opt: "in cave tur", isCorrect: false },
+      ],
+    },
+    {
+      question: "Who were the first to embrace islam(in order)",
+      answerOpt: [
+        {
+          opt: "khadija(wife), zaid ibn harith(freed slave), ali ibn talib(cousin) and abubakar(friend)",
+          isCorrect: true,
+        },
+        {
+          opt: "zaid ibn harith(freed slave), ali ibn talib(cousin), khadija(wife)  and abubakar(friend)",
+          isCorrect: false,
+        },
+        {
+          opt: "khadija(wife), zaid ibn harith(freed slave) and ali ibn talib(cousin) ",
+          isCorrect: false,
+        },
+        {
+          opt: "abubakar(friend), zaid ibn harith(freed slave), ali ibn talib(cousin) and khadija(wife) ",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      question: "how was the dawah(worship) done in the begining",
+      answerOpt: [
+        { opt: "openly", isCorrect: false },
+        { opt: "secretly", isCorrect: true },
+        { opt: "secretly and openly", isCorrect: false },
+        { opt: "none of the above", isCorrect: false },
+      ],
+    },
+    {
+      question: "did the prophet's uncle abu talib accept islam",
+      answerOpt: [
+        { opt: "yes he did", isCorrect: false },
+        { opt: "yes but didnt not practice", isCorrect: false },
+        { opt: "no he died a polythiest", isCorrect: true },
+        { opt: "none of the above", isCorrect: false },
+      ],
+    },
+    {
+      question: "The Year of Mourning was the year Khadija and _________died",
+      answerOpt: [
+        { opt: "Abu Bakr", isCorrect: false },
+        { opt: "Abu jahl", isCorrect: false },
+        { opt: "Abu lahab", isCorrect: false },
+        { opt: "Abu talib", isCorrect: true },
+      ],
+    },
+    {
+      question: "Who accompanied the Prophet on his migration to Madinah?",
+      answerOpt: [
+        { opt: "Abu Bakr", isCorrect: true },
+        { opt: "Umar ibn al-Kattab", isCorrect: false },
+        { opt: "Uthman ibn Affan", isCorrect: false },
+        { opt: "Ali ibn Talib", isCorrect: false },
+      ],
+    },
+    {
+      question: "Which wife of the prophet was the daughter of Abu Bakr?",
+      answerOpt: [
+        { opt: "Asma", isCorrect: false },
+        { opt: "Aisha", isCorrect: true },
+        { opt: "Hafsah", isCorrect: false },
+        { opt: "Saudahh", isCorrect: false },
+      ],
+    },
+    {
+      question: "At what age did the prophet die",
+      answerOpt: [
+        { opt: "64", isCorrect: false },
+        { opt: "65", isCorrect: false },
+        { opt: "67", isCorrect: false },
+        { opt: "63", isCorrect: true },
+      ],
+    },
+    {
+      question:
+        "Which was his only living child present when the Prophet died?",
+      answerOpt: [
+        { opt: "fatima", isCorrect: true },
+        { opt: "Zainab", isCorrect: false },
+        { opt: "umme kulsoom", isCorrect: false },
+        { opt: "Ruqayya", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "Which of the following was one of the prophet's occupations before he became a prophet?",
+      answerOpt: [
+        { opt: "Tailor", isCorrect: false },
+        { opt: "Farmer", isCorrect: false },
+        { opt: "Merchent", isCorrect: true },
+        { opt: "Carpenter", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "In which month did the attack during 'Aam al-Fil (Year of the Elephant) take place?",
+      answerOpt: [
+        { opt: "Ramadan", isCorrect: false },
+        { opt: "Muharam", isCorrect: true },
+        { opt: "dhul hijjah", isCorrect: false },
+        { opt: "sha'ban", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What was the name of the maid who helped to look after the Prophet Muhammad ﷺ as a child?",
+      answerOpt: [
+        { opt: "Maimoonah bint Harith", isCorrect: false },
+        { opt: "Zaynab", isCorrect: false },
+        { opt: "Ruqayyah", isCorrect: false },
+        { opt: "Barakah bint Tha'alaba (Umm Ayman)", isCorrect: true },
+      ],
+    },
+    {
+      question:
+        "Aam al-Fil (the Year of the Elephant) was named after an attack launched by which of the following",
+      answerOpt: [
+        { opt: "The crusaders", isCorrect: false },
+        { opt: "The roman empires", isCorrect: false },
+        { opt: "An Abyssinian ruler of yemen", isCorrect: true },
+        { opt: "The byzantine empire", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What was the name of the wet nurse that looked after the Prophet Muhammad during his childhood?",
+      answerOpt: [
+        { opt: "Halima al-sadiyah", isCorrect: true },
+        { opt: "Umm Sulaim", isCorrect: false },
+        { opt: "Amina bint Wahb", isCorrect: false },
+        { opt: "Juwayriyah bint Harith", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What was the name of the servant that Khadijah RA sent with the Prophet for business trade prior to their marriage?",
+      answerOpt: [
+        { opt: "Rabi'ah", isCorrect: false },
+        { opt: "maysarah", isCorrect: true },
+        { opt: "sumayyah", isCorrect: false },
+        { opt: "Nafisah", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "How many years did the Qur'an take to be revealed to the prophet Muhammad?",
+      answerOpt: [
+        { opt: "33", isCorrect: false },
+        { opt: "43", isCorrect: false },
+        { opt: "3", isCorrect: false },
+        { opt: "23", isCorrect: true },
+      ],
+    },
+    {
+      question: "How many male children did the prophet Muhammad (Pbuh) have?",
       answerOpt: [
         { opt: "1", isCorrect: false },
-        { opt: "600", isCorrect: true },
-        { opt: "598", isCorrect: false },
-        { opt: "2", isCorrect: false },
+        { opt: "2", isCorrect: true },
+        { opt: "5", isCorrect: false },
+        { opt: "none", isCorrect: false },
+      ],
+    },
+    {
+      question: "What was the core of his predication?",
+      answerOpt: [
+        { opt: "To be proud of being Arab", isCorrect: false },
+        { opt: "To fight against the non belivers", isCorrect: false },
+        { opt: "To be a nice person", isCorrect: false },
+        { opt: "To worship Allah the only Good", isCorrect: true },
+      ],
+    },
+    {
+      question: "What battle did the prophet first win?",
+      answerOpt: [
+        { opt: "Badr", isCorrect: true },
+        { opt: "Uhud", isCorrect: false },
+        { opt: "Yarmuk", isCorrect: false },
+        { opt: "none of the above", isCorrect: false },
+      ],
+    },
+    {
+      question: "What was the second Surah revealed to Prophet Muhammad?",
+      answerOpt: [
+        { opt: "Ya-seen", isCorrect: false },
+        { opt: "Al fatiha", isCorrect: false },
+        { opt: "al mulk", isCorrect: false },
+        { opt: "al muddathir", isCorrect: true },
+      ],
+    },
+    {
+      question: "the year the prophet was born is called?",
+      answerOpt: [
+        { opt: "Aamul huzn", isCorrect: false },
+        { opt: "Aaamul shajar", isCorrect: false },
+        { opt: "Aamul feel", isCorrect: true },
+        { opt: "Aamul jamal", isCorrect: false },
       ],
     },
     {
       question:
-        "How many times will the trumpet be blown on the day of judgement",
+        "Who was prominent protestants from among makkans against Muslims?",
       answerOpt: [
-        { opt: "Once", isCorrect: false },
-        { opt: "Twice", isCorrect: true },
-        { opt: "3 times", isCorrect: false },
-        { opt: "5 Times", isCorrect: false },
-      ],
-    },
-    {
-      question: "Which animal was made from fire?",
-      answerOpt: [
-        { opt: "Snake", isCorrect: false },
-        { opt: "Elephant", isCorrect: false },
-        { opt: "Cow", isCorrect: false },
-        { opt: "Camel", isCorrect: true },
+        { opt: "Abu Lahab", isCorrect: true },
+        { opt: "Abu bakr", isCorrect: false },
+        { opt: "omar RA", isCorrect: false },
+        { opt: "uthman bin khattab", isCorrect: false },
       ],
     },
     {
       question:
-        "Who did Allah SWT mention in the Quran as the best example to follow?",
+        "The first masjid of islam , masjide Quba was made in how many days?",
       answerOpt: [
-        { opt: "Jinn", isCorrect: false },
-        { opt: "Pharoah", isCorrect: false },
-        { opt: "Angels", isCorrect: false },
-        { opt: "Prophet Muhammed (SAW)", isCorrect: true },
+        { opt: "10 days", isCorrect: false },
+        { opt: "12 days", isCorrect: false },
+        { opt: "5 days", isCorrect: false },
+        { opt: "8 days", isCorrect: true },
       ],
     },
     {
-      question: "What is Taqwa",
+      question:
+        "Who was the first sahabi to do hijrat to madinah and preach islam?",
       answerOpt: [
-        { opt: "Repentance", isCorrect: false },
-        { opt: "Fasting", isCorrect: false },
-        { opt: "Fear of Allah", isCorrect: true },
-        { opt: "Charity", isCorrect: false },
+        { opt: "Mussab bin omer", isCorrect: true },
+        { opt: "Hz talha", isCorrect: false },
+        { opt: "Abdulrahman bin auf", isCorrect: false },
+        { opt: "saad bi abi waqqas", isCorrect: false },
       ],
     },
     {
-      question: "How long will the fog last after Mahdi Arrives?",
+      question: "What is the distance between Quba and Madinah?",
       answerOpt: [
-        { opt: "40days", isCorrect: true },
-        { opt: "4 weeks", isCorrect: false },
-        { opt: "5 hours", isCorrect: false },
-        { opt: "3 years", isCorrect: false },
+        { opt: "3 miles", isCorrect: true },
+        { opt: "10 miles", isCorrect: false },
+        { opt: "5 miles", isCorrect: false },
+        { opt: "4 miles", isCorrect: false },
       ],
     },
     {
-      question: "What is the best day in Islam",
+      question:
+        "For how many months Baithul Muqaddas was qibla in Madinah for Muslims and then changed to kaaba?",
       answerOpt: [
-        { opt: "Friday", isCorrect: false },
-        { opt: "Eid-Fitr", isCorrect: false },
-        { opt: "15th Shabban", isCorrect: false },
-        { opt: "Arafah", isCorrect: true },
+        { opt: "17 months", isCorrect: true },
+        { opt: "10 months", isCorrect: false },
+        { opt: "6 months", isCorrect: false },
+        { opt: "15 months", isCorrect: false },
       ],
     },
     {
-      question: "What is the best night in Islam",
+      question:
+        "Who was wife of Rasoolallah s.a.w at time of his hijrat to Madinah?",
       answerOpt: [
-        { opt: "Friday Night", isCorrect: false },
-        { opt: "Night of Arafah", isCorrect: false },
-        { opt: "Night of Eid", isCorrect: false },
-        { opt: "Laylatul Kadr", isCorrect: true },
+        { opt: "khadija", isCorrect: false },
+        { opt: "zainab", isCorrect: false },
+        { opt: "hafsa", isCorrect: false },
+        { opt: "sawda", isCorrect: true },
       ],
     },
     {
-      question: "Who was seen in the fourth heaven on the night if Miraj?",
+      question: "Who were Ashabe Suhfa?",
       answerOpt: [
-        { opt: "Ibrahim AS", isCorrect: false },
-        { opt: "Idris AS", isCorrect: true },
-        { opt: "Musa AS", isCorrect: false },
-        { opt: "Ibrahim AS", isCorrect: false },
+        { opt: "The first people to embrace islam", isCorrect: false },
+        {
+          opt: "the muhajirins from mecca and other places that came to practice islam",
+          isCorrect: true,
+        },
+        { opt: "the learners from medinnah", isCorrect: false },
+        { opt: "none of the above", isCorrect: false },
       ],
     },
     {
-      question: "Pillars of Islam are also called what?",
+      question:
+        "What is the equivelent of praying salah in masjide Nabuwwi in Madina?",
       answerOpt: [
-        { opt: "Fi Amanillah", isCorrect: false },
-        { opt: "Qadr ul Islam", isCorrect: false },
-        { opt: "Arkanal Islam", isCorrect: true },
-        { opt: "khairul Islam", isCorrect: false },
+        { opt: "better than 1000 salah", isCorrect: true },
+        { opt: "10,000 salah", isCorrect: false },
+        { opt: "50,000 salah", isCorrect: false },
+        { opt: "better than a million salah", isCorrect: false },
       ],
     },
     {
-      question: "How many Prophets are Mentioned in the Quran?",
+      question:
+        "the Special place in masjid Nabuwwi which is a piece of jannah is called riyazul jannah",
       answerOpt: [
-        { opt: "21", isCorrect: false },
+        { opt: "true", isCorrect: true },
+        { opt: "false", isCorrect: false },
+      ],
+    },
+    {
+      question: "How many people embraced Islam in the early stage? ",
+      answerOpt: [
+        { opt: "60", isCorrect: false },
+        { opt: "40", isCorrect: true },
+        { opt: "10", isCorrect: false },
         { opt: "30", isCorrect: false },
-        { opt: "26", isCorrect: false },
-        { opt: "25", isCorrect: true },
       ],
     },
     {
-      question: "Where was the qibla before we faced the Ka'abah",
+      question: "What date did the Prophet migrate to Madinah?",
       answerOpt: [
-        { opt: "Jordan", isCorrect: false },
-        { opt: "Jerusalem", isCorrect: true },
-        { opt: "Egypt", isCorrect: false },
-        { opt: "Babylon", isCorrect: false },
+        { opt: "12th Rabi ul Awwal", isCorrect: true },
+        { opt: "9th Rabi ul awwal", isCorrect: false },
+        { opt: "15th rabi ul awwal", isCorrect: false },
+        { opt: "19th rabi ul awwal", isCorrect: false },
+      ],
+    },
+    {
+      question: "Did prophet muhammed (SAW) get injured in any battle?",
+      answerOpt: [
+        { opt: "Yes", isCorrect: true },
+        { opt: "No", isCorrect: false },
+      ],
+    },
+    {
+      question: "in what battle did the prophet get injured?",
+      answerOpt: [
+        { opt: "Badr", isCorrect: false },
+        { opt: "ditch", isCorrect: false },
+        { opt: "uhud", isCorrect: true },
+        { opt: "ushayra", isCorrect: false },
       ],
     },
     {
       question:
-        "Before Allah created humans which other creatures roamed the earth?",
+        "how many expenditions did the prophet(SAW) attend personally in his life time?",
       answerOpt: [
-        { opt: "Aliens", isCorrect: false },
-        { opt: "Ghost", isCorrect: false },
-        { opt: "Angels", isCorrect: false },
-        { opt: "Jinn", isCorrect: true },
+        { opt: "12", isCorrect: false },
+        { opt: "17", isCorrect: false },
+        { opt: "20", isCorrect: false },
+        { opt: "27", isCorrect: true },
+      ],
+    },
+    {
+      question: "What was the greatest miracle of the Prophet muhammad SAW",
+      answerOpt: [
+        { opt: "the splitting of the moon", isCorrect: false },
+        { opt: "water gushing from his noble fingers", isCorrect: false },
+        { opt: ")stones and trees making salaam to him", isCorrect: false },
+        { opt: "The Quran", isCorrect: true },
       ],
     },
   ];
@@ -236,19 +563,19 @@ const Index = () => {
   const [tscore, setTscore] = useState(0);
   const [tWrongans, setTwrongans] = useState(0);
   const [tCorrectAns, setTcorrectAns] = useState(0);
-  const [time, setTime] = useState();
+  const [time, setTime] = useState("");
   const [timeOff, setTimeOff] = useState(false);
   const [attemptedq, setAttemptedq] = useState(0);
-
+  const [totalq, setTotalQ] = useState();
+  //console.log(questions.length);
   let counter;
-  // useEffect(() => {
-  //   localStorage.setItem("recentScore", JSON.stringify(tscore));
-  // }, [tscore]);
+
   function start() {
     setPlay(true);
     startTimer();
   }
   function startTimer() {
+    setTimeOff(false);
     counter = setInterval(() => {
       setTime((time) => {
         if (time < 1) {
@@ -256,17 +583,20 @@ const Index = () => {
           setTime("time off");
           setTimeOff(true);
           setShowComplete(true);
+        } else {
+          setTimeOff(false);
         }
         return time - 1;
       });
     }, 1000);
   }
 
-  const getData = (tScore, tCorrectans, tWrongans, attempts) => {
+  const getData = (tQs, tScore, tCorrectans, tWrongans, attempts) => {
     setTscore(tScore);
     setTcorrectAns(tCorrectans);
     setTwrongans(tWrongans);
     setAttemptedq(attempts);
+    setTotalQ(tQs.length);
   };
 
   return (
@@ -277,7 +607,7 @@ const Index = () => {
             <CompleteQuiz
               navigate={navigate}
               wrongAnswer={tWrongans}
-              question={questions.length}
+              question={totalq}
               correctAnswer={tCorrectAns}
               score={tscore}
               attemptedq={attemptedq}
@@ -289,58 +619,72 @@ const Index = () => {
               getData={getData}
               questions={questions}
               setShowComplete={setShowComplete}
+              easyQ={easyQ}
+              mediumQ={mediumQ}
+              hardQ={hardQ}
             />
           )}
         </>
       ) : (
-        <div className="mode">
-          <h1>select mode</h1>
-          <div className="btn-container">
-            <button
-              onClick={(e) => {
-                setTime(e.target.value);
-                start();
-              }}
-              value="300"
-              className="easy"
-            >
-              easy <br />
-            </button>
-            <small>
-              5:00<sub>min</sub>
-            </small>
+        <section>
+          <div className="quiz-info">
+            <p>
+              Todays Quiz is going to be focused on the life of prophet
+              muhammed(SAW)
+            </p>
           </div>
-          <div className="btn-container">
-            <button
-              onClick={(e) => {
-                setTime(e.target.value);
-                start();
-              }}
-              value="180"
-              className="medium"
-            >
-              medium <br />
-            </button>
-            <small>
-              3:00 <sub>min</sub>
-            </small>
-          </div>{" "}
-          <div className="btn-container">
-            <button
-              onClick={(e) => {
-                setTime(e.target.value);
-                start();
-              }}
-              value="95"
-              className="hard"
-            >
-              hard <br />
-            </button>
-            <small>
-              1:35 <sub>sec</sub>
-            </small>
+          <div className="mode">
+            <h1>select mode</h1>
+            <div className="btn-container">
+              <button
+                value={100}
+                onClick={(e) => {
+                  setTime(e.target.value);
+                  setEasyQ(true);
+                  start();
+                }}
+                className="easy"
+              >
+                easy <small>15 questions</small> <br />
+              </button>
+              <small>
+                1:45<sub>min</sub>
+              </small>
+            </div>
+            <div className="btn-container">
+              <button
+                value={120}
+                onClick={(e) => {
+                  setTime(e.target.value);
+                  setMediumQ(true);
+                  start();
+                }}
+                className="medium"
+              >
+                medium <small>16 questions</small> <br />
+              </button>
+              <small>
+                2:00 <sub>min</sub>
+              </small>
+            </div>
+            <div className="btn-container">
+              <button
+                value="240"
+                onClick={(e) => {
+                  setTime(e.target.value);
+                  setHardQ(true);
+                  start();
+                }}
+                className="hard"
+              >
+                hard <small>24 questions</small> <br />
+              </button>
+              <small>
+                4:00 <sub>min</sub>
+              </small>
+            </div>
           </div>
-        </div>
+        </section>
       )}
     </div>
   );
