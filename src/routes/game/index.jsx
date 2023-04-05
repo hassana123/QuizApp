@@ -563,7 +563,7 @@ const Index = () => {
   const [tscore, setTscore] = useState(0);
   const [tWrongans, setTwrongans] = useState(0);
   const [tCorrectAns, setTcorrectAns] = useState(0);
-  const [time, setTime] = useState(time);
+  const [time, setTime] = useState(" ");
   const [timeOff, setTimeOff] = useState(false);
   const [attemptedq, setAttemptedq] = useState(0);
   const [totalq, setTotalQ] = useState();
@@ -579,7 +579,7 @@ const Index = () => {
     setTimeOff(false);
     counter = setInterval(() => {
       setTime((time) => {
-        if (time && time < 1) {
+        if (time < 1) {
           clearInterval(counter);
           setTime(0);
           setTimeOff(true);
@@ -640,9 +640,9 @@ const Index = () => {
             <h1>select mode</h1>
             <div className="btn-container">
               <button
-                value={100}
+                value="100"
                 onClick={(e) => {
-                  setTime(e.target.value);
+                  setTime("100");
                   setEasyQ(true);
                   start();
                 }}
@@ -656,9 +656,9 @@ const Index = () => {
             </div>
             <div className="btn-container">
               <button
-                value={120}
-                onClick={(e) => {
-                  setTime(e.target.value);
+                value="120"
+                onClick={() => {
+                  setTime("120");
                   setMediumQ(true);
                   start();
                 }}
@@ -672,9 +672,9 @@ const Index = () => {
             </div>
             <div className="btn-container">
               <button
-                value={240}
+                value="240"
                 onClick={(e) => {
-                  setTime(e.target.value);
+                  setTime("240");
                   setHardQ(true);
                   start();
                 }}
