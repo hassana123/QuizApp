@@ -13,21 +13,21 @@ const Index = (props) => {
   const [time, setTime] = useState(0);
   let qs;
   if (props.easyQ) {
-    qs = props.questions.slice(0, 15);
+    qs = props.questions.slice(0, 10);
   } else if (props.mediumQ) {
-    qs = props.questions.slice(15, 31);
+    qs = props.questions.slice(10, 25);
   } else if (props.hardQ) {
-    qs = props.questions.slice(31);
+    qs = props.questions.slice(25);
   }
   //console.log(qs);
   const handleNext = () => {
     setClicked(false);
     if (currentQ < qs.length - 1) {
-      //props.getData(score, correctA);
       const nextQ = currentQ + 1;
       setCurrentQ(nextQ);
     } else {
       props.setShowComplete(true);
+      props.setTime("stop");
     }
   };
 
@@ -58,33 +58,8 @@ const Index = (props) => {
 
   return (
     <div className="quiz">
-      <section className="sect-qs">
+      <section>
         <div className="sect-1">
-          <section className="q-sect">
-            <div className="grid">
-              <small className="c-count">
-                {correctA}
-                <div></div>
-              </small>
-              <div className="time">
-                <h4>{time}</h4>
-              </div>
-
-              <small className="w-count">
-                <div></div>
-                {wrongA}
-              </small>
-            </div>
-            <div className="q-count">
-              <span>
-                question {currentQ + 1} Of {qs.length}
-              </span>
-              <h2>{score}</h2>
-            </div>
-            <div className="q-cont">
-              <h1>{qs[currentQ].question}</h1>
-            </div>
-          </section>
           {/* <progress
           className="progress-bar"
           value={`${(currentQ / props.questions.length) * 100}`}
@@ -97,6 +72,31 @@ const Index = (props) => {
           </button> */}
           </div>
         </div>
+        <section className="q-sect">
+          <div className="grid">
+            <small className="c-count">
+              {correctA}
+              <div></div>
+            </small>
+            <div className="time">
+              <h4>{time}</h4>
+            </div>
+
+            <small className="w-count">
+              <div></div>
+              {wrongA}
+            </small>
+          </div>
+          <div className="q-count">
+            <span>
+              question {currentQ + 1} Of {qs.length}
+            </span>
+            <h2>{score}</h2>
+          </div>
+          <div className="q-cont">
+            <h1>{qs[currentQ].question}</h1>
+          </div>
+        </section>
       </section>
 
       <div className="answer-sect">
