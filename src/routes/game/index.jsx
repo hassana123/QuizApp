@@ -14,450 +14,733 @@ const Index = () => {
 
   const questions = [
     {
-      question: "Where was prophet Musa AS born?",
+      question:
+        "prophet Yusuf AS story started with a —---- and ended with an —------.",
       answerOpt: [
-        { opt: "Hadramout", isCorrect: false },
-        { opt: "Yemen", isCorrect: false },
-        { opt: "Egypt", isCorrect: true },
-        { opt: "Palestine", isCorrect: false },
+        { opt: "song and  event", isCorrect: false },
+        { opt: " Dream and interpretation", isCorrect: true },
+        { opt: "Lie and offense", isCorrect: false },
+        { opt: " none of the above", isCorrect: false },
       ],
     },
     {
-      question: "Who was Haroon AS to Musa AS? ",
+      question: "How many stars did Yusuf AS see in his dream? ",
       answerOpt: [
-        { opt: "Musa's Father", isCorrect: false },
-        { opt: "musa's Brother", isCorrect: true },
-        { opt: "musa's helper", isCorrect: false },
-        { opt: "musa's father-in-law", isCorrect: false },
-      ],
-    },
-    {
-      question: "What was the name of Pharaoh’s minister?",
-      answerOpt: [
-        { opt: "Samiri", isCorrect: false },
-        { opt: "Haroon", isCorrect: false },
-        { opt: "Malik", isCorrect: false },
-        { opt: "Hamaan", isCorrect: true },
-      ],
-    },
-    {
-      question: "What were the people of Musa (AS) called?",
-      answerOpt: [
-        { opt: "The children of taym", isCorrect: false },
-        { opt: "The children of Adi.", isCorrect: false },
-        { opt: "The children of Israel.", isCorrect: true },
-        { opt: "The children of egypt.", isCorrect: false },
+        { opt: " 20 stars and the sun and the moon", isCorrect: false },
+        { opt: "12 stars and the sun and the moon  ", isCorrect: false },
+        { opt: " 11 stars and the sun and the moon", isCorrect: true },
+        { opt: " 10 stars and the sun and the moon", isCorrect: false },
       ],
     },
     {
       question:
-        "The Prophet Musa (pbuh) was put into the river Nile by his mother inside which object",
+        "In his dream, what did Yusuf (AS) see the stars, sun and moon doing? ",
       answerOpt: [
-        { opt: "A wooden basket", isCorrect: true },
-        { opt: "A metal cage", isCorrect: false },
-        { opt: "an old Caneo", isCorrect: false },
-        { opt: "a wooden box", isCorrect: false },
+        { opt: "making him a prophet ", isCorrect: false },
+        { opt: "Dancing for him ", isCorrect: false },
+        { opt: " praying for him", isCorrect: false },
+        { opt: "Prostrating to him  ", isCorrect: true },
       ],
     },
     {
-      question:
-        "What punishment did Pharaoh use to give the children and women of Israel?",
+      question: " Were The step brothers of Yosuf AS jealous of him",
+      answerOpt: [
+        { opt: " yes they were", isCorrect: true },
+        { opt: "no the were not", isCorrect: false },
+        { opt: " they felt indifferent ", isCorrect: false },
+        { opt: " they just did not care", isCorrect: false },
+      ],
+    },
+    {
+      question: "why were the step brothers jealous of yusuf and his brother ",
       answerOpt: [
         {
-          opt: "he would Banish the children and keep the women",
-          isCorrect: false,
-        },
-        {
-          opt: "He would slaughter the daugthers, and keep the sons alive.",
-          isCorrect: false,
-        },
-        {
-          opt: "He would slaughter the children, and keep the women alive.",
+          opt: "they were jealous because yusuf and his brother were loved more by their father",
           isCorrect: true,
         },
         {
-          opt: "He would slaughter the women, and keep the men alive.",
+          opt: " they were jealous because yusuf told them his dream",
           isCorrect: false,
         },
-      ],
-    },
-    {
-      question:
-        "It was the wife of Pharaoh who discovered Musa (pbuh) in the river. What was her name?",
-      answerOpt: [
-        { opt: "Hafsa", isCorrect: false },
-        { opt: "Maryam", isCorrect: false },
-        { opt: "Asiya", isCorrect: true },
-        { opt: "Hajar", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Who cleverly told the household of Pharaoh that there was a suitable wet nurse nearby for baby Musa (pbuh) after he refused the others, and thus reunited him with his mother?",
-      answerOpt: [
-        { opt: "his mother's servant", isCorrect: false },
-        { opt: "His brother", isCorrect: false },
-        { opt: "His uncle", isCorrect: false },
-        { opt: "His Sister", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        " Pharaoh's wife took up the responsibility of bringing up Musa (AS) ?",
-      answerOpt: [
-        { opt: "True", isCorrect: true },
-        { opt: "False", isCorrect: false },
-      ],
-    },
-    {
-      question: "Which incident caused Musa (pbuh) to flee from Egypt?",
-      answerOpt: [
-        { opt: "He accidentally killed an egyptian man", isCorrect: true },
-        { opt: "He was accused of theft", isCorrect: false },
-        { opt: "there was a plague", isCorrect: false },
-        { opt: "There was a plague", isCorrect: false },
-      ],
-    },
-    {
-      question: "What was the penalty For Killing an egyptian at the time",
-      answerOpt: [
-        { opt: "Banishment", isCorrect: false },
-        { opt: "Prison", isCorrect: false },
-        { opt: "Death", isCorrect: true },
-        { opt: "No penalty", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Why did prophet Musa leave Egypt after the incident in his youth?",
-      answerOpt: [
         {
-          opt: "Because he was scared of the soldiers of pharoah",
+          opt: "they were jealous because of his extreme beauty ",
+          isCorrect: false,
+        },
+        { opt: " they were not jealous at all", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What is the name of prophet yusuf AS birth country ",
+      answerOpt: [
+        { opt: " Mekka", isCorrect: false },
+        { opt: "Cannan (Now palestine)", isCorrect: true },
+        { opt: " Yathrib (medina)", isCorrect: false },
+        { opt: "Egypt ", isCorrect: false },
+      ],
+    },
+    {
+      question: "what is the name of prophet yusuf's fathers ",
+      answerOpt: [
+        { opt: "Yunus AS", isCorrect: false },
+        { opt: " yahya As", isCorrect: false },
+        { opt: "ibrahim As ", isCorrect: false },
+        { opt: "Yaqub As ", isCorrect: true },
+      ],
+    },
+    {
+      question: "Who was Ya'qoob (AS) ",
+      answerOpt: [
+        { opt: "A Prophet ", isCorrect: true },
+        { opt: "Son of Ishaq ", isCorrect: true },
+        {
+          opt: "He was also known as Israeel and his generation was called Bani Israeel ",
           isCorrect: true,
         },
-        { opt: "Because he wanted to marry", isCorrect: false },
-        { opt: "Because he wanted to see his mother", isCorrect: false },
-        { opt: "Because he wanted to migrate", isCorrect: false },
+        { opt: "Father of Yusuf ", isCorrect: true },
+        { opt: "All of the above", isCorrect: true },
       ],
     },
     {
-      question:
-        "After fleeing Egypt, Musa (pbuh) eventually arrived at a new location. What was it called?",
+      question: " what is the name of his mother",
       answerOpt: [
-        { opt: "Jerusalem", isCorrect: false },
-        { opt: "Constantinople", isCorrect: false },
-        { opt: "Madyan", isCorrect: true },
-        { opt: "Sinai", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Upon arriving at this location, Musa (pbuh) saw two women struggling nearby a well. What were they struggling with?",
-      answerOpt: [
-        { opt: "Their purchased goods", isCorrect: false },
-        { opt: "Their horses", isCorrect: false },
-        { opt: "Their flock of sheep", isCorrect: true },
-        { opt: "Their elderly father", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Musa (pbuh) eventually married one of these two women. What was her name?",
-      answerOpt: [
-        { opt: "Sumayyah", isCorrect: false },
-        { opt: "Safurah", isCorrect: true },
-        { opt: "Safiyyah", isCorrect: false },
-        { opt: "Sameerah", isCorrect: false },
-      ],
-    },
-    {
-      question: "How many years did Musa stayed away from his home?",
-      answerOpt: [
-        { opt: "10 Years", isCorrect: true },
-        { opt: "7 years", isCorrect: false },
-        { opt: "12 years", isCorrect: false },
-        { opt: "5 years", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Why did musa AS suddenly decides to return to egypt after 10 years ",
-      answerOpt: [
-        { opt: "He had a dream ", isCorrect: false },
-        { opt: "he felt Homesick", isCorrect: true },
-        { opt: "He wanted to see his brother", isCorrect: false },
-        { opt: "He wanted to see his sister", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "While travelling with his family, Musa (AS) saw something on mount tur which led him to go and investigate. This is where he ulimately spoke to Allah (swt) and received Prophethood what did he see?",
-      answerOpt: [
-        { opt: "A bright light", isCorrect: false },
-        { opt: "A huge cave", isCorrect: false },
-        { opt: "A burning fire", isCorrect: true },
-        { opt: "A dark cloud", isCorrect: false },
-      ],
-    },
-    {
-      question: "As musa AS neared the fire Whose voice he hear  calling him",
-      answerOpt: [
-        { opt: "Haroon", isCorrect: false },
-        { opt: "Allah SWT", isCorrect: true },
-        { opt: "pharaoh", isCorrect: false },
-        { opt: "angel jibreel", isCorrect: false },
-      ],
-    },
-    {
-      question: "where did Musa AS receive the first revelation?",
-      answerOpt: [
-        { opt: "in Madyn", isCorrect: false },
-        { opt: "in towa valley", isCorrect: true },
-        { opt: "in cave hira", isCorrect: false },
-        { opt: "in the enterance of egypt", isCorrect: false },
-      ],
-    },
-    {
-      question: "What miracles did Allah showed him when he got the mission?",
-      answerOpt: [
-        { opt: "The sea", isCorrect: false },
-        { opt: "The moutain", isCorrect: false },
-        { opt: "The snake and the hand", isCorrect: true },
-        { opt: "the bird", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Which of Musa’s (pbuh) possessions did Allah (swt) order him to throw on to the ground, which then turned into a snake?",
-      answerOpt: [
-        { opt: "His cloak", isCorrect: false },
-        { opt: "His turban", isCorrect: false },
-        { opt: "His shoe", isCorrect: false },
-        { opt: "His staff", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        "What happened when Allah (swt) ordered Musa (pbuh) to put his hand into his garment?",
-      answerOpt: [
-        { opt: "It shined brightly", isCorrect: true },
-        { opt: "It grew twice as big", isCorrect: false },
-        { opt: "It turned into gold", isCorrect: false },
-        { opt: "It vanished for a moment", isCorrect: false },
+        { opt: "Maryam ", isCorrect: false },
+        { opt: "Rebecca ", isCorrect: false },
+        { opt: "Rachel ", isCorrect: true },
+        { opt: "Hauwa ", isCorrect: false },
       ],
     },
 
     {
       question:
-        "What request did Musa (pbuh) make to Allah (swt) when he was commanded to go and confront Pharaoh?",
+        "What is the name of his younger brother (from the same mother) ",
       answerOpt: [
-        { opt: "That it should be during the night", isCorrect: false },
-        { opt: "That his brother Harun should go with him", isCorrect: true },
-        { opt: "that he send an army with him", isCorrect: false },
-        { opt: "That he should not fight him", isCorrect: false },
+        { opt: "Yahudh (judah) ", isCorrect: false },
+        { opt: "benjamin (benyamin)", isCorrect: true },
+        { opt: "Beynon ", isCorrect: false },
+        { opt: " Photiphar", isCorrect: false },
       ],
     },
     {
-      question:
-        "How did Pharaoh’s magicians react after they witnessed the miracles that Musa (pbuh) performed in front of them and were defeated?",
+      question: "How many Brothers did Yusuf AS have ",
       answerOpt: [
-        { opt: "They laughed at him", isCorrect: false },
-        { opt: "They called him a trickstar", isCorrect: false },
-        { opt: "they challenged him to a rematch", isCorrect: false },
-        { opt: "They fell down in prostration to Allah", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        "What did Pharaoh do to the magicians after they accepted Islam?",
-      answerOpt: [
-        {
-          opt: "He cut off their hands and feet on opposite sides and crucified them",
-          isCorrect: true,
-        },
-        { opt: "He locked them up", isCorrect: false },
-        { opt: "he banished them ", isCorrect: false },
-        { opt: " He let them go", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Which of the follwing is the correct order of the plagues of egypt ",
-      answerOpt: [
-        {
-          opt: "The flood, the locusts, the drought , lice, frogs and blood.",
-          isCorrect: true,
-        },
-        {
-          opt: "The flood, the locusts, chickenpox and blood.",
-          isCorrect: false,
-        },
-        {
-          opt: "The flood, the locusts, eathquake ,lice,  frogs and  drought.",
-          isCorrect: false,
-        },
-        {
-          opt: "The Drought, chickenpox, lice and frogs and blood.",
-          isCorrect: false,
-        },
-      ],
-    },
-    {
-      question: "How many tribes was the people of Musa AS divided into?",
-      answerOpt: [
-        { opt: "six tribes", isCorrect: false },
-        { opt: "Eleven tribes", isCorrect: false },
-        { opt: "Twelve tribes.", isCorrect: true },
-        { opt: "3 tribes", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Which miracle did Allah (swt) cause to happen for Musa (pbuh) when he put his staff into the Red Sea?",
-      answerOpt: [
-        { opt: "he sea turned red", isCorrect: false },
-        { opt: "The sea parted", isCorrect: true },
-        { opt: "He was able to walk on it", isCorrect: false },
-        { opt: "An ark appeared", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "There was a rebellious man among the people of Musa (pbuh) who tried to lead the people astray, i.e. away from monotheism and worshiping one God. What was his name?",
-      answerOpt: [
-        { opt: "Melik", isCorrect: false },
-        { opt: "Khidr", isCorrect: false },
-        { opt: "Dhul Qarnayn", isCorrect: false },
-        { opt: "Samiri", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        "What did this rebellious man do in order to encourage the followers of Musa (pbuh) to fall into idolatry?",
-      answerOpt: [
-        { opt: "He claimed to be a prophet", isCorrect: false },
-        { opt: "He built a golden calf", isCorrect: true },
-        { opt: "He built a statue", isCorrect: false },
-        { opt: "He built a wall", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "When did the rebellious man take the opportunity to encourage the followers of Musa (pbuh) to fall into idolatry?",
-      answerOpt: [
-        { opt: "On the Day of Ashura", isCorrect: false },
-        { opt: "While Musa (pbuh) was sleeping", isCorrect: false },
-        { opt: "Openly in front of Musa (pbuh)", isCorrect: false },
-        { opt: "While Musa (pbuh) was at Mount Sinai", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        " Whom did Musa (AS) appoint as incharge when he left his people?",
-      answerOpt: [
-        { opt: "Samiriy", isCorrect: false },
-        { opt: "Qaron", isCorrect: false },
-        { opt: "Haroon", isCorrect: true },
-        { opt: "Dhul Qarnayn ", isCorrect: false },
-      ],
-    },
-    {
-      question: "For how many nights did Musa (AS) leave his people? ",
-      answerOpt: [
-        { opt: "30 nights", isCorrect: false },
-        { opt: " 90 nights", isCorrect: false },
-        { opt: " 50 nights ", isCorrect: false },
-        { opt: " 40 night", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        "Allah (swt) continued to forgive and favour Banu Israeel and sent them provisions over the years, including water, shade, and two types of food. What were these foods called?",
-      answerOpt: [
-        { opt: "Tin and Zaytun", isCorrect: false },
-        { opt: "Ruman and thamar", isCorrect: false },
-        { opt: "Manna and salwa", isCorrect: true },
-        { opt: "Naan and halwa", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "What was the name of the wise man with the special knowledge, musa As was informed of?",
-      answerOpt: [
-        { opt: "Al khidr", isCorrect: true },
-        { opt: "Al khali", isCorrect: false },
-        { opt: "Al kahaf", isCorrect: false },
-        { opt: "Al kabeer", isCorrect: false },
-      ],
-    },
-    {
-      question: "What is the main lesson the wise man taught Musa AS?",
-      answerOpt: [
-        { opt: "Punctuality", isCorrect: false },
-        { opt: "Smartness", isCorrect: false },
-        { opt: "Patience", isCorrect: true },
-        { opt: "Courage", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Musa AS wanted to meet Al-khidr so Allah instructed to journey with a live fish in a water filled vessel and when the fish ___ he would find the location of Al-khidr?",
-      answerOpt: [
-        { opt: "disappeares", isCorrect: true },
-        { opt: "Glows", isCorrect: false },
-        { opt: "Turns into a shark", isCorrect: false },
-        { opt: "Dies", isCorrect: false },
+        { opt: " 10", isCorrect: false },
+        { opt: "8 ", isCorrect: false },
+        { opt: " 9", isCorrect: false },
+        { opt: "11 ", isCorrect: true },
       ],
     },
 
     {
       question:
-        "who said the words `did i not tell you that you can have no patiience with me` To musa AS ",
+        "The plot by yusuf's step brothers was to either kill him or cast him out ",
       answerOpt: [
-        { opt: "ALLAH SWT", isCorrect: false },
-        { opt: "Al-khidr", isCorrect: true },
-        { opt: "Haroon AS", isCorrect: false },
-        { opt: "Samiri", isCorrect: false },
+        { opt: "true ", isCorrect: true },
+        { opt: " false", isCorrect: false },
       ],
     },
     {
       question:
-        "Through which method was Prophet Musa (pbuh) given the commandments by Allah (swt)?",
+        " after several delibrations on what to do with Yusuf A.  yusuf's step brothers decided to cast him out instead of killing him , which of the step brothers came up with this solution",
       answerOpt: [
-        { opt: "Verbal communication only", isCorrect: false },
-        { opt: "On leaves", isCorrect: false },
-        { opt: "on golden paper", isCorrect: false },
-        { opt: "On tablets", isCorrect: true },
+        { opt: "Benjamin ", isCorrect: false },
+        { opt: "Beynon ", isCorrect: false },
+        { opt: "Yahudh (judah) ", isCorrect: true },
+        { opt: "Fir'awn ", isCorrect: false },
       ],
     },
     {
-      question: "What did Allah write for Musa (a) on the tablets? ",
+      question:
+        "When the step brothers approached yaqub and asked him to  Send Yusuf AS with them  to enjoy himself and play. Pophet Yaqub As responded by saying—",
       answerOpt: [
-        { opt: "Names of all the other prophets ", isCorrect: false },
-        { opt: "Prayers and worship chants", isCorrect: false },
         {
-          opt: "Instructions and explanation for all thing",
+          opt: "verily, you should take him and bring him back home on time ",
+          isCorrect: false,
+        },
+        {
+          opt: "Truly, it saddens me that you should take him away. I fear least a wolf should devour him",
           isCorrect: true,
         },
-        { opt: "list of all the idolators", isCorrect: false },
+        {
+          opt: "Go, go and a fun with him as he is your brother ",
+          isCorrect: false,
+        },
+        { opt: "he said nothing ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What happened to Yousuf when he went with his brothers? ",
+      answerOpt: [
+        { opt: "He was thrown into a well ", isCorrect: true },
+        { opt: "He got lost ", isCorrect: false },
+        { opt: " A wolf attecked him", isCorrect: false },
+        {
+          opt: "He was saved from a wolf attack by his brothers ",
+          isCorrect: false,
+        },
       ],
     },
     {
-      question: "Mount Sinai is also called Jabal-ut-Toor",
+      question:
+        " After throwing yusuf As into the well the brothers took an oath to forever keep the deed a secret, they then killed an animal and  soaked his shirt in the animal's blood. What animal's blood did they soak his shirt in?",
       answerOpt: [
-        { opt: "false", isCorrect: false },
+        { opt: "Wolf ", isCorrect: false },
+        { opt: "Pig ", isCorrect: false },
+        { opt: " Sheep", isCorrect: true },
+        { opt: "Camel", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "They came to their father in the middle of the night weeping. What did they claim happened to yusuf? They claimed that—",
+      answerOpt: [
+        { opt: "He fell in to well and died ", isCorrect: false },
+        { opt: " He was eaten by a wolf", isCorrect: true },
+        { opt: "they lost him ", isCorrect: false },
+        { opt: "he was kidnapped ", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "when they handed Yaqub AS yusuf's blood soaked shirt, what did the prophet AS say? ",
+      answerOpt: [
+        {
+          opt: " he said What a merciful wolf! he ate up my beloved son without tearing his shirt!",
+          isCorrect: true,
+        },
+        { opt: "He said the brothers were lying  ", isCorrect: false },
+        { opt: "He asked for more proff ", isCorrect: false },
+        { opt: "he said nothing ", isCorrect: false },
+      ],
+    },
+    {
+      question: "How old was yusuf AS when he was thrown into the well ",
+      answerOpt: [
+        { opt: "20 years old ", isCorrect: false },
+        { opt: "25 years old ", isCorrect: false },
+        { opt: "18 years old ", isCorrect: true },
+        { opt: "16 years old ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "Did their father Yaqub AS believe that yusuf has died  ",
+      answerOpt: [
+        { opt: "yes he did ", isCorrect: false },
+        { opt: "No he did not", isCorrect: true },
+      ],
+    },
+
+    {
+      question:
+        "Who found prophet Yusuf As in the well he was thrown in by his brothers ",
+      answerOpt: [
+        { opt: "The King ", isCorrect: false },
+        { opt: " The cheif minister", isCorrect: false },
+        { opt: " caravan Travellers", isCorrect: true },
+        { opt: " nobody", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        " When the travelers found Prophet Yusuf in the well, where did they take him?",
+      answerOpt: [
+        { opt: " back to cannan", isCorrect: false },
+        { opt: " Jerusalem", isCorrect: false },
+        { opt: "egypt ", isCorrect: true },
+        { opt: "Yemen ", isCorrect: false },
+        { opt: "Iran ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What did the caravan traveller do with yusuf AS  ",
+      answerOpt: [
+        { opt: "The kept him as a slave for themselves ", isCorrect: false },
+        { opt: "they sold him for a few dhirhams ", isCorrect: true },
+        { opt: "They set him free ", isCorrect: false },
+        { opt: "they took him to the king", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "Who Bought him from the caravan travellers  ",
+      answerOpt: [
+        { opt: "The king of egypt ", isCorrect: false },
+        { opt: "The cheif Minister of Egypt ", isCorrect: true },
+        { opt: "The king's cup bearer ", isCorrect: false },
+        { opt: " none of the above", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "And when he yusuf attained his full manhood he was blessed with ? ",
+      answerOpt: [
+        { opt: " beauty and strength", isCorrect: false },
+        { opt: "beauty and grace ", isCorrect: false },
+        { opt: " wisdom and knowledge", isCorrect: true },
+        { opt: "Voice and charisma", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        " Other then Prophethood, Prophet Yousuf AS was blessed with the knowledge of?",
+      answerOpt: [
+        { opt: " He was able to predict future", isCorrect: false },
+        { opt: "He was able to control jinns ", isCorrect: false },
+        { opt: "he was able to tell the outcome of dreams ", isCorrect: true },
+        { opt: " He was able to talk to animals", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "The name of wife of the cheif minister  of Egypt who liked Prophet Yousuf AS and also falsely accussed him of molesting her , was ",
+      answerOpt: [
+        { opt: "Zulufa ", isCorrect: false },
+        { opt: "Zainab ", isCorrect: false },
+        { opt: "Rahmah ", isCorrect: false },
+        { opt: " Zulaikha", isCorrect: true },
+      ],
+    },
+    {
+      question:
+        "The wise and just chief minister apologized to yusuf for his wife's indecency. He also instructed her to beg yusuf's forgiveness for accusing him falsely ",
+      answerOpt: [
+        { opt: "true ", isCorrect: true },
+        { opt: "false ", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "when the news of her indecency spread Zuliakha invited women over in order to regain her reputation  (a banquet) what kitchen  item did she give the women in attendance",
+      answerOpt: [
+        { opt: "A knife ", isCorrect: true },
+        { opt: "A plate", isCorrect: false },
+        { opt: "A spoon ", isCorrect: false },
+        { opt: "A fork ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "and she said (to Joseph): 'Come out before them'. Then, when they (the women) saw him, they exalted him (at his beauty) and (in their astonishment) they ------ ",
+      answerOpt: [
+        { opt: " stared at him ", isCorrect: false },
+        { opt: "tripped and fell ", isCorrect: false },
+        { opt: "cut their hands ", isCorrect: true },
+        { opt: "lost balance ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: " For how long did Prophet Yousuf stay in the prison",
+      answerOpt: [
+        { opt: " 12 years", isCorrect: false },
+        { opt: "11 years  ", isCorrect: false },
+        { opt: "10 years  ", isCorrect: false },
+        {
+          opt: " Many years(exact time is not known from Quran and Ahadeeth)",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      question:
+        "When he was in prison two other inmates joined him one was the king's  — and the other was the king's  —  ",
+      answerOpt: [
+        { opt: "cupbearer and slave ", isCorrect: false },
+        { opt: " guard and cook", isCorrect: false },
+        { opt: "Cupbrearer and cook ", isCorrect: true },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: " What dreams did the two prison inmates have",
+      answerOpt: [
+        { opt: "They did not reveal their dreams", isCorrect: false },
+        {
+          opt: "One saw himself making wine. The other saw himself carrying upon his head some bread, from which the birds were eating.",
+          isCorrect: true,
+        },
+        {
+          opt: " one saw himself crying and the other saw birds eating from his food ",
+          isCorrect: false,
+        },
+        {
+          opt: "one saw the king dead and the other saw himself making wine for the king ",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      question:
+        "When the prisoners asked about the explanation of there dreams, how did Yousuf (AS) start ",
+      answerOpt: [
+        {
+          opt: "He started thinking about what those dream meant ",
+          isCorrect: false,
+        },
+        {
+          opt: "He said: You have chosen the right person to ask ",
+          isCorrect: false,
+        },
+        {
+          opt: "He said this is just a normal dream which you had because you are in prison ",
+          isCorrect: false,
+        },
+        {
+          opt: " He said: I will inform about the interpretation and that is what Allah has thought me. He then praised Allah then thought them about Tawheed. After this he explained the dream",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      question:
+        " what message did he give to the inmate with the wine pouring dream",
+      answerOpt: [
+        {
+          opt: " he told him to mention him and his wrongful imprisonment to the king once out",
+          isCorrect: true,
+        },
+        {
+          opt: "he told him to remind his master that he is still in prison ",
+          isCorrect: false,
+        },
+        {
+          opt: "he told him to ask for the king's forgiveness ",
+          isCorrect: false,
+        },
+        { opt: "he did not give any message, ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        " did the wine making dream guy remember to deliver the message",
+      answerOpt: [
+        { opt: " yes he delivered", isCorrect: false },
+        { opt: "No shaytan made him forget ", isCorrect: true },
+        { opt: "No he choose to ignore the message ", isCorrect: false },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        " After many years of staying in prison Prophet Yousuf was forgotten... How was he remembered",
+      answerOpt: [
+        {
+          opt: "the cheif minister could no longer bear to see him in prison ",
+          isCorrect: false,
+        },
+        { opt: "Zulaikha asked for his release ", isCorrect: false },
+        {
+          opt: "The king had a strange frightening dream so the wine making dream guy remembered ",
+          isCorrect: true,
+        },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+    {
+      question: "What did the king see in his dream? ",
+      answerOpt: [
+        { opt: "he saw a lion chasing an elephant ", isCorrect: false },
+        {
+          opt: "he saw seven fat cows being eaten by seven lean cows, and seven green spikes of grains and seven dry one ",
+          isCorrect: true,
+        },
+        {
+          opt: "he saw seven fat cows being eaten by 7 fat lions ",
+          isCorrect: false,
+        },
+        { opt: "it was not revealed ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "According to Prophet Yusuf's interpretation of the kings dream, Egypt will face.. ",
+      answerOpt: [
+        {
+          opt: "7 years of abundant harvest; followed by 7 years of draught",
+          isCorrect: true,
+        },
+        { opt: "Drought for the next 7 years ", isCorrect: false },
+        {
+          opt: "7 years of drought; followed by 7 years of abundant harvest",
+          isCorrect: false,
+        },
+        { opt: "7 years of misfortune", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "The king ordered his envoy to fetch yusuf  immediately after the interpretation of the dream, but yusuf refused to leave the prison unless—--",
+      answerOpt: [
+        { opt: "His master apologized to him ", isCorrect: false },
+        { opt: "His master's wife apologized to him", isCorrect: false },
+        { opt: "His innocence is proven ", isCorrect: true },
+        { opt: "he was given a chieftancy title ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "when yusuf was set free and proven innocent what did he request he be put in charge off ",
+      answerOpt: [
+        { opt: "The entire land of egypt ", isCorrect: false },
+        { opt: "the affairs of the king ", isCorrect: false },
+        { opt: "the expenditions of the land ", isCorrect: false },
+        { opt: " the storehouses of the land", isCorrect: true },
+      ],
+    },
+    {
+      question: "What was the responsibility of Yousuf AS in the kingdom? ",
+      answerOpt: [
+        { opt: " health", isCorrect: false },
+        {
+          opt: "Wealth and Food for the next 7 years of famine coming",
+          isCorrect: true,
+        },
+        { opt: "Education ", isCorrect: false },
+        { opt: " None of the above", isCorrect: false },
+      ],
+    },
+    {
+      question: "Why was  Yusuf (as) sent to prison? ",
+      answerOpt: [
+        { opt: "He misbehaved with the nobleman's wife ", isCorrect: false },
+        {
+          opt: " He was innocent but to save the family honor, he was sent to prison by the nobleman",
+          isCorrect: true,
+        },
+        { opt: "He was accused of stealing ", isCorrect: false },
+        { opt: "he was accused of murder ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "7 years passed and famine spread accross the entire region including cannan (yusuf hometown). yaqub sent his sons all except benjamin to egypt for provision yusuf AS immediately recognized them and then he  ask them to —-  in other to get full supplies",
+      answerOpt: [
+        { opt: "Bring their other brother  ", isCorrect: true },
+        { opt: "bring their father ", isCorrect: false },
+        { opt: "bring their mothers ", isCorrect: false },
+        { opt: "none of the above", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "when they told their father about the request made by the man in egypt(yusuf As) he refused to send benjamin with them because ",
+      answerOpt: [
+        { opt: " he did not love them", isCorrect: false },
+        {
+          opt: "he had entrusted Joseph to them and they failed him ",
+          isCorrect: true,
+        },
+        { opt: "He does not trust benjamin", isCorrect: false },
+        { opt: " none of the above", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "yaqub AS later agreed to let benjamin go with them to egypt only if his sons swear to him in Allah's name that no harm shall befall benjamin and he shall return safely ",
+      answerOpt: [
         { opt: "true", isCorrect: true },
+        { opt: "false ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "the brothers left for egypt, yusuf and benjamin met, what did yusuf do to prevent benjamin from going back to cannan with his brothers",
+      answerOpt: [
+        {
+          opt: "He hid benjamin safely in the king's palace  ",
+          isCorrect: false,
+        },
+        {
+          opt: "he did nothing to stop benjamin from leaving ",
+          isCorrect: false,
+        },
+        {
+          opt: " He put the king’s drinking cup of gold in benjamin's bag And stopped the caravans to search for that stolen cup.",
+          isCorrect: true,
+        },
+        {
+          opt: "he asked the brothers to sell benjamin to him ",
+          isCorrect: false,
+        },
       ],
     },
 
     {
       question:
-        "What did musa AS do to the Angel of Death when he came totake his life",
+        "What did Yaqub’s sons do when their brother was caught as a thief?",
       answerOpt: [
-        { opt: "shaked his hands", isCorrect: false },
-        { opt: "Slapped him", isCorrect: true },
-        { opt: "smiled at him", isCorrect: false },
-        { opt: "hit him with his staff ", isCorrect: false },
+        { opt: "They scolded benjamin for stealing ", isCorrect: false },
+        { opt: "they let benjamin take the fall ", isCorrect: false },
+        {
+          opt: "They offered that the king may take one of them, instead of their younger brother.",
+          isCorrect: true,
+        },
+        {
+          opt: " they offered benjamin to the egypt in exchange for their own freedom",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      question:
+        "What happened to Yaqub’s (aS) eyes and what did he say when he cried for Yusuf (aS)? ",
+      answerOpt: [
+        {
+          opt: "his eyes became white with grief and he said “I only complain of my suffering and my grief to Allah.” ",
+          isCorrect: true,
+        },
+        {
+          opt: " he became blind and he said he blames his sons for what happened to yusuf",
+          isCorrect: false,
+        },
+        { opt: "all of the above ", isCorrect: false },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "What did Yusuf (aS) announce (what did he declare) as punishment for his brothers when they found out who Yusuf (aS) was?",
+      answerOpt: [
+        {
+          opt: " he asked that allah punishes them for all the sins ",
+          isCorrect: false,
+        },
+        { opt: "He locked them up in prison ", isCorrect: false },
+        {
+          opt: "He forgave them and asked that allah forgives them to for only he is all forgiving the most merciful  ",
+          isCorrect: true,
+        },
+        { opt: "he threw each one of them into a deep well", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What did Yusuf (aS) send to his father to cure his eyesight? ",
+      answerOpt: [
+        {
+          opt: "he sent a white scarf and asked them to cast it on his fathers face ",
+          isCorrect: false,
+        },
+        {
+          opt: "he sent A gold scarf and asked them to cast it on his fathers face ",
+          isCorrect: false,
+        },
+        {
+          opt: "he sent his shirt, and asked them to cast it on his father’s face ",
+          isCorrect: true,
+        },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "yusuf's story began with a dream and it ends with the interpretation of the dream what would you say is the intepretation",
+      answerOpt: [
+        {
+          opt: "he gave his brothers free food",
+          isCorrect: false,
+        },
+        {
+          opt: "his brothers ended up believing in his prophethood ",
+          isCorrect: true,
+        },
+        {
+          opt: "his father and brothers bowed to him in prostration as he raised his parents to the thrown",
+          isCorrect: true,
+        },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "Prophets are the people who are most tested from Allah: How was Prophet Yousuf (AS) tested ",
+      answerOpt: [
+        {
+          opt: "He was throwed in the well by his brothers when he was very young",
+          isCorrect: true,
+        },
+        {
+          opt: "He stayed away from his family for many many years ",
+          isCorrect: true,
+        },
+        {
+          opt: " from just aaa fake blame on him he was prisoned for a long time",
+          isCorrect: true,
+        },
+        { opt: "All of the above", isCorrect: true },
+        { opt: "noneof the above", isCorrect: false },
+      ],
+    },
+
+    {
+      question: " some lessons we learn from the story of Prophet Yousuf (AS) ",
+      answerOpt: [
+        {
+          opt: "We should praise Allah for the knowledge He has given us ",
+          isCorrect: true,
+        },
+        {
+          opt: " We learn patience, a beautiful patience of a father and son.",
+          isCorrect: true,
+        },
+        {
+          opt: "Jealousy(hasad) is a dangerous emotion and it is cause many bad effects in society ",
+          isCorrect: true,
+        },
+        {
+          opt: " We should do our work with honesty, loyalty, hard work, devotion, and wisdom, Yusuf fulfilled his role and he did an excellent job and collected food which lasted for 7 years, even for their nighbours",
+          isCorrect: true,
+        },
+        { opt: "all of the above", isCorrect: true },
+        { opt: "none of the above", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "prophet yusuf As was said to have died at age 110 and when he died his body was mummified and placed in coffin. why was he not burried on the grounds of egypt ? ",
+      answerOpt: [
+        {
+          opt: "because at the momment of his death he asked his brothers not to burry him",
+          isCorrect: false,
+        },
+        {
+          opt: " because at the momment of his death he asked his brothers to burry him beside his forefathers if they were to leave egypt",
+          isCorrect: true,
+        },
+        {
+          opt: "because at the momment of his death he asked to be burried next to his mother",
+          isCorrect: false,
+        },
+        { opt: "none of the above", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "FUN FACT: family tree of prophet yusuf AS down to the first generation",
+      answerOpt: [
+        { opt: "yusuf ibn yaqub ibn ishaq ibn ibrahim ... ", isCorrect: true },
+        {
+          opt: " ibrahim ibn tarikh ibn nahur ibn sarough ibn raghu ibn phaligh ibn aher ibn shalih in arfghshand ibn sam ibn Noah ... ",
+          isCorrect: true,
+        },
+        { opt: "noah ibn lamik ibn mitoshilkh ibn enoch ...", isCorrect: true },
+        {
+          opt: "enoch ibn yard ibn mahlabeel ibn qinan ibn anoush ibn shees ibn Adam",
+          isCorrect: true,
+        },
       ],
     },
   ];
@@ -534,9 +817,11 @@ const Index = () => {
         <section>
           <div className="quiz-info">
             <p>
-              Todays Quiz is going to be focused on the life of prophet musa
-              (moses) AS
-              <br /> <small>Enjoy🤗!</small>
+              Todays Quiz is going to be focused on the story of prophet Yusuf
+              (Joseph) AS <br />
+              <sub>my😍fave😍</sub>
+              <br />
+              <small>Enjoy🤗!</small>
             </p>
           </div>
           <div className="mode">
@@ -544,22 +829,22 @@ const Index = () => {
             <div className="btn-container">
               <button
                 onClick={() => {
-                  setTime("65");
+                  setTime("180");
                   setEasyQ(true);
                   start();
                 }}
                 className="easy"
               >
-                easy <small>10 questions</small> <br />
+                easy <small>15 questions</small> <br />
               </button>
               <small>
-                1:00<sub>min</sub>
+                3:00<sub>min</sub>
               </small>
             </div>
             <div className="btn-container">
               <button
                 onClick={() => {
-                  setTime("120");
+                  setTime("300");
                   setMediumQ(true);
                   start();
                 }}
@@ -568,13 +853,13 @@ const Index = () => {
                 medium <small>15 questions</small> <br />
               </button>
               <small>
-                2:00 <sub>min</sub>
+                5:00 <sub>min</sub>
               </small>
             </div>
             <div className="btn-container">
               <button
                 onClick={(e) => {
-                  setTime("200");
+                  setTime("600");
                   setHardQ(true);
                   start();
                 }}
@@ -583,7 +868,7 @@ const Index = () => {
                 hard <small>18 questions</small> <br />
               </button>
               <small>
-                3:00 <sub>min</sub>
+                10:00 <sub>min</sub>
               </small>
             </div>
           </div>
