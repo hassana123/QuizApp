@@ -865,7 +865,7 @@ const Index = () => {
                 }}
                 className="hard"
               >
-                hard <small>18 questions</small> <br />
+                hard <small>25 questions</small> <br />
               </button>
               <small>
                 10:00 <sub>min</sub>
