@@ -15,9 +15,9 @@ const Index = (props) => {
   if (props.easyQ) {
     qs = props.questions.slice(0, 10);
   } else if (props.mediumQ) {
-    qs = props.questions.slice(0, 15);
+    qs = props.questions.slice(10, 25);
   } else if (props.hardQ) {
-    qs = props.questions.slice(15);
+    qs = props.questions.slice(25);
   }
   //console.log(qs);
   const handleNext = () => {

@@ -14,382 +14,455 @@ const Index = () => {
 
   const questions = [
     {
-      question: "Where did Zam Zam  water come from? ",
-      answerOpt: [
-        { opt: "safa and Marwa ", isCorrect: true },
-        { opt: "cave of hira ", isCorrect: false },
-        { opt: "Masjid Al Haram ", isCorrect: false },
-        { opt: "Mount Arafah  ", isCorrect: false },
-      ],
-    },
-    {
-      question: " who was the first prophet to build the kaabah?",
-      answerOpt: [
-        { opt: "Muhammad SAW  ", isCorrect: false },
-        { opt: " Ismail AS   ", isCorrect: false },
-        { opt: "Ibrahim AS ", isCorrect: true },
-        { opt: "Nuh AS ", isCorrect: false },
-      ],
-    },
-    {
-      question: "whose footsteps is in mecca ?",
-      answerOpt: [
-        { opt: " Ibrahim AS   ", isCorrect: true },
-        { opt: "Ismail AS  ", isCorrect: false },
-        { opt: " Muh AS", isCorrect: false },
-        { opt: " Musa AS ", isCorrect: false },
-      ],
-    },
-    {
       question:
-        " From the previous question where exactly are those Footstep? ",
+        "Ramadan begins during which month of the Islamic lunar calendar? ",
       answerOpt: [
-        { opt: " Mecca ", isCorrect: false },
-        { opt: " masjid Nimra ", isCorrect: false },
-        { opt: " mount Arafa  ", isCorrect: false },
-        { opt: " kaabah", isCorrect: true },
+        { opt: "7th ", isCorrect: false },
+        { opt: "8th", isCorrect: false },
+        { opt: "9th", isCorrect: true },
+        { opt: "10th ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What is the meal called before the beginning of the fast? ",
+      answerOpt: [
+        { opt: " walima", isCorrect: false },
+        { opt: " wajabatul khafifa", isCorrect: false },
+        { opt: "sahoor ", isCorrect: true },
+        { opt: "Taem", isCorrect: false },
+      ],
+    },
+
+    {
+      question: " What is the meal after sunset called?",
+      answerOpt: [
+        { opt: " Altuham", isCorrect: false },
+        { opt: " Taghdaa", isCorrect: false },
+        { opt: "Dhahab lil'akl ", isCorrect: false },
+        { opt: "iftar ", isCorrect: true },
+      ],
+    },
+
+    {
+      question: "What is the first prayer of the day called? ",
+      answerOpt: [
+        { opt: " fajr", isCorrect: true },
+        { opt: " zuhr", isCorrect: false },
+        { opt: "magrihb ", isCorrect: false },
+        { opt: " isha", isCorrect: false },
       ],
     },
     {
-      question: " What is the Arabic word for the oneness of Allah?",
+      question: "What does 'Ramadan Mubarak' mean? ",
       answerOpt: [
-        { opt: "shirk  ", isCorrect: false },
-        { opt: " Tawhid ", isCorrect: true },
-        { opt: " iman  ", isCorrect: false },
-        { opt: " jihad  ", isCorrect: false },
+        { opt: "It is a food blessing ", isCorrect: false },
+        { opt: "Have a blessed Ramadan", isCorrect: true },
+        { opt: " Happy Ramadan", isCorrect: false },
+        { opt: "Thank you", isCorrect: false },
       ],
     },
     {
-      question: "Which angel never smiled since he was created?   ",
+      question: "what do muslimsusually break their fast with?",
       answerOpt: [
-        { opt: "Malik  ", isCorrect: true },
-        { opt: "Israfil  ", isCorrect: false },
-        { opt: "Munkar  ", isCorrect: false },
-        { opt: " Jibril  ", isCorrect: false },
+        { opt: "a cup of water or milk and a date", isCorrect: true },
+        { opt: "a cup of orange juice and apple", isCorrect: false },
+        { opt: "yoghurt and honey", isCorrect: false },
       ],
     },
     {
-      question: " what are followers of Islam known as?",
+      question: "How many people are said to observe Ramadan?",
       answerOpt: [
-        { opt: "Muhammeddans  ", isCorrect: false },
-        { opt: " Islamics ", isCorrect: false },
-        { opt: " Moumin ", isCorrect: true },
-        { opt: " Brethren ", isCorrect: false },
+        { opt: " 1.1 billion", isCorrect: false },
+        { opt: "50 million ", isCorrect: false },
+        { opt: " 250 million", isCorrect: false },
+        { opt: "1.6 billion ", isCorrect: true },
       ],
     },
 
     {
       question:
-        "When Islam first entered Medina what were the names of the two main tribes?",
+        " What is the light or lantern that is traditionally used during Ramadan called?",
       answerOpt: [
-        { opt: "Anaza and Hard", isCorrect: false },
-        { opt: "Qaynuqaa and Nadheer  ", isCorrect: false },
-        { opt: "Quraysh and Khazraj ", isCorrect: false },
-        { opt: "Aws and the Khazraj ", isCorrect: true },
+        { opt: "Shaeila ", isCorrect: false },
+        { opt: "Fanoos ", isCorrect: true },
+        { opt: "Nar ", isCorrect: false },
+        { opt: "Misbah ", isCorrect: false },
       ],
     },
     {
       question:
-        "How long will The Mahdi  (the rightly guided caliph)  Reign on this earth before his Death?",
+        "Muslims are not allowed to chew gum while fasting. True or false?",
       answerOpt: [
-        { opt: "2 Years.", isCorrect: false },
-        { opt: "7 - 9 Years. ", isCorrect: true },
-        { opt: "10 Years .", isCorrect: false },
-        { opt: "5 Years. ", isCorrect: false },
-      ],
-    },
-    {
-      question: "Which Surah of the Quran has Allah in every single verse? ",
-      answerOpt: [
-        { opt: "Surah Muhammad.", isCorrect: false },
-        { opt: "Surah al-ikhlas.  ", isCorrect: false },
-        { opt: " Suraj Al-Mujadilla", isCorrect: true },
-        { opt: "Surah Al-Fatiha. ", isCorrect: false },
+        { opt: "True, because it still counts as food ", isCorrect: true },
+        { opt: "False, because it's not really food ", isCorrect: false },
       ],
     },
 
     {
-      question: "how many verses are there in the Quran?  ",
+      question: "At the end of Ramadan what is the large festival called? ",
       answerOpt: [
-        {
-          opt: " 6025 without Bismillah 6138 with bismillah",
-          isCorrect: false,
-        },
-        { opt: "6235 without Bismillah 6348 with bismillah", isCorrect: true },
-        {
-          opt: "6465 without Bismillah 6578 with bismillah ",
-          isCorrect: false,
-        },
-        {
-          opt: "6553 without Bismillah 6666 with bismillah",
-          isCorrect: false,
-        },
+        { opt: "Al-Hijra ", isCorrect: false },
+        { opt: "Prophet's Birthday ", isCorrect: false },
+        { opt: "Eid Al-Adha ", isCorrect: false },
+        { opt: "Eid ul Fitr", isCorrect: true },
       ],
     },
 
     {
-      question: " Who was known as khalilullah(friend of Allah)? ",
+      question: "Ramadan stems from an Arabic word ramad which means what?",
       answerOpt: [
-        { opt: "Ibrahim AS ", isCorrect: true },
-        { opt: " Abubakar RA", isCorrect: false },
-        { opt: "Muhammad AS ", isCorrect: false },
-        { opt: "Musa As ", isCorrect: false },
+        { opt: "Fast ", isCorrect: false },
+        { opt: " Giving", isCorrect: false },
+        { opt: " Feast", isCorrect: false },
+        { opt: "dryness", isCorrect: true },
+      ],
+    },
+
+    {
+      question:
+        "Ramadan is mentioned in which of the following Surahs in the Quran?",
+      answerOpt: [
+        { opt: "Surah al-Nisa ", isCorrect: false },
+        { opt: "Surah al-Hijr ", isCorrect: false },
+        { opt: "Surah Ali Imran ", isCorrect: false },
+        { opt: "Surah Al-Baqarah", isCorrect: true },
       ],
     },
     {
-      question: "Which Prophet  was Known as Kalimullah? ",
+      question: "On which day does Eid ul-Fitr occur? ",
       answerOpt: [
-        { opt: "Idris AS ", isCorrect: false },
-        { opt: "Muhammad AS ", isCorrect: false },
-        { opt: "Yusuf AS ", isCorrect: false },
-        { opt: "Musa AS ", isCorrect: true },
+        { opt: "On the first day of Shawwal ", isCorrect: true },
+        { opt: "Nobody knows ", isCorrect: false },
+        { opt: "On the final day of Ramadan ", isCorrect: false },
+        { opt: "During the full moon ", isCorrect: false },
       ],
     },
     {
-      question: " In a religious context what does islam mean?",
+      question: "Fasting during Ramadan is which of the 5 pillars in Islam? ",
       answerOpt: [
-        { opt: "Worshiping multiple gods ", isCorrect: false },
-        { opt: " Religion of peace. ", isCorrect: false },
+        { opt: "First ", isCorrect: false },
+        { opt: "Second ", isCorrect: false },
+        { opt: "Third", isCorrect: false },
+        { opt: "Fourth ", isCorrect: true },
+      ],
+    },
+    {
+      question: "Which famous battle took place during the month of Ramadan? ",
+      answerOpt: [
+        { opt: "The Battle of Badr ", isCorrect: true },
+        { opt: "The Battle of Uhud ", isCorrect: false },
+        { opt: "The Battle of Khaybar ", isCorrect: false },
+        { opt: "The Battle of the Trench ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What was revealed to the prophet muhammad SAW during the month of Ramadan? ",
+      answerOpt: [
+        { opt: "Hadiths", isCorrect: false },
+        { opt: "Torah", isCorrect: false },
+        { opt: "Quran", isCorrect: true },
+        { opt: "Injeel", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "True or false: The Quran was the only holy book revealed by Allah during the month of Ramadan? ",
+      answerOpt: [
+        { opt: " true", isCorrect: false },
+        { opt: "false ", isCorrect: true },
+      ],
+    },
+    {
+      question: "Laylatul-Qadr is a night greater than: ",
+      answerOpt: [
+        { opt: "1000 years ", isCorrect: false },
+        { opt: "1000 months ", isCorrect: true },
+        { opt: "1000 weeks ", isCorrect: false },
+        { opt: "1000 lifetimes ", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "True or false: Eating out of forgetfulness will break your fast? ",
+      answerOpt: [
+        { opt: "true ", isCorrect: false },
+        { opt: "false ", isCorrect: true },
+      ],
+    },
+    {
+      question:
+        " On the Day of Judgement, those who fasted Ramadan will be told to enter paradise through which gate",
+      answerOpt: [
+        { opt: "Baab al-Hajj ", isCorrect: false },
+        { opt: "Baab al-Rayyan ", isCorrect: true },
+        { opt: "Baab as-Sadaqah ", isCorrect: false },
+        { opt: "Baab al-Iman ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "How many times the word Ramadan was mentioned in the Holy Quran? ",
+      answerOpt: [
+        { opt: " twice", isCorrect: false },
+        { opt: " once", isCorrect: true },
+        { opt: "thrice ", isCorrect: false },
+        { opt: "6 times ", isCorrect: false },
+      ],
+    },
+    {
+      question: "Who started Taraweeh in congregation? ",
+      answerOpt: [
+        { opt: "Abubarkar ", isCorrect: false },
+        { opt: "prophet muhammad SAW ", isCorrect: false },
+        { opt: "Umar ibn alkhattab ", isCorrect: true },
+        { opt: "zayd  ", isCorrect: false },
+      ],
+    },
+    {
+      question: "What is dua for Laylatul Qadr?",
+      answerOpt: [
         {
-          opt: "submitting to the will of the one God,( Allah )",
+          opt: "O Allah, indeed you are pardoning and generous; you love to pardon, so pardon us",
           isCorrect: true,
         },
         {
-          opt: "submitting to only the sayings of prophet muhammad. ",
+          opt: "oh allah assist me in remebering you, in thanking you and wrshiping you in the best of manners ",
+          isCorrect: false,
+        },
+        {
+          opt: " glorious is allah and praises are due to allah and allah is the greatest",
+          isCorrect: false,
+        },
+        { opt: "i ask allah to forgive me ", isCorrect: false },
+      ],
+    },
+    {
+      question: "What do you do if you accidentally eat/drink while fasting? ",
+      answerOpt: [
+        {
+          opt: "Continue your fast, it is a gift from Allah ",
+          isCorrect: true,
+        },
+        {
+          opt: "your fast becomes invalid so break your fast ",
           isCorrect: false,
         },
       ],
     },
     {
-      question: "Which prophet is mentioned is surah An-Naml?",
+      question:
+        "What is it called when a Muslim stays at the Masjid for 3 or more nights? ",
       answerOpt: [
-        { opt: "Luqman AS. ", isCorrect: false },
-        { opt: " Dawud AS.", isCorrect: true },
-        { opt: " Al-khidr.", isCorrect: false },
-        { opt: "Zakariyya AS. ", isCorrect: false },
+        { opt: "Itikaf ", isCorrect: true },
+        { opt: " laylatul qadr", isCorrect: false },
+        { opt: " safa and marwa", isCorrect: false },
+        { opt: " taraweeh", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What should you fast from in addition to not eating/drinking? ",
+      answerOpt: [
+        { opt: "bathing and brushing ", isCorrect: false },
+        { opt: "sleeping ", isCorrect: false },
+        { opt: " Bad words/actions", isCorrect: true },
+        { opt: "applying make-up ", isCorrect: false },
+      ],
+    },
+    {
+      question: " Who first gave us the name ‘Muslims’?",
+      answerOpt: [
+        { opt: "Nabi Ibrahim (pbuh) ", isCorrect: true },
+        { opt: " Nabi musa (pbuh) ", isCorrect: false },
+        { opt: "Nabi muhammad (pbuh) ", isCorrect: false },
+        { opt: "Nabi Adam (pbuh)", isCorrect: false },
+      ],
+    },
+    {
+      question: " Who was the first of the prophets to fast?",
+      answerOpt: [
+        { opt: "Musa AS ", isCorrect: false },
+        { opt: "Muhammad SAW ", isCorrect: false },
+        { opt: "Adam AS", isCorrect: true },
+        { opt: "Isa AS", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "Which fruits are mentioned in Quran? ",
+      answerOpt: [
+        {
+          opt: "gardenegg, dates, apple, olive, grapes and banana",
+          isCorrect: false,
+        },
+        { opt: "dates, olive,  apple and eggplant", isCorrect: false },
+        { opt: "dates and olives only ", isCorrect: false },
+        {
+          opt: "Fig plant, Dates, olive, grapes, pomegrante and banana",
+          isCorrect: true,
+        },
+      ],
+    },
+
+    {
+      question: "What is sighted to signal the start of Ramadan? ",
+      answerOpt: [
+        { opt: "The crescent moon", isCorrect: true },
+        { opt: "the full moon ", isCorrect: false },
+        { opt: " the stars", isCorrect: false },
+        { opt: "nothing ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "How many Ramadans did the prophet fast? ",
+      answerOpt: [
+        { opt: "10 ramadans", isCorrect: false },
+        { opt: " 11 ramadans", isCorrect: false },
+        { opt: "9 Ramadans ", isCorrect: true },
+        { opt: " 7 ramadans", isCorrect: false },
+      ],
+    },
+    {
+      question: "What is the first surah revealed in Quran? ",
+      answerOpt: [
+        { opt: "Al-ʻAlaq ( Congealed Blood)", isCorrect: true },
+        { opt: " fatiha (the opening)", isCorrect: false },
+        { opt: " al-baqara (the cow)", isCorrect: false },
+        { opt: "an-nas (mankid) ", isCorrect: false },
+      ],
+    },
+    {
+      question: " When did fasting start in Islam?",
+      answerOpt: [
+        { opt: "first year after hijrah", isCorrect: false },
+        { opt: " Seconed  year after Hijrah", isCorrect: true },
+        { opt: "a year before hijrah", isCorrect: false },
+        { opt: "third year after hijrah", isCorrect: false },
       ],
     },
 
     {
       question:
-        "Which Surah has all its verses ending with the letter (س) seen  ",
+        "RIDDLE TIME: I am the heart of the Quran yet I am not in the center of the Quran. What am I? ",
       answerOpt: [
-        { opt: " Ya Seen", isCorrect: false },
-        { opt: "Al-Nasr ", isCorrect: false },
-        { opt: "An-Nas", isCorrect: true },
-        { opt: "Al- Masad ", isCorrect: false },
+        { opt: "surah al-aadiyaat", isCorrect: false },
+        { opt: "surah Al hadid ", isCorrect: false },
+        { opt: "Surah Yaseen", isCorrect: true },
+        { opt: " surah ar-rahmaan", isCorrect: false },
+      ],
+    },
+    {
+      question: "What is Umrah equal to when done in Ramadan? ",
+      answerOpt: [
+        { opt: "1000 salats", isCorrect: false },
+        { opt: "A year of good deeds", isCorrect: false },
+        { opt: "nothing", isCorrect: false },
+        { opt: "Hajj ", isCorrect: true },
       ],
     },
 
     {
-      question:
-        "Who said 'didn't i say you couldn't be patient with me'  In suratul kahf ? ",
+      question: "Who introduced the Islamic calendar?",
       answerOpt: [
-        { opt: " Adam AS", isCorrect: false },
-        { opt: "Allah(SWT)", isCorrect: false },
-        { opt: " Yusuf AS", isCorrect: false },
-        { opt: " Al-khidr", isCorrect: true },
+        { opt: "Abu bakr", isCorrect: false },
+        { opt: "Umar Ibn Al-Khattab ", isCorrect: true },
+        { opt: "Ali ibn abi talib ", isCorrect: false },
+        { opt: "zayd ibn harithah", isCorrect: false },
+      ],
+    },
+    {
+      question: "Who was the İnjil revealed to? ",
+      answerOpt: [
+        { opt: "Jesus (isah)", isCorrect: true },
+        { opt: "Abraham ", isCorrect: false },
+        { opt: "musa (moses) ", isCorrect: false },
+        { opt: "dawud ", isCorrect: false },
+      ],
+    },
+    {
+      question: "Who was the zabur revealed to? ",
+      answerOpt: [
+        { opt: "Jesus (isah)", isCorrect: false },
+        { opt: "suliaman (solomon)", isCorrect: false },
+        { opt: "musa (moses) ", isCorrect: false },
+        { opt: "dawud (david) ", isCorrect: true },
       ],
     },
 
     {
-      question: "how many verses does the longest surah in the quran contain?",
+      question: " What is the deeper purpose of Ramadan?",
       answerOpt: [
-        { opt: "268 ", isCorrect: false },
-        { opt: "298 ", isCorrect: false },
-        { opt: " 286", isCorrect: true },
-        { opt: "300 ", isCorrect: false },
+        {
+          opt: "being concscious and cognizant of allah, of truth and fear of allah",
+          isCorrect: true,
+        },
+        { opt: "bring Muslims closer to Allah ", isCorrect: false },
+        { opt: "protest the government ", isCorrect: false },
+        { opt: "get cleansed of one's sins ", isCorrect: false },
       ],
     },
     {
-      question:
-        "What is the Name of the river in paradise that Allah gave prophet Muhammad (SAW)?",
+      question: "Why do people fast during Ramadhan?",
       answerOpt: [
-        { opt: "Sidrat", isCorrect: false },
-        { opt: "At-Tasnime", isCorrect: false },
-        { opt: "Al-Khawtar", isCorrect: true },
-        { opt: "Az-Zaqqum", isCorrect: false },
-      ],
-    },
-
-    {
-      question: "How many surahs begins with Alif Lam Ra (ا ل ر)",
-      answerOpt: [
-        { opt: "9", isCorrect: false },
-        { opt: "3", isCorrect: false },
-        { opt: "6", isCorrect: true },
-        { opt: "12", isCorrect: false },
+        { opt: " as a means of seeking forgiveness of sins", isCorrect: true },
+        {
+          opt: "as a means of reminder of the plight of those who do not have adequate food, supply and shelter",
+          isCorrect: true,
+        },
+        { opt: "teaches self control, reinforces ones faith", isCorrect: true },
+        { opt: "all of the above", isCorrect: true },
       ],
     },
 
     {
-      question: "Where were surahs that begins with Ha Meem (ح م)Revealed?",
+      question: "Who was Torah revealed to? ",
       answerOpt: [
-        { opt: "Mecca", isCorrect: true },
-        { opt: "Medina", isCorrect: false },
-        { opt: "Tabuk", isCorrect: false },
-        { opt: "Muta", isCorrect: false },
+        { opt: " David (dawud)", isCorrect: false },
+        { opt: " isah (jesus)", isCorrect: false },
+        { opt: "Moses (musa) ", isCorrect: true },
+        { opt: " Muhammed SAW", isCorrect: false },
+      ],
+    },
+    {
+      question: " What is the origin of the term Ramadan?",
+      answerOpt: [
+        { opt: " Judism", isCorrect: false },
+        { opt: "Indian ", isCorrect: false },
+        { opt: "Arabic ", isCorrect: true },
+        { opt: "none of the above", isCorrect: false },
       ],
     },
 
     {
-      question: "How does surah Al-Ankabut begin?",
+      question: " Are Muslims allowed to take water while fasting?",
       answerOpt: [
-        { opt: "Ha meem", isCorrect: false },
-        { opt: "Ta sin", isCorrect: false },
-        { opt: "Alif Lam Meem", isCorrect: true },
-        { opt: "Alif Lam Ra", isCorrect: false },
-      ],
-    },
-
-    {
-      question: "which surah is the hundredth surah of the holy Quran?",
-      answerOpt: [
-        { opt: "Surrah Al-Bayyinnah", isCorrect: false },
-        { opt: "Surrah Al- Adiyat", isCorrect: true },
-        { opt: "Surrah Al-Qaria", isCorrect: false },
-        { opt: "Surah Al-Asr", isCorrect: false },
-      ],
-    },
-
-    {
-      question: "To which battle does surah Al-Anfal refer to?",
-      answerOpt: [
-        { opt: "Battle of badr", isCorrect: true },
-        { opt: "battle of uhud", isCorrect: false },
-        { opt: "battle of hunayn ", isCorrect: false },
-        { opt: "battle of mutah", isCorrect: false },
-      ],
-    },
-
-    {
-      question:
-        "What month was fasting in the month of ramadan made obligatory",
-      answerOpt: [
-        { opt: "Rajab", isCorrect: false },
-        { opt: "Jumadal al ula", isCorrect: false },
-        { opt: "Sha'abban", isCorrect: true },
-        { opt: "Muharram", isCorrect: false },
+        { opt: "Yes, but only 5 sips a day ", isCorrect: false },
+        { opt: " Yes, after certain period of hours", isCorrect: false },
+        { opt: "No ", isCorrect: true },
       ],
     },
     {
-      question: "A Surah in the Quran's equivalent of what?",
+      question: "Why do Ramadhan dates change every year? ",
       answerOpt: [
-        { opt: "page", isCorrect: false },
-        { opt: "chapter", isCorrect: true },
-        { opt: "verse", isCorrect: false },
-        { opt: "quote", isCorrect: false },
+        { opt: " Because of Muslim leaders", isCorrect: false },
+        { opt: " Because of Lunar (gregorian) calendar)", isCorrect: true },
+        { opt: "because of the moon", isCorrect: false },
       ],
     },
     {
-      question:
-        "Which of the following names is the Quran also referred to by?",
+      question: "who is a mesaharati",
       answerOpt: [
-        { opt: "Al-kitaab", isCorrect: true },
-        { opt: "Al-Tanzeel", isCorrect: true },
-        { opt: "al-furqan", isCorrect: true },
-        { opt: "ath-thikr", isCorrect: true },
-        { opt: "All Of The above", isCorrect: true },
-      ],
-    },
-    {
-      question: "How many surahs are named after prophets in the quran",
-      answerOpt: [
-        { opt: "3", isCorrect: false },
-        { opt: "10", isCorrect: false },
-        { opt: "6", isCorrect: true },
-        { opt: "9", isCorrect: false },
-      ],
-    },
-
-    {
-      question:
-        "Which of the following prophets DOES NOT have a Surah named after them?",
-      answerOpt: [
-        { opt: "Hud", isCorrect: false },
-        { opt: "Nuh", isCorrect: false },
-        { opt: "Ibrahim", isCorrect: false },
-        { opt: "Zakariyya", isCorrect: true },
-      ],
-    },
-
-    {
-      question:
-        "How old was the Prophet when the first verses of the Quran were revealed to him?",
-      answerOpt: [
-        { opt: "20", isCorrect: false },
-        { opt: "30", isCorrect: false },
-        { opt: "40", isCorrect: true },
-        { opt: "50", isCorrect: false },
-      ],
-    },
-    {
-      question: "How many different names is Allah known by?",
-      answerOpt: [
-        { opt: "2", isCorrect: false },
-        { opt: "10", isCorrect: false },
-        { opt: "99", isCorrect: true },
-        { opt: "100", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Which of the Quran's Surahs is the only one not to begin with 'Bismillah'?",
-      answerOpt: [
-        { opt: "Ar-Rahman", isCorrect: false },
-        { opt: "At-Tawbah", isCorrect: true },
-        { opt: "Az-Zalzalah", isCorrect: false },
-        { opt: "At-Tin", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Which of the following is the only month the Quran references by name?",
-      answerOpt: [
-        { opt: "Rajab", isCorrect: false },
-        { opt: "Ramadan", isCorrect: true },
-        { opt: "Muharram", isCorrect: false },
-        { opt: "Rabi’al Awwal", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "One of Allah's 99 names is 'The Giver of Life', which translates to which of the following in Arabic?",
-      answerOpt: [
-        { opt: "As-Samad", isCorrect: false },
-        { opt: "Al-Muhyi", isCorrect: true },
-        { opt: "Al-Ahad", isCorrect: false },
-        { opt: "Al-Qadir", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "What is the term Muslims use for those who've completely memorized the Quran?",
-      answerOpt: [
-        { opt: "Hafiz", isCorrect: true },
-        { opt: "Imam", isCorrect: false },
-        { opt: "Qari", isCorrect: false },
-        { opt: "Murshid", isCorrect: false },
-      ],
-    },
-    {
-      question: "How many of the Quran's Surahs are named after animals?",
-      answerOpt: [
-        { opt: "8", isCorrect: false },
-        { opt: "2", isCorrect: false },
-        { opt: "4", isCorrect: false },
-        { opt: "6", isCorrect: true },
-      ],
-    },
-
-    {
-      question:
-        "Who was the only companion of prophet Muhammad SAW to be named in the Quran?",
-      answerOpt: [
-        { opt: "Zayd", isCorrect: true },
-        { opt: "Ali", isCorrect: false },
-        { opt: "Abubakr", isCorrect: false },
-        { opt: "salman", isCorrect: false },
+        { opt: "a persoon who prepares iftar desserts", isCorrect: false },
+        {
+          opt: "a persoon who wakes people up before fast begins to eat and drink",
+          isCorrect: true,
+        },
+        { opt: "a persoon who prepares sahoor foods", isCorrect: false },
       ],
     },
   ];
@@ -466,7 +539,7 @@ const Index = () => {
         <section>
           <div className="quiz-info">
             <p>
-              Todays Quiz contains Random Questions
+              How much do you know about the month of ramadan? 🤔
               <br />
               <small>Enjoy🤗!</small>
             </p>
@@ -512,7 +585,7 @@ const Index = () => {
                 }}
                 className="hard"
               >
-                hard <small>22 questions</small> <br />
+                hard <small>20 questions</small> <br />
               </button>
               <small>
                 4:00 <sub>min</sub>
