@@ -176,7 +176,7 @@ const Index = ({
                 getImage();
               }}
             >
-              📷 click to take a snap for the socials 📸
+              📷click to take a snap for the socials📸
             </button>
           </div>
         </>
