@@ -14,455 +14,670 @@ const Index = () => {
 
   const questions = [
     {
-      question:
-        "Ramadan begins during which month of the Islamic lunar calendar? ",
+      question: "translate الله خلقني ",
       answerOpt: [
-        { opt: "7th ", isCorrect: false },
-        { opt: "8th", isCorrect: false },
-        { opt: "9th", isCorrect: true },
-        { opt: "10th ", isCorrect: false },
+        { opt: " Allah is my Lord.", isCorrect: false },
+        { opt: "Allah is my savior", isCorrect: false },
+        { opt: "Allah gave me provision.", isCorrect: false },
+        { opt: "Allah created me.", isCorrect: true },
+      ],
+    },
+    {
+      question: "Muslims have only ____ God ",
+      answerOpt: [
+        { opt: " one", isCorrect: true },
+        { opt: " two", isCorrect: false },
+        { opt: "three ", isCorrect: false },
+        { opt: " four", isCorrect: false },
+      ],
+    },
+    {
+      question: "Who is our God?",
+      answerOpt: [
+        { opt: "Prophet Adam As ", isCorrect: false },
+        { opt: " Prophet Isa As ", isCorrect: false },
+        { opt: "Allah SWT ", isCorrect: true },
+        { opt: "Prophet muhammad SAW ", isCorrect: false },
       ],
     },
 
     {
-      question: "What is the meal called before the beginning of the fast? ",
+      question: "Did Allah creates all the living things? ",
       answerOpt: [
-        { opt: " walima", isCorrect: false },
-        { opt: " wajabatul khafifa", isCorrect: false },
-        { opt: "sahoor ", isCorrect: true },
-        { opt: "Taem", isCorrect: false },
-      ],
-    },
-
-    {
-      question: " What is the meal after sunset called?",
-      answerOpt: [
-        { opt: " Altuham", isCorrect: false },
-        { opt: " Taghdaa", isCorrect: false },
-        { opt: "Dhahab lil'akl ", isCorrect: false },
-        { opt: "iftar ", isCorrect: true },
-      ],
-    },
-
-    {
-      question: "What is the first prayer of the day called? ",
-      answerOpt: [
-        { opt: " fajr", isCorrect: true },
-        { opt: " zuhr", isCorrect: false },
-        { opt: "magrihb ", isCorrect: false },
-        { opt: " isha", isCorrect: false },
+        { opt: "yes", isCorrect: true },
+        { opt: "nope ", isCorrect: false },
       ],
     },
     {
-      question: "What does 'Ramadan Mubarak' mean? ",
+      question: "translate  الله ربي   ",
       answerOpt: [
-        { opt: "It is a food blessing ", isCorrect: false },
-        { opt: "Have a blessed Ramadan", isCorrect: true },
-        { opt: " Happy Ramadan", isCorrect: false },
-        { opt: "Thank you", isCorrect: false },
-      ],
-    },
-    {
-      question: "what do muslimsusually break their fast with?",
-      answerOpt: [
-        { opt: "a cup of water or milk and a date", isCorrect: true },
-        { opt: "a cup of orange juice and apple", isCorrect: false },
-        { opt: "yoghurt and honey", isCorrect: false },
-      ],
-    },
-    {
-      question: "How many people are said to observe Ramadan?",
-      answerOpt: [
-        { opt: " 1.1 billion", isCorrect: false },
-        { opt: "50 million ", isCorrect: false },
-        { opt: " 250 million", isCorrect: false },
-        { opt: "1.6 billion ", isCorrect: true },
+        { opt: "Allah gave me provision. ", isCorrect: false },
+        { opt: " Allah created me.", isCorrect: false },
+        { opt: "Allah is my Lord. ", isCorrect: true },
+        { opt: "Allah is all forgiving ", isCorrect: false },
       ],
     },
 
     {
       question:
-        " What is the light or lantern that is traditionally used during Ramadan called?",
+        "Allah is also the Creator of the unseen such as angels, heavens and ruh (soul).",
       answerOpt: [
-        { opt: "Shaeila ", isCorrect: false },
-        { opt: "Fanoos ", isCorrect: true },
-        { opt: "Nar ", isCorrect: false },
-        { opt: "Misbah ", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "Muslims are not allowed to chew gum while fasting. True or false?",
-      answerOpt: [
-        { opt: "True, because it still counts as food ", isCorrect: true },
-        { opt: "False, because it's not really food ", isCorrect: false },
+        { opt: "Correct ", isCorrect: true },
+        { opt: " false", isCorrect: false },
       ],
     },
 
     {
-      question: "At the end of Ramadan what is the large festival called? ",
+      question: "الخا لق  means?",
       answerOpt: [
-        { opt: "Al-Hijra ", isCorrect: false },
-        { opt: "Prophet's Birthday ", isCorrect: false },
-        { opt: "Eid Al-Adha ", isCorrect: false },
-        { opt: "Eid ul Fitr", isCorrect: true },
+        { opt: "the opener ", isCorrect: false },
+        { opt: " the creator", isCorrect: true },
+        { opt: "the one ", isCorrect: false },
+        { opt: "the savior", isCorrect: false },
+      ],
+    },
+    {
+      question: "What does Allah's Beautiful Name 'Al Haqq' mean ?",
+      answerOpt: [
+        { opt: " The King.", isCorrect: false },
+        { opt: "The truth. ", isCorrect: true },
+        { opt: "The Most merciful. ", isCorrect: false },
+        { opt: "the begining.", isCorrect: false },
+      ],
+    },
+    {
+      question: "What does Allah's Beautiful Name 'Al Qawiyy' mean ?",
+      answerOpt: [
+        { opt: " The King.", isCorrect: false },
+        { opt: "The truth. ", isCorrect: false },
+        { opt: "The almighty. ", isCorrect: true },
+        { opt: "the patron", isCorrect: false },
+      ],
+    },
+    {
+      question: "What does Allah's Beautiful Name 'Ar Raqeeb' mean ?",
+      answerOpt: [
+        { opt: " The King.", isCorrect: false },
+        { opt: "The caretaker. ", isCorrect: true },
+        { opt: "The answerer of duas. ", isCorrect: false },
+        { opt: "the patron", isCorrect: false },
+      ],
+    },
+    {
+      question: "What does Allah's Beautiful Name 'As - saboor' mean ?",
+      answerOpt: [
+        { opt: " The supporter.", isCorrect: false },
+        { opt: "The eternal. ", isCorrect: false },
+        { opt: "The most forebearing. ", isCorrect: true },
+        { opt: "the deviser", isCorrect: false },
+      ],
+    },
+    {
+      question: "What does Allah's Beautiful Name 'Al Waasi' mean ?",
+      answerOpt: [
+        { opt: " The linient.", isCorrect: true },
+        { opt: "The wise. ", isCorrect: false },
+        { opt: "The answerer of duas. ", isCorrect: false },
+        { opt: "the most loving", isCorrect: false },
+      ],
+    },
+    {
+      question: "What does Allah's Beautiful Name 'al wadood' mean ?",
+      answerOpt: [
+        { opt: " The provident.", isCorrect: false },
+        { opt: "The ominipresent ", isCorrect: false },
+        { opt: "The answerer of duas. ", isCorrect: false },
+        { opt: "the most loving", isCorrect: true },
+      ],
+    },
+    {
+      question: "What does Allah's Beautiful Name 'an nur' mean ?",
+      answerOpt: [
+        { opt: " The provident.", isCorrect: false },
+        { opt: "The ominipresent ", isCorrect: false },
+        { opt: "The light. ", isCorrect: true },
+        { opt: "the most loving", isCorrect: false },
       ],
     },
 
     {
-      question: "Ramadan stems from an Arabic word ramad which means what?",
+      question: "What does Allah's Beautiful Name 'al mani' mean ?",
       answerOpt: [
-        { opt: "Fast ", isCorrect: false },
-        { opt: " Giving", isCorrect: false },
-        { opt: " Feast", isCorrect: false },
-        { opt: "dryness", isCorrect: true },
+        { opt: " The hinderer.", isCorrect: true },
+        { opt: "The one who can cause loss ", isCorrect: false },
+        { opt: "The assembler. ", isCorrect: false },
+        { opt: "the one who gives guidiance", isCorrect: false },
       ],
     },
 
     {
-      question:
-        "Ramadan is mentioned in which of the following Surahs in the Quran?",
-      answerOpt: [
-        { opt: "Surah al-Nisa ", isCorrect: false },
-        { opt: "Surah al-Hijr ", isCorrect: false },
-        { opt: "Surah Ali Imran ", isCorrect: false },
-        { opt: "Surah Al-Baqarah", isCorrect: true },
-      ],
-    },
-    {
-      question: "On which day does Eid ul-Fitr occur? ",
-      answerOpt: [
-        { opt: "On the first day of Shawwal ", isCorrect: true },
-        { opt: "Nobody knows ", isCorrect: false },
-        { opt: "On the final day of Ramadan ", isCorrect: false },
-        { opt: "During the full moon ", isCorrect: false },
-      ],
-    },
-    {
-      question: "Fasting during Ramadan is which of the 5 pillars in Islam? ",
-      answerOpt: [
-        { opt: "First ", isCorrect: false },
-        { opt: "Second ", isCorrect: false },
-        { opt: "Third", isCorrect: false },
-        { opt: "Fourth ", isCorrect: true },
-      ],
-    },
-    {
-      question: "Which famous battle took place during the month of Ramadan? ",
-      answerOpt: [
-        { opt: "The Battle of Badr ", isCorrect: true },
-        { opt: "The Battle of Uhud ", isCorrect: false },
-        { opt: "The Battle of Khaybar ", isCorrect: false },
-        { opt: "The Battle of the Trench ", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "What was revealed to the prophet muhammad SAW during the month of Ramadan? ",
-      answerOpt: [
-        { opt: "Hadiths", isCorrect: false },
-        { opt: "Torah", isCorrect: false },
-        { opt: "Quran", isCorrect: true },
-        { opt: "Injeel", isCorrect: false },
-      ],
-    },
-
-    {
-      question:
-        "True or false: The Quran was the only holy book revealed by Allah during the month of Ramadan? ",
-      answerOpt: [
-        { opt: " true", isCorrect: false },
-        { opt: "false ", isCorrect: true },
-      ],
-    },
-    {
-      question: "Laylatul-Qadr is a night greater than: ",
-      answerOpt: [
-        { opt: "1000 years ", isCorrect: false },
-        { opt: "1000 months ", isCorrect: true },
-        { opt: "1000 weeks ", isCorrect: false },
-        { opt: "1000 lifetimes ", isCorrect: false },
-      ],
-    },
-
-    {
-      question:
-        "True or false: Eating out of forgetfulness will break your fast? ",
-      answerOpt: [
-        { opt: "true ", isCorrect: false },
-        { opt: "false ", isCorrect: true },
-      ],
-    },
-    {
-      question:
-        " On the Day of Judgement, those who fasted Ramadan will be told to enter paradise through which gate",
-      answerOpt: [
-        { opt: "Baab al-Hajj ", isCorrect: false },
-        { opt: "Baab al-Rayyan ", isCorrect: true },
-        { opt: "Baab as-Sadaqah ", isCorrect: false },
-        { opt: "Baab al-Iman ", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "How many times the word Ramadan was mentioned in the Holy Quran? ",
-      answerOpt: [
-        { opt: " twice", isCorrect: false },
-        { opt: " once", isCorrect: true },
-        { opt: "thrice ", isCorrect: false },
-        { opt: "6 times ", isCorrect: false },
-      ],
-    },
-    {
-      question: "Who started Taraweeh in congregation? ",
-      answerOpt: [
-        { opt: "Abubarkar ", isCorrect: false },
-        { opt: "prophet muhammad SAW ", isCorrect: false },
-        { opt: "Umar ibn alkhattab ", isCorrect: true },
-        { opt: "zayd  ", isCorrect: false },
-      ],
-    },
-    {
-      question: "What is dua for Laylatul Qadr?",
+      question: "What is the meaning of Tawheed?",
       answerOpt: [
         {
-          opt: "O Allah, indeed you are pardoning and generous; you love to pardon, so pardon us",
+          opt: "Tawheed does not have any specific meaning ",
+          isCorrect: false,
+        },
+        { opt: "Tawheed is worshipping Gods in all forms ", isCorrect: false },
+        {
+          opt: "Tawheed means belief in one unique God, unification and asserting oneness of God ",
+          isCorrect: true,
+        },
+        { opt: "Tawheed means belief in many Gods ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "How many categories can Tawheed be divided into? ",
+      answerOpt: [
+        { opt: "Two categories", isCorrect: false },
+        { opt: "Four categories", isCorrect: false },
+        { opt: "One category ", isCorrect: false },
+        { opt: "Three categories ", isCorrect: true },
+      ],
+    },
+
+    {
+      question:
+        "What does Allah mention about insulting, abusing or condemning the Gods of other religions, in the Quran? ",
+      answerOpt: [
+        { opt: "Insult the Gods of other religions ", isCorrect: false },
+        {
+          opt: "Do not revile those whom they call upon besides Allah as Gods ",
+          isCorrect: true,
+        },
+        { opt: "Abuse the Gods of other religions ", isCorrect: false },
+        { opt: "Condemn the Gods of other religions ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What does Shirk mean?",
+      answerOpt: [
+        { opt: " Shirk is a form of worship", isCorrect: false },
+        {
+          opt: " Shirk means associating partners with Allah and is equivalent to idolatry",
           isCorrect: true,
         },
         {
-          opt: "oh allah assist me in remebering you, in thanking you and wrshiping you in the best of manners ",
+          opt: " Shirk means asserting the oneness of Allah",
+          isCorrect: false,
+        },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+    {
+      question: "What is Tawheed al-Ibaadah? ",
+      answerOpt: [
+        {
+          opt: " Tawheed al- Ibaadah is maintaining the unity of Lordship",
           isCorrect: false,
         },
         {
-          opt: " glorious is allah and praises are due to allah and allah is the greatest",
-          isCorrect: false,
-        },
-        { opt: "i ask allah to forgive me ", isCorrect: false },
-      ],
-    },
-    {
-      question: "What do you do if you accidentally eat/drink while fasting? ",
-      answerOpt: [
-        {
-          opt: "Continue your fast, it is a gift from Allah ",
+          opt: " Tawheed al-Ibaadah is maintaining the unity of worship",
           isCorrect: true,
         },
         {
-          opt: "your fast becomes invalid so break your fast ",
+          opt: "Tawheed al-Ibaadah is maintaining the unity of Allah's name and attributes ",
+          isCorrect: false,
+        },
+        { opt: "none of the above ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What is Tawheed ar-Ruboobeeyah? ",
+      answerOpt: [
+        {
+          opt: "Tawheed ar-Ruboobeeyah is maintaining the unity of Allah's name and attributes ",
+          isCorrect: false,
+        },
+        {
+          opt: " Tawheed ar-Ruboobeeyah is maintaining the unity of Lordship",
+          isCorrect: true,
+        },
+        {
+          opt: " Tawheed ar-Ruboobeeyah is maintaining the unity of worship",
+          isCorrect: false,
+        },
+        { opt: " none of the above", isCorrect: false },
+      ],
+    },
+
+    {
+      question: " What is Tawheed al-Asmaa was-sifaat?",
+      answerOpt: [
+        {
+          opt: "Tawheed al-Asmaa was-sifaat is maintaining the unity of Allah's name and attributes ",
+          isCorrect: true,
+        },
+        {
+          opt: " Tawheed al-Asmaa was-sifaat is maintaining the unity of Worship",
+          isCorrect: false,
+        },
+        {
+          opt: "Tawheed al-Asmaa was-sifaat is maintaining the unity of Lordship ",
+          isCorrect: false,
+        },
+        { opt: "none of the aabove ", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What is the greatest sin which Allah will never forgive? ",
+      answerOpt: [
+        {
+          opt: "Shirk is the greatest sin which Allah will never forgive ",
+          isCorrect: true,
+        },
+        {
+          opt: "There is nothing which is considered as the greatest sin ",
+          isCorrect: false,
+        },
+        {
+          opt: "Adultery is the greatest sin which Allah will never forgive ",
+          isCorrect: false,
+        },
+        {
+          opt: "Lying is the greatest sin which Allah will never forgive ",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      question: "Belief in the Angels is a fundamental part of Iman (faith) ",
+      answerOpt: [
+        { opt: " true ", isCorrect: true },
+        { opt: " false", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "Angels are created from? ",
+      answerOpt: [
+        { opt: "fire and Sun light ", isCorrect: false },
+        { opt: "light", isCorrect: true },
+        { opt: "water and ice ", isCorrect: false },
+        { opt: " stars", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What is the name of the angel that will blow the trumpet to signal the coming of the Day of Judgement? ",
+      answerOpt: [
+        { opt: "Azrael AS", isCorrect: false },
+        { opt: "Mika'il AS", isCorrect: false },
+        { opt: "Jibreel AS", isCorrect: false },
+        { opt: "Israfil AS", isCorrect: true },
+      ],
+    },
+
+    {
+      question: "How many angels do you have specifically assigned to you? ",
+      answerOpt: [
+        { opt: "1 ", isCorrect: false },
+        { opt: " 2", isCorrect: false },
+        { opt: " 4", isCorrect: true },
+        { opt: " 6", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "Who is the Angel of Death ",
+      answerOpt: [
+        { opt: "Nakir AS", isCorrect: false },
+        { opt: "Azrael AS", isCorrect: true },
+        { opt: "Maalik AS", isCorrect: false },
+        { opt: "Munkar AS ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What is the name of The Angel who manage man’s mundane necessities, bring forth rain and oversee the cultivation of crops. ",
+      answerOpt: [
+        { opt: "Ridwan AS ", isCorrect: false },
+        { opt: " Maalik AS", isCorrect: false },
+        { opt: "Jibrail AS ", isCorrect: false },
+        { opt: " Mikael AS", isCorrect: true },
+      ],
+    },
+
+    {
+      question:
+        "what is the name of The Angel who deliver the Divine Revelations from Allah (swt) ",
+      answerOpt: [
+        { opt: "Mikail AS", isCorrect: false },
+        { opt: "Jibrail AS", isCorrect: true },
+        { opt: " Izrail AS", isCorrect: false },
+        { opt: " Azrael AS", isCorrect: false },
+      ],
+    },
+    {
+      question: "Do angels have wings? ",
+      answerOpt: [
+        { opt: "yes ", isCorrect: true },
+        { opt: "No", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        "Which Angels Sits on man’s left shoulder to record his/her evil deeds. ",
+      answerOpt: [
+        { opt: "Maalik AS ", isCorrect: false },
+        { opt: "Raqib AS ", isCorrect: false },
+        { opt: "Atid AS ", isCorrect: true },
+        { opt: "Munkar Nakir AS ", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        " Which Angel Sits on man’s right shoulder to record his/her good deeds.",
+      answerOpt: [
+        { opt: "Atid AS ", isCorrect: false },
+        { opt: "Ridwan AS ", isCorrect: false },
+        { opt: "Munkar Nakir AS ", isCorrect: false },
+        { opt: "Raqib AS ", isCorrect: true },
+      ],
+    },
+    {
+      question:
+        " Does the angel recording our bad deeds to the left of us write them down into our Record immediately?",
+      answerOpt: [
+        {
+          opt: " No, there is a delay where the angel waits before writing",
+          isCorrect: true,
+        },
+        { opt: " Yes, as we commit them", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What did the Angels say to Allah when they found out man was to be sent to Earth?",
+      answerOpt: [
+        {
+          opt: "They were hesitant and asked God why, when they worship Him perfectly ",
+          isCorrect: true,
+        },
+        {
+          opt: "They were happy, and did not question this ",
+          isCorrect: false,
+        },
+        {
+          opt: " They asked if they should go and prepare Earth",
+          isCorrect: false,
+        },
+        { opt: " They asked how many men will be sent", isCorrect: false },
+      ],
+    },
+    {
+      question: "Do angels eat and drink or sin? ",
+      answerOpt: [
+        { opt: " yes ", isCorrect: false },
+        { opt: " no", isCorrect: true },
+      ],
+    },
+
+    {
+      question: "How many angels will question us in our graves? ",
+      answerOpt: [
+        { opt: " 2", isCorrect: true },
+        { opt: " 4", isCorrect: false },
+        { opt: "6 ", isCorrect: false },
+        { opt: " 8", isCorrect: false },
+      ],
+    },
+    {
+      question:
+        "What are the names of the angels that watch over heaven and hell? (respectively) ",
+      answerOpt: [
+        { opt: " Munkar (Heaven) and Nakir (Hell)", isCorrect: false },
+        { opt: "Nakir (Heaven) and Munkar (Hell) ", isCorrect: false },
+        { opt: " Malik (Heaven) and Ridwan (Hell)", isCorrect: false },
+        { opt: "Ridwan (Heaven) and Malik (Hell) ", isCorrect: true },
+      ],
+    },
+    {
+      question: " what battle did angels participate in? ",
+      answerOpt: [
+        { opt: "battle of uhud ", isCorrect: false },
+        { opt: "battle of badr  ", isCorrect: true },
+        { opt: "battle of  tabuk", isCorrect: false },
+        { opt: "battle of  khaybar", isCorrect: false },
+      ],
+    },
+
+    {
+      question: " Angels are ?",
+      answerOpt: [
+        { opt: "Extremely beautiful ", isCorrect: true },
+        { opt: "Can take on the form of humans. ", isCorrect: true },
+        { opt: "very large  ", isCorrect: true },
+        { opt: "all of the above ", isCorrect: true },
+      ],
+    },
+
+    {
+      question:
+        "which angel is Responsible for directing the rain and winds according to the will of Allah (swt)? ",
+      answerOpt: [
+        { opt: " mikail AS", isCorrect: true },
+        { opt: "malik AS", isCorrect: false },
+        { opt: "ridwan AS", isCorrect: false },
+        { opt: " jibrial AS", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "Angels have no free will. This means...",
+      answerOpt: [
+        { opt: " They do not do what Allah tells them", isCorrect: false },
+        { opt: "They can't make their own decisions ", isCorrect: true },
+      ],
+    },
+
+    {
+      question: "The purpose of angels in the Islamic faith is to ",
+      answerOpt: [
+        { opt: "obey Adam ", isCorrect: false },
+        { opt: " obey Allah", isCorrect: true },
+        { opt: "obey Abraham ", isCorrect: false },
+        { opt: " obey Muhammad", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "The role of the Angel jibril was to ",
+      answerOpt: [
+        { opt: " act as a messenger of Allah", isCorrect: true },
+        {
+          opt: "take a persons soul to Allah (Angel of Death) ",
+          isCorrect: false,
+        },
+        { opt: "act as a messenger of Muhammad ", isCorrect: false },
+        {
+          opt: "reward those who led a good life, and bring rain and thunder to Earth ",
           isCorrect: false,
         },
       ],
     },
     {
       question:
-        "What is it called when a Muslim stays at the Masjid for 3 or more nights? ",
+        "how many anges visit al - bait-al ma'mur everyday and perform prayers daily and then leave and never return(but a new group comes into it daily) ? ",
       answerOpt: [
-        { opt: "Itikaf ", isCorrect: true },
-        { opt: " laylatul qadr", isCorrect: false },
-        { opt: " safa and marwa", isCorrect: false },
-        { opt: " taraweeh", isCorrect: false },
-      ],
-    },
-    {
-      question:
-        "What should you fast from in addition to not eating/drinking? ",
-      answerOpt: [
-        { opt: "bathing and brushing ", isCorrect: false },
-        { opt: "sleeping ", isCorrect: false },
-        { opt: " Bad words/actions", isCorrect: true },
-        { opt: "applying make-up ", isCorrect: false },
-      ],
-    },
-    {
-      question: " Who first gave us the name ‘Muslims’?",
-      answerOpt: [
-        { opt: "Nabi Ibrahim (pbuh) ", isCorrect: true },
-        { opt: " Nabi musa (pbuh) ", isCorrect: false },
-        { opt: "Nabi muhammad (pbuh) ", isCorrect: false },
-        { opt: "Nabi Adam (pbuh)", isCorrect: false },
-      ],
-    },
-    {
-      question: " Who was the first of the prophets to fast?",
-      answerOpt: [
-        { opt: "Musa AS ", isCorrect: false },
-        { opt: "Muhammad SAW ", isCorrect: false },
-        { opt: "Adam AS", isCorrect: true },
-        { opt: "Isa AS", isCorrect: false },
+        { opt: " 12", isCorrect: false },
+        { opt: "limitless ", isCorrect: false },
+        { opt: " 70,000", isCorrect: true },
+        { opt: "90,000 ", isCorrect: false },
       ],
     },
 
     {
-      question: "Which fruits are mentioned in Quran? ",
+      question: "what is al-bait al-ma'mur",
+      answerOpt: [
+        { opt: " the frequented house ", isCorrect: true },
+        { opt: "the peacefull house", isCorrect: false },
+        { opt: " the sacred house", isCorrect: false },
+        { opt: " the flourishing house ", isCorrect: true },
+      ],
+    },
+    {
+      question: "where is al-bait al-ma'mur situated",
       answerOpt: [
         {
-          opt: "gardenegg, dates, apple, olive, grapes and banana",
+          opt: " on the 5th heaven directly above the ka'abah",
           isCorrect: false,
         },
-        { opt: "dates, olive,  apple and eggplant", isCorrect: false },
-        { opt: "dates and olives only ", isCorrect: false },
         {
-          opt: "Fig plant, Dates, olive, grapes, pomegrante and banana",
+          opt: "on the 6th heaven directly above the ka'abah",
+          isCorrect: false,
+        },
+        {
+          opt: "on the 7th heaven directly above the ka'abah",
           isCorrect: true,
+        },
+        {
+          opt: "on the 8th heaven directly above the ka'abah",
+          isCorrect: false,
         },
       ],
     },
-
     {
-      question: "What is sighted to signal the start of Ramadan? ",
+      question: "Who are the archangels in islam",
       answerOpt: [
-        { opt: "The crescent moon", isCorrect: true },
-        { opt: "the full moon ", isCorrect: false },
-        { opt: " the stars", isCorrect: false },
-        { opt: "nothing ", isCorrect: false },
-      ],
-    },
-
-    {
-      question: "How many Ramadans did the prophet fast? ",
-      answerOpt: [
-        { opt: "10 ramadans", isCorrect: false },
-        { opt: " 11 ramadans", isCorrect: false },
-        { opt: "9 Ramadans ", isCorrect: true },
-        { opt: " 7 ramadans", isCorrect: false },
+        { opt: "Jibrail, malik, israfil, and azrail", isCorrect: false },
+        { opt: "Jibrail, mikail, israfil, and azrail ", isCorrect: true },
+        { opt: "Jibrail, mikail, israfil, and Ridwan ", isCorrect: false },
+        { opt: "Jibrail, mikail, munkar, and nakir ", isCorrect: false },
       ],
     },
     {
-      question: "What is the first surah revealed in Quran? ",
+      question: "Who is the most powerful angel in islam",
       answerOpt: [
-        { opt: "Al-ʻAlaq ( Congealed Blood)", isCorrect: true },
-        { opt: " fatiha (the opening)", isCorrect: false },
-        { opt: " al-baqara (the cow)", isCorrect: false },
-        { opt: "an-nas (mankid) ", isCorrect: false },
+        { opt: "mikail AS", isCorrect: false },
+        { opt: "Munkar AS", isCorrect: false },
+        { opt: "malik AS", isCorrect: false },
+        { opt: "Ridwan AS", isCorrect: false },
+        { opt: "jibrail AS", isCorrect: true },
+        { opt: "nakir AS", isCorrect: false },
+        { opt: "israfil AS", isCorrect: false },
       ],
     },
     {
-      question: " When did fasting start in Islam?",
+      question: "What is the meaning of the word “AL - Qur’an”? ",
       answerOpt: [
-        { opt: "first year after hijrah", isCorrect: false },
-        { opt: " Seconed  year after Hijrah", isCorrect: true },
-        { opt: "a year before hijrah", isCorrect: false },
-        { opt: "third year after hijrah", isCorrect: false },
+        { opt: " The Recitation", isCorrect: true },
+        { opt: "the seeing ", isCorrect: false },
+        { opt: " the believed", isCorrect: false },
+        { opt: " that book", isCorrect: false },
       ],
     },
 
     {
       question:
-        "RIDDLE TIME: I am the heart of the Quran yet I am not in the center of the Quran. What am I? ",
+        "How many letters are found in the Arabic alphabet which looks exactly the same but are differentiated by a dot. ",
       answerOpt: [
-        { opt: "surah al-aadiyaat", isCorrect: false },
-        { opt: "surah Al hadid ", isCorrect: false },
-        { opt: "Surah Yaseen", isCorrect: true },
-        { opt: " surah ar-rahmaan", isCorrect: false },
-      ],
-    },
-    {
-      question: "What is Umrah equal to when done in Ramadan? ",
-      answerOpt: [
-        { opt: "1000 salats", isCorrect: false },
-        { opt: "A year of good deeds", isCorrect: false },
-        { opt: "nothing", isCorrect: false },
-        { opt: "Hajj ", isCorrect: true },
+        { opt: " 2", isCorrect: false },
+        { opt: " 6", isCorrect: false },
+        { opt: "8 ", isCorrect: true },
+        { opt: "9 ", isCorrect: false },
       ],
     },
 
     {
-      question: "Who introduced the Islamic calendar?",
+      question: " is the letter hamza ه the same as the leter alif ا?",
       answerOpt: [
-        { opt: "Abu bakr", isCorrect: false },
-        { opt: "Umar Ibn Al-Khattab ", isCorrect: true },
-        { opt: "Ali ibn abi talib ", isCorrect: false },
-        { opt: "zayd ibn harithah", isCorrect: false },
-      ],
-    },
-    {
-      question: "Who was the İnjil revealed to? ",
-      answerOpt: [
-        { opt: "Jesus (isah)", isCorrect: true },
-        { opt: "Abraham ", isCorrect: false },
-        { opt: "musa (moses) ", isCorrect: false },
-        { opt: "dawud ", isCorrect: false },
-      ],
-    },
-    {
-      question: "Who was the zabur revealed to? ",
-      answerOpt: [
-        { opt: "Jesus (isah)", isCorrect: false },
-        { opt: "suliaman (solomon)", isCorrect: false },
-        { opt: "musa (moses) ", isCorrect: false },
-        { opt: "dawud (david) ", isCorrect: true },
+        { opt: "no, not the same ", isCorrect: true },
+        { opt: " yes they are the same", isCorrect: false },
       ],
     },
 
     {
-      question: " What is the deeper purpose of Ramadan?",
+      question: "How is an Arabic vowel represented in English? ",
       answerOpt: [
+        { opt: " It is represented with a dot over it", isCorrect: false },
+        { opt: "It is represented with an apostrophe ", isCorrect: false },
         {
-          opt: "being concscious and cognizant of allah, of truth and fear of allah",
+          opt: "It is represented with a line above the English letter ",
           isCorrect: true,
         },
-        { opt: "bring Muslims closer to Allah ", isCorrect: false },
-        { opt: "protest the government ", isCorrect: false },
-        { opt: "get cleansed of one's sins ", isCorrect: false },
-      ],
-    },
-    {
-      question: "Why do people fast during Ramadhan?",
-      answerOpt: [
-        { opt: " as a means of seeking forgiveness of sins", isCorrect: true },
-        {
-          opt: "as a means of reminder of the plight of those who do not have adequate food, supply and shelter",
-          isCorrect: true,
-        },
-        { opt: "teaches self control, reinforces ones faith", isCorrect: true },
-        { opt: "all of the above", isCorrect: true },
+        { opt: " not represented at all", isCorrect: false },
       ],
     },
 
     {
-      question: "Who was Torah revealed to? ",
+      question:
+        "How many points of articulation  in the mouth are there for Arabic letters?",
       answerOpt: [
-        { opt: " David (dawud)", isCorrect: false },
-        { opt: " isah (jesus)", isCorrect: false },
-        { opt: "Moses (musa) ", isCorrect: true },
-        { opt: " Muhammed SAW", isCorrect: false },
-      ],
-    },
-    {
-      question: " What is the origin of the term Ramadan?",
-      answerOpt: [
-        { opt: " Judism", isCorrect: false },
-        { opt: "Indian ", isCorrect: false },
-        { opt: "Arabic ", isCorrect: true },
-        { opt: "none of the above", isCorrect: false },
+        { opt: " 6", isCorrect: false },
+        { opt: "5 ", isCorrect: true },
+        { opt: " 9", isCorrect: false },
+        { opt: "7 ", isCorrect: false },
       ],
     },
 
     {
-      question: " Are Muslims allowed to take water while fasting?",
+      question: "Which Arabic letter is pronounced as a glottal stop? ",
       answerOpt: [
-        { opt: "Yes, but only 5 sips a day ", isCorrect: false },
-        { opt: " Yes, after certain period of hours", isCorrect: false },
-        { opt: "No ", isCorrect: true },
+        { opt: " ه (ha)", isCorrect: false },
+        { opt: "ة (ta marbuta)", isCorrect: false },
+        { opt: "ي (ya)", isCorrect: false },
+        { opt: "ء (hamzah)", isCorrect: true },
+      ],
+    },
+
+    {
+      question: "Which main points of articulation have the most letters? ",
+      answerOpt: [
+        { opt: " the throat الحلق", isCorrect: false },
+        { opt: "the lips الشفتن", isCorrect: false },
+        { opt: " the tongue اللسن", isCorrect: true },
+        { opt: "the nasal cavity (the nose) الخيشوم", isCorrect: false },
+      ],
+    },
+
+    {
+      question:
+        " In points of articulation, which letter belongs to the tongue?",
+      answerOpt: [
+        { opt: "ض ", isCorrect: false },
+        { opt: "ق ", isCorrect: true },
+        { opt: "ص ", isCorrect: false },
+        { opt: " ع", isCorrect: false },
+      ],
+    },
+
+    {
+      question: "What sound is made by sukun ",
+      answerOpt: [
+        { opt: " The sound of u", isCorrect: false },
+        { opt: " The sound of i", isCorrect: false },
+        { opt: "The sound of a ", isCorrect: false },
+        { opt: "The absence of sound (no vowel/ silent) ", isCorrect: true },
+      ],
+    },
+
+    {
+      question: "How many vowels exist in Arabic? ",
+      answerOpt: [
+        { opt: "2 (1 short vowel  and 1 long vowel)", isCorrect: false },
+        { opt: "5(2 short vowel  and 3 long vowel)", isCorrect: false },
+        { opt: "6(3 short vowel  and 3 long vowel)", isCorrect: true },
+        { opt: "3 (1 short vowel  and 2 long vowel)", isCorrect: false },
       ],
     },
     {
-      question: "Why do Ramadhan dates change every year? ",
+      question: "so far how will you rate your self this ramdan ",
       answerOpt: [
-        { opt: " Because of Muslim leaders", isCorrect: false },
-        { opt: " Because of Lunar (gregorian) calendar)", isCorrect: true },
-        { opt: "because of the moon", isCorrect: false },
-      ],
-    },
-    {
-      question: "who is a mesaharati",
-      answerOpt: [
-        { opt: "a persoon who prepares iftar desserts", isCorrect: false },
-        {
-          opt: "a persoon who wakes people up before fast begins to eat and drink",
-          isCorrect: true,
-        },
-        { opt: "a persoon who prepares sahoor foods", isCorrect: false },
+        { opt: "10", isCorrect: true },
+        { opt: "9", isCorrect: true },
+        { opt: "8", isCorrect: true },
+        { opt: "7", isCorrect: true },
+        { opt: "6", isCorrect: true },
+        { opt: "5 ", isCorrect: true },
+        { opt: "4 ", isCorrect: false },
+        { opt: "3", isCorrect: false },
+        { opt: "2 ", isCorrect: false },
+        { opt: "1 ", isCorrect: false },
       ],
     },
   ];
@@ -521,6 +736,9 @@ const Index = () => {
               score={tscore}
               attemptedq={attemptedq}
               timeOff={timeOff}
+              easyQ={easyQ}
+              mediumQ={mediumQ}
+              hardQ={hardQ}
             />
           ) : (
             <Quiz
@@ -549,46 +767,46 @@ const Index = () => {
             <div className="btn-container">
               <button
                 onClick={() => {
-                  setTime("90");
+                  setTime("180");
                   setEasyQ(true);
                   start();
                 }}
                 className="easy"
               >
-                easy <small>10 questions</small> <br />
+                easy <small>15 questions</small> <br />
               </button>
               <small>
-                1:30<sub>min</sub>
+                3:00<sub>min</sub>
               </small>
             </div>
             <div className="btn-container">
               <button
                 onClick={() => {
-                  setTime("120");
+                  setTime("240");
                   setMediumQ(true);
                   start();
                 }}
                 className="medium"
               >
-                medium <small>15 questions</small> <br />
+                medium <small>20 questions</small> <br />
               </button>
               <small>
-                2:00 <sub>min</sub>
+                4:00 <sub>min</sub>
               </small>
             </div>
             <div className="btn-container">
               <button
                 onClick={(e) => {
-                  setTime("240");
+                  setTime("300");
                   setHardQ(true);
                   start();
                 }}
                 className="hard"
               >
-                hard <small>20 questions</small> <br />
+                hard <small>25 questions</small> <br />
               </button>
               <small>
-                4:00 <sub>min</sub>
+                5:00 <sub>min</sub>
               </small>
             </div>
           </div>

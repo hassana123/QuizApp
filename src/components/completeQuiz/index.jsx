@@ -17,6 +17,9 @@ const Index = ({
   wrongAnswer,
   attemptedq,
   timeOff,
+  easyQ,
+  mediumQ,
+  hardQ,
 }) => {
   const [name, setName] = useState("");
   const [saved, setSaved] = useState(false);
@@ -81,7 +84,27 @@ const Index = ({
             ) : (
               <p>Quiz completed ✅ successfully.👏</p>
             )}
-
+            {easyQ ? (
+              <h3 className="level">
+                level : <span>easy</span>
+              </h3>
+            ) : (
+              ""
+            )}
+            {mediumQ ? (
+              <h3 className="level">
+                level : <span>medium</span>
+              </h3>
+            ) : (
+              ""
+            )}
+            {hardQ ? (
+              <h3 className="level">
+                level : <span>hard</span>
+              </h3>
+            ) : (
+              ""
+            )}
             <h3>
               POINTS 👇🏾 <br />
               <br /> <span>✨ {score} 🙌</span>
@@ -102,6 +125,7 @@ const Index = ({
                 {wrongAnswer} out of {question}
               </span>
             </p>
+
             <div className="share">
               <small>share with friends:🤗</small>
 
@@ -152,7 +176,7 @@ const Index = ({
                 getImage();
               }}
             >
-              📷 Take a screenshot for the socials 📸
+              📷 click to take a snap for the socials 📸
             </button>
           </div>
         </>

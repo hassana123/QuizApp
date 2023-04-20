@@ -13,11 +13,11 @@ const Index = (props) => {
   const [time, setTime] = useState(0);
   let qs;
   if (props.easyQ) {
-    qs = props.questions.slice(0, 10);
+    qs = props.questions.slice(0, 15);
   } else if (props.mediumQ) {
-    qs = props.questions.slice(10, 25);
+    qs = props.questions.slice(15, 35);
   } else if (props.hardQ) {
-    qs = props.questions.slice(25);
+    qs = props.questions.slice(35);
   }
   //console.log(qs);
   const handleNext = () => {
