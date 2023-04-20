@@ -757,9 +757,9 @@ const Index = () => {
         <section>
           <div className="quiz-info">
             <p>
-              How much do you know about the month of ramadan? 🤔
+              How deep is your islamic knowledge ? 🤔
               <br />
-              <small>Enjoy🤗!</small>
+              <small>let's find out.🤗!</small>
             </p>
           </div>
           <div className="mode">
